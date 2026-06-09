@@ -80,6 +80,174 @@ const webDevProjects = [
     likes: 145, 
     category: "網站開發" 
   },
+  {
+    id: 10,
+    title: "TOYOTA GR系列车辆管理小程序",
+    client: "TOYOTA",
+    description: "TOYOTA GR series vehicle management mini program",
+    image: "/portfolio/網站開發/TOYOTA_GR系列车辆管理小程序/thumbnail.jpg",
+    folder: "/portfolio/網站開發/TOYOTA_GR系列车辆管理小程序",
+    tags: ["Mini Program", "Automotive", "Vehicle Management"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 11,
+    title: "落至晚樱",
+    client: "落至晚樱",
+    description: "Falling cherry blossoms - UI design portfolio",
+    image: "/portfolio/網站開發/落至晚樱/thumbnail.png",
+    folder: "/portfolio/網站開發/落至晚樱",
+    tags: ["UI Design", "Portfolio", "APP Design"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 12,
+    title: "家庭微电网APP UIUX设计稿交互原型",
+    client: "家庭微电网",
+    description: "Family microgrid APP UI/UX design and interactive prototype",
+    image: "/portfolio/網站開發/家庭微电网APP_UIUX设计稿交互原型/thumbnail.png",
+    folder: "/portfolio/網站開發/家庭微电网APP_UIUX设计稿交互原型",
+    tags: ["APP Design", "UI/UX", "Smart Home"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 13,
+    title: "Security Camera UI kit",
+    client: "kopenLi",
+    description: "Security camera UI kit design",
+    image: "/portfolio/網站開發/Security Camera UI kit/thumbnail.png",
+    folder: "/portfolio/網站開發/Security Camera UI kit",
+    tags: ["UI Kit", "Security", "APP Design"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 14,
+    title: "Dreame App Iterative Design",
+    client: "Dreame",
+    description: "Dyson smart home APP iterative design",
+    image: "/portfolio/網站開發/Dreame App迭代設計/thumbnail.jpg",
+    folder: "/portfolio/網站開發/Dreame App迭代設計",
+    tags: ["APP Design", "Smart Home", "Iterative Design"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 15,
+    title: "2026 UI Works Collection",
+    client: "Loooo",
+    description: "2026 UI works collection by designer Loooo",
+    image: "/portfolio/網站開發/2026UI作品集/thumbnail.jpg",
+    folder: "/portfolio/網站開發/2026UI作品集",
+    tags: ["UI Design", "Portfolio", "2026"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 16,
+    title: "Ncollecto - 文物类RWA项目APP UI/UX设计",
+    client: "Ncollecto",
+    description: "Cultural artifact RWA project APP UI/UX design",
+    image: "/portfolio/網站開發/Ncollecto/thumbnail.jpg",
+    folder: "/portfolio/網站開發/Ncollecto",
+    tags: ["APP Design", "RWA", "Blockchain"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 17,
+    title: "携程国际事业部设计年鉴",
+    client: "携程",
+    description: "Ctrip International Business Division design annual",
+    image: "/portfolio/網站開發/携程国际事业部设计年鉴/thumbnail.gif",
+    folder: "/portfolio/網站開發/携程国际事业部设计年鉴",
+    tags: ["Design Annual", "Travel", "Corporate"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 18,
+    title: "智能婴童看护APP",
+    client: "智能婴童",
+    description: "Smart baby care APP design",
+    image: "/portfolio/網站開發/智能婴童看护APP/thumbnail.gif",
+    folder: "/portfolio/網站開發/智能婴童看护APP",
+    tags: ["APP Design", "Baby Care", "Smart Home"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 22,
+    title: "Capy個人理財APP",
+    client: "Capy",
+    description: "Capy personal finance APP design",
+    image: "/portfolio/網站開發/Capy個人理財APP/thumbnail.png",
+    folder: "/portfolio/網站開發/Capy個人理財APP",
+    tags: ["APP Design", "Finance", "Personal"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 25,
+    title: "X-MATE Wallet Project",
+    client: "梁宇龙",
+    description: "Blockchain X-MATE wallet project UI design, showcasing innovative crypto wallet interface and user experience",
+    image: "/portfolio/網站開發/X-MATE錢包項目/thumbnail.png",
+    folder: "/portfolio/網站開發/X-MATE錢包項目",
+    tags: ["APP Design", "Blockchain", "Wallet"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 26,
+    title: "Richland Gem App",
+    client: "Richland",
+    description: "Richland gemstone trading app, featuring elegant UI design and seamless user experience for luxury gem authentication and trading",
+    image: "/portfolio/網站開發/Richland宝石app项目/thumbnail.jpg",
+    folder: "/portfolio/網站開發/Richland宝石app项目",
+    tags: ["App Design", "Luxury", "E-commerce"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 27,
+    title: "流动泡泡糖",
+    client: "流动泡泡糖",
+    description: "UI portfolio design showcasing creative interface works",
+    image: "/portfolio/網站開發/流动泡泡糖/thumbnail.png",
+    folder: "/portfolio/網站開發/流动泡泡糖",
+    tags: ["UI Design", "Portfolio", "Design"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 28,
+    title: "Web3金融UX視覺設計",
+    client: "Web3",
+    description: "Web3 financial UX visual design",
+    image: "/portfolio/網站開發/Web3金融UX視覺設計/thumbnail.png",
+    folder: "/portfolio/網站開發/Web3金融UX視覺設計",
+    tags: ["UX Design", "Web3", "Finance"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
 ]
 
 const brandProjects = [
@@ -95,9 +263,72 @@ const brandProjects = [
     likes: 156, 
     category: "品牌設計" 
   },
+  {
+    id: 24,
+    title: "OMS",
+    client: "OMS",
+    description: "OMS brand design",
+    image: "/portfolio/品牌設計/OMS/thumbnail.png",
+    folder: "/portfolio/品牌設計/OMS",
+    tags: ["Brand Design", "Corporate", "Visual Identity"],
+    views: 1500,
+    likes: 120,
+    category: "品牌設計"
+  },
+  {
+    id: 29,
+    title: "Style Attempt",
+    client: "kopenLi",
+    description: "Style attempt brand design collection",
+    image: "/portfolio/品牌設計/Style Attempt/thumbnail.png",
+    folder: "/portfolio/品牌設計/Style Attempt",
+    tags: ["Brand Design", "Fashion", "Visual"],
+    views: 1500,
+    likes: 120,
+    category: "品牌設計"
+  },
 ]
 
-const allProjects = [...webDevProjects, ...brandProjects]
+const aiAutoProjects = [
+  {
+    id: 20,
+    title: "2026作品集匯總",
+    client: "2026",
+    description: "2026 portfolio summary - AI automation works collection",
+    image: "/portfolio/AI自動化/ZNzMwNzA0MjA=/thumbnail.png",
+    folder: "/portfolio/AI自動化/ZNzMwNzA0MjA=",
+    tags: ["AI Automation", "Portfolio", "2026"],
+    views: 1500,
+    likes: 120,
+    category: "AI自動化"
+  },
+  {
+    id: 21,
+    title: "2025智能家居UI作品集",
+    client: "周游0626",
+    description: "2025 smart home UI portfolio",
+    image: "/portfolio/AI自動化/2025智能家居UI作品集/thumbnail.jpg",
+    folder: "/portfolio/AI自動化/2025智能家居UI作品集",
+    tags: ["AI Automation", "Smart Home", "UI Design"],
+    views: 1500,
+    likes: 120,
+    category: "AI自動化"
+  },
+  {
+    id: 23,
+    title: "Beck_UI作品集",
+    client: "Beck_z",
+    description: "Beck UI works collection 2026 - GIF format",
+    image: "/portfolio/AI自動化/Beck_UI作品集/thumbnail.gif",
+    folder: "/portfolio/AI自動化/Beck_UI作品集",
+    tags: ["UI Design", "Portfolio", "GIF"],
+    views: 1500,
+    likes: 120,
+    category: "AI自動化"
+  },
+]
+
+const allProjects = [...webDevProjects, ...brandProjects, ...aiAutoProjects]
 
 // 靜態生成所有項目的路由
 export function generateStaticParams() {

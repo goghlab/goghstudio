@@ -138,6 +138,145 @@ const translations = {
     "work.project.7.tag2": "Smart Home",
     "work.project.7.tag3": "Product Launch",
 
+    // Project 10: TOYOTA GR系列车辆管理小程序 (EN)
+    "work.project.10.title": "TOYOTA GR Series Vehicle Management",
+    "work.project.10.client": "TOYOTA",
+    "work.project.10.description": "TOYOTA GR series vehicle management mini program",
+    "work.project.10.tag1": "Mini Program",
+    "work.project.10.tag2": "Automotive",
+    "work.project.10.tag3": "Vehicle Management",
+
+    // Project 11: 落至晚樱 (EN)
+    "work.project.11.title": "Falling Cherry Blossoms",
+    "work.project.11.client": "落至晚樱",
+    "work.project.11.description": "Falling cherry blossoms - UI design portfolio",
+    "work.project.11.tag1": "UI Design",
+    "work.project.11.tag2": "Portfolio",
+    "work.project.11.tag3": "APP Design",
+
+    // Project 12: 家庭微电网APP_UIUX设计稿交互原型 (EN)
+    "work.project.12.title": "Family Microgrid APP UI/UX Design",
+    "work.project.12.client": "家庭微电网",
+    "work.project.12.description": "Family microgrid APP UI/UX design and interactive prototype",
+    "work.project.12.tag1": "APP Design",
+    "work.project.12.tag2": "UI/UX",
+    "work.project.12.tag3": "Smart Home",
+
+    // Project 13: Security Camera UI kit (EN)
+    "work.project.13.title": "Security Camera UI kit",
+    "work.project.13.client": "kopenLi",
+    "work.project.13.description": "Security camera UI kit design",
+    "work.project.13.tag1": "UI Kit",
+    "work.project.13.tag2": "Security",
+    "work.project.13.tag3": "APP Design",
+
+    // Project 14: Dreame App迭代設計 (EN)
+    "work.project.14.title": "Dreame App Iterative Design",
+    "work.project.14.client": "Dreame",
+    "work.project.14.description": "Dyson smart home APP iterative design",
+    "work.project.14.tag1": "APP Design",
+    "work.project.14.tag2": "Smart Home",
+    "work.project.14.tag3": "Iterative Design",
+
+    // Project 15: 2026UI作品集 (EN)
+    "work.project.15.title": "2026 UI Works Collection",
+    "work.project.15.client": "Loooo",
+    "work.project.15.description": "2026 UI works collection by designer Loooo",
+    "work.project.15.tag1": "UI Design",
+    "work.project.15.tag2": "Portfolio",
+    "work.project.15.tag3": "2026",
+
+    // Project 16: Ncollecto (EN)
+    "work.project.16.title": "Ncollecto - Cultural Artifact RWA APP",
+    "work.project.16.client": "Ncollecto",
+    "work.project.16.description": "Cultural artifact RWA project APP UI/UX design",
+    "work.project.16.tag1": "APP Design",
+    "work.project.16.tag2": "RWA",
+    "work.project.16.tag3": "Blockchain",
+
+
+    // Project 17: 携程国际事业部设计年鉴 (EN)
+    "work.project.17.title": "Ctrip International Design Annual",
+    "work.project.17.client": "携程",
+    "work.project.17.description": "Ctrip International Business Division design annual",
+    "work.project.17.tag1": "Design Annual",
+    "work.project.17.tag2": "Travel",
+    "work.project.17.tag3": "Corporate",
+
+
+    // Project 18: 智能婴童看护APP (EN)
+    "work.project.18.title": "Smart Baby Care APP",
+    "work.project.18.client": "智能婴童",
+    "work.project.18.description": "Smart baby care APP design",
+    "work.project.18.tag1": "APP Design",
+    "work.project.18.tag2": "Baby Care",
+    "work.project.18.tag3": "Smart Home",
+
+    // Project 20: 2026作品集匯總 (EN)
+    "work.project.20.title": "2026 Portfolio Summary",
+    "work.project.20.client": "2026",
+    "work.project.20.description": "2026 portfolio summary - AI automation works collection",
+    "work.project.20.tag1": "AI Automation",
+    "work.project.20.tag2": "Portfolio",
+    "work.project.20.tag3": "2026",
+
+    // Project 21: 2025智能家居UI作品集 (EN)
+    "work.project.21.title": "2025 Smart Home UI Portfolio",
+    "work.project.21.client": "周游0626",
+    "work.project.21.description": "2025 smart home UI portfolio",
+    "work.project.21.tag1": "AI Automation",
+    "work.project.21.tag2": "Smart Home",
+    "work.project.21.tag3": "UI Design",
+
+
+    // Project 22: Capy個人理財APP (EN)
+    "work.project.22.title": "Capy Personal Finance APP",
+    "work.project.22.client": "Capy",
+    "work.project.22.description": "Capy personal finance APP design",
+    "work.project.22.tag1": "APP Design",
+    "work.project.22.tag2": "Finance",
+    "work.project.22.tag3": "Personal",
+
+    // Project 23: Beck_UI作品集 (EN)
+    "work.project.23.title": "Beck UI Works Collection",
+    "work.project.23.client": "Beck_z",
+    "work.project.23.description": "Beck UI works collection 2026 - GIF format",
+    "work.project.23.tag1": "UI Design",
+    "work.project.23.tag2": "Portfolio",
+    "work.project.23.tag3": "GIF",
+
+    // Project 24: OMS (EN)
+    "work.project.24.title": "OMS",
+    "work.project.24.client": "OMS",
+    "work.project.24.description": "OMS brand design",
+    "work.project.24.tag1": "Brand Design",
+    "work.project.24.tag2": "Corporate",
+    "work.project.24.tag3": "Visual Identity",
+
+    // Project 25: X-MATE Wallet Project (EN)
+    "work.project.25.title": "X-MATE Wallet Project",
+    "work.project.25.client": "梁宇龙",
+    "work.project.25.description": "Blockchain X-MATE wallet project UI design, showcasing innovative crypto wallet interface and user experience",
+    "work.project.25.tag1": "APP Design",
+    "work.project.25.tag2": "Blockchain",
+    "work.project.25.tag3": "Wallet",
+
+    // Project 26: Richland Gem App
+    "work.project.26.title": "Richland Gem App",
+    "work.project.26.client": "Richland",
+    "work.project.26.description": "Richland gemstone trading app, featuring elegant UI design and seamless user experience for luxury gem authentication and trading",
+    "work.project.26.tag1": "App Design",
+    "work.project.26.tag2": "Luxury",
+    "work.project.26.tag3": "E-commerce",
+
+    // Project 27: 流动泡泡糖 (EN)
+    "work.project.27.title": "流动泡泡糖",
+    "work.project.27.client": "流动泡泡糖",
+    "work.project.27.description": "UI portfolio design showcasing creative interface works",
+    "work.project.27.tag1": "UI Design",
+    "work.project.27.tag2": "Portfolio",
+    "work.project.27.tag3": "Design",
+
     // What page
     "what.title": "What We Do",
     "what.service1.title": "Minimalist Branding",
@@ -416,6 +555,141 @@ const translations = {
     "work.project.7.tag1": "應用設計",
     "work.project.7.tag2": "智能家居",
     "work.project.7.tag3": "新品發布",
+
+    // Project 10: TOYOTA GR系列车辆管理小程序 (繁體)
+    "work.project.10.title": "TOYOTA GR系列車輛管理小程序",
+    "work.project.10.client": "TOYOTA",
+    "work.project.10.description": "TOYOTA GR 系列車輛管理小程序",
+    "work.project.10.tag1": "小程序",
+    "work.project.10.tag2": "汽車",
+    "work.project.10.tag3": "車輛管理",
+
+    // Project 11: 落至晚樱 (繁體)
+    "work.project.11.title": "落至晚樱",
+    "work.project.11.client": "落至晚樱",
+    "work.project.11.description": "落至晚樱 - UI 設計作品集",
+    "work.project.11.tag1": "UI 設計",
+    "work.project.11.tag2": "作品集",
+    "work.project.11.tag3": "應用設計",
+
+    // Project 12: 家庭微电网APP_UIUX设计稿交互原型 (繁體)
+    "work.project.12.title": "家庭微電網APP UI/UX設計稿交互原型",
+    "work.project.12.client": "家庭微電網",
+    "work.project.12.description": "家庭微電網 APP UI/UX 設計稿與交互原型",
+    "work.project.12.tag1": "應用設計",
+    "work.project.12.tag2": "UI/UX",
+    "work.project.12.tag3": "智能家居",
+
+    // Project 13: Security Camera UI kit (繁體)
+    "work.project.13.title": "Security Camera UI kit",
+    "work.project.13.client": "kopenLi",
+    "work.project.13.description": "Security Camera UI kit 設計",
+    "work.project.13.tag1": "UI 套件",
+    "work.project.13.tag2": "監控",
+    "work.project.13.tag3": "應用設計",
+
+    // Project 14: Dreame App迭代設計 (繁體)
+    "work.project.14.title": "Dreame App 迭代設計",
+    "work.project.14.client": "Dreame",
+    "work.project.14.description": "Dyson 智能家居 APP 迭代設計",
+    "work.project.14.tag1": "應用設計",
+    "work.project.14.tag2": "智能家居",
+    "work.project.14.tag3": "迭代設計",
+
+    // Project 15: 2026UI作品集 (繁體)
+    "work.project.15.title": "2026 UI 作品集",
+    "work.project.15.client": "Loooo",
+    "work.project.15.description": "設計師 Loooo 的 2026 UI 作品集",
+    "work.project.15.tag1": "UI 設計",
+    "work.project.15.tag2": "作品集",
+    "work.project.15.tag3": "2026",
+
+    // Project 16: Ncollecto (繁體)
+    "work.project.16.title": "Ncollecto - 文物類 RWA 項目 APP UI/UX 設計",
+    "work.project.16.client": "Ncollecto",
+    "work.project.16.description": "文物類 RWA 項目 APP UI/UX 設計",
+    "work.project.16.tag1": "應用設計",
+    "work.project.16.tag2": "RWA",
+    "work.project.16.tag3": "區塊鏈",
+
+    // Project 17: 携程国际事业部设计年鉴 (繁體)
+    "work.project.17.title": "攜程國際事業部門設計年鑑",
+    "work.project.17.client": "攜程",
+    "work.project.17.description": "攜程國際事業部門設計年鑑",
+    "work.project.17.tag1": "設計年鑑",
+    "work.project.17.tag2": "旅遊",
+    "work.project.17.tag3": "企業",
+
+    // Project 18: 智能婴童看护APP (繁體)
+    "work.project.18.title": "智能嬰童看護APP",
+    "work.project.18.client": "智能嬰童",
+    "work.project.18.description": "智能嬰童看護 APP 設計",
+    "work.project.18.tag1": "應用設計",
+    "work.project.18.tag2": "嬰兒護理",
+    "work.project.18.tag3": "智能家居",
+
+    // Project 20: 2026作品集匯總 (繁體)
+    "work.project.20.title": "2026 作品集匯總",
+    "work.project.20.client": "2026",
+    "work.project.20.description": "2026 作品集匯總 - AI 自動化作品集",
+    "work.project.20.tag1": "AI 自動化",
+    "work.project.20.tag2": "作品集",
+    "work.project.20.tag3": "2026",
+
+    // Project 21: 2025智能家居UI作品集 (繁體)
+    "work.project.21.title": "2025 智能家居 UI 作品集",
+    "work.project.21.client": "周游0626",
+    "work.project.21.description": "2025 智能家居 UI 作品集",
+    "work.project.21.tag1": "AI 自動化",
+    "work.project.21.tag2": "智能家居",
+    "work.project.21.tag3": "UI 設計",
+
+    // Project 22: Capy個人理財APP (繁體)
+    "work.project.22.title": "Capy 個人理財APP",
+    "work.project.22.client": "Capy",
+    "work.project.22.description": "Capy 個人理財 APP 設計",
+    "work.project.22.tag1": "應用設計",
+    "work.project.22.tag2": "金融",
+    "work.project.22.tag3": "個人",
+    // Project 23: Beck_UI作品集 (繁體)
+    "work.project.23.title": "Beck UI 作品集",
+    "work.project.23.client": "Beck_z",
+    "work.project.23.description": "Beck UI 作品集 2026 - GIF 格式",
+    "work.project.23.tag1": "UI 設計",
+    "work.project.23.tag2": "作品集",
+    "work.project.23.tag3": "GIF",
+
+    // Project 24: OMS (繁體)
+    "work.project.24.title": "OMS",
+    "work.project.24.client": "OMS",
+    "work.project.24.description": "OMS 品牌設計",
+    "work.project.24.tag1": "品牌設計",
+    "work.project.24.tag2": "企業",
+    "work.project.24.tag3": "視覺識別",
+
+    // Project 25: X-MATE錢包項目 (繁體)
+    "work.project.25.title": "X-MATE錢包項目",
+    "work.project.25.client": "梁宇龙",
+    "work.project.25.description": "區塊鏈 X-MATE 錢包項目 UI 設計，展示創新加密貨幣錢包介面與用戶體驗",
+    "work.project.25.tag1": "應用設計",
+    "work.project.25.tag2": "區塊鏈",
+    "work.project.25.tag3": "錢包",
+
+    // Project 26: Richland 寶石APP
+    "work.project.26.title": "Richland 寶石APP",
+    "work.project.26.client": "Richland",
+    "work.project.26.description": "Richland 寶石交易APP，採用優雅介面設計，展示寶石收藏與交易功能，為用戶提供尊貴的寶石鑑定及交易體驗",
+    "work.project.26.tag1": "應用設計",
+    "work.project.26.tag2": "尊貴",
+    "work.project.26.tag3": "電子商務",
+
+    // Project 27: 流动泡泡糖 (繁體)
+    "work.project.27.title": "流动泡泡糖",
+    "work.project.27.client": "流动泡泡糖",
+    "work.project.27.description": "UI作品集設計，展示創意介面作品",
+    "work.project.27.tag1": "UI設計",
+    "work.project.27.tag2": "作品集",
+    "work.project.27.tag3": "設計",
 
     // What page
     "what.title": "我們的服務",
@@ -728,6 +1002,191 @@ const translations = {
     "work.project.7.tag1": "应用设计",
     "work.project.7.tag2": "智能家居",
     "work.project.7.tag3": "新品发布",
+
+    // Project 10: TOYOTA GR系列车辆管理小程序 (简体)
+    "work.project.10.title": "TOYOTA GR系列车辆管理小程序",
+    "work.project.10.client": "TOYOTA",
+    "work.project.10.description": "TOYOTA GR 系列车辆管理小程序",
+    "work.project.10.tag1": "小程序",
+    "work.project.10.tag2": "汽车",
+    "work.project.10.tag3": "车辆管理",
+
+    // Project 11: 落至晚樱 (简体)
+    "work.project.11.title": "落至晚樱",
+    "work.project.11.client": "落至晚樱",
+    "work.project.11.description": "落至晚樱 - UI 设计作品集",
+    "work.project.11.tag1": "UI 设计",
+    "work.project.11.tag2": "作品集",
+    "work.project.11.tag3": "应用设计",
+
+    // Project 12: 家庭微电网APP_UIUX设计稿交互原型 (简体)
+    "work.project.12.title": "家庭微电网APP UI/UX设计稿交互原型",
+    "work.project.12.client": "家庭微电网",
+    "work.project.12.description": "家庭微电网 APP UI/UX 设计稿与交互原型",
+    "work.project.12.tag1": "应用设计",
+    "work.project.12.tag2": "UI/UX",
+    "work.project.12.tag3": "智能家居",
+
+    // Project 13: Security Camera UI kit (简体)
+    "work.project.13.title": "Security Camera UI kit",
+    "work.project.13.client": "kopenLi",
+    "work.project.13.description": "Security Camera UI kit 设计",
+    "work.project.13.tag1": "UI 套件",
+    "work.project.13.tag2": "监控",
+    "work.project.13.tag3": "应用设计",
+
+    // Project 14: Dreame App迭代設計 (简体)
+    "work.project.14.title": "Dreame App 迭代设计",
+    "work.project.14.client": "Dreame",
+    "work.project.14.description": "Dyson 智能家居 APP 迭代设计",
+    "work.project.14.tag1": "应用设计",
+    "work.project.14.tag2": "智能家居",
+    "work.project.14.tag3": "迭代设计",
+
+
+    // Project 15: 2026UI作品集 (简体)
+    "work.project.15.title": "2026 UI 作品集",
+    "work.project.15.client": "Loooo",
+    "work.project.15.description": "设计师 Loooo 的 2026 UI 作品集",
+    "work.project.15.tag1": "UI 设计",
+    "work.project.15.tag2": "作品集",
+    "work.project.15.tag3": "2026",
+
+    // Project 16: Ncollecto (简体)
+    "work.project.16.title": "Ncollecto - 文物类 RWA 项目 APP UI/UX 设计",
+    "work.project.16.client": "Ncollecto",
+    "work.project.16.description": "文物类 RWA 项目 APP UI/UX 设计",
+    "work.project.16.tag1": "应用设计",
+    "work.project.16.tag2": "RWA",
+    "work.project.16.tag3": "区块链",
+
+
+    // Project 17: 携程国际事业部设计年鉴 (简体)
+    "work.project.17.title": "携程国际事业部设计年鉴",
+    "work.project.17.client": "携程",
+    "work.project.17.description": "携程国际事业部设计年鉴",
+    "work.project.17.tag1": "设计年鉴",
+    "work.project.17.tag2": "旅游",
+    "work.project.17.tag3": "企业",
+
+    // Project 18: 智能婴童看护APP (简体)
+    "work.project.18.title": "智能婴童看护APP",
+    "work.project.18.client": "智能婴童",
+    "work.project.18.description": "智能婴童看护 APP 设计",
+    "work.project.18.tag1": "应用设计",
+    "work.project.18.tag2": "婴儿护理",
+    "work.project.18.tag3": "智能家居",
+
+    // Project 20: 2026作品集匯總 (简体)
+    "work.project.20.title": "2026 作品集汇总",
+    "work.project.20.client": "2026",
+    "work.project.20.description": "2026 作品集汇总 - AI 自动化作品集",
+    "work.project.20.tag1": "AI 自动化",
+    "work.project.20.tag2": "作品集",
+    "work.project.20.tag3": "2026",
+
+    // Project 21: 2025智能家居UI作品集 (简体)
+    "work.project.21.title": "2025 智能家居 UI 作品集",
+    "work.project.21.client": "周游0626",
+    "work.project.21.description": "2025 智能家居 UI 作品集",
+    "work.project.21.tag1": "AI 自动化",
+    "work.project.21.tag2": "智能家居",
+    "work.project.21.tag3": "UI 设计",
+
+    // Project 22: Capy個人理財APP (简体)
+    "work.project.22.title": "Capy 个人理财APP",
+    "work.project.22.client": "Capy",
+    "work.project.22.description": "Capy 个人理财 APP 设计",
+    "work.project.22.tag1": "应用设计",
+    "work.project.22.tag2": "金融",
+    "work.project.22.tag3": "个人",
+    // Project 23: Beck_UI作品集 (简体)
+    "work.project.23.title": "Beck UI 作品集",
+    "work.project.23.client": "Beck_z",
+    "work.project.23.description": "Beck UI 作品集 2026 - GIF 格式",
+    "work.project.23.tag1": "UI 设计",
+    "work.project.23.tag2": "作品集",
+    "work.project.23.tag3": "GIF",
+
+    // Project 24: OMS (简体)
+    "work.project.24.title": "OMS",
+    "work.project.24.client": "OMS",
+    "work.project.24.description": "OMS 品牌设计",
+    "work.project.24.tag1": "品牌设计",
+    "work.project.24.tag2": "企业",
+    "work.project.24.tag3": "视觉识别",
+
+    // Project 25: X-MATE钱包项目 (简体)
+    "work.project.25.title": "X-MATE钱包项目",
+    "work.project.25.client": "梁宇龙",
+    "work.project.25.description": "区块链 X-MATE 钱包项目 UI 设计，展示创新加密货币钱包界面与用户体验",
+    "work.project.25.tag1": "应用设计",
+    "work.project.25.tag2": "区块链",
+    "work.project.25.tag3": "钱包",
+
+    // Project 26: Richland 宝石APP
+    "work.project.26.title": "Richland 宝石APP",
+    "work.project.26.client": "Richland",
+    "work.project.26.description": "Richland 宝石交易APP，采用优雅界面设计，展示宝石收藏与交易功能，为用户提供尊贵的宝石鉴定及交易体验",
+    "work.project.26.tag1": "应用设计",
+    "work.project.26.tag2": "尊贵",
+    "work.project.26.tag3": "电子商务",
+
+    // Project 27: 流动泡泡糖 (简体)
+    "work.project.27.title": "流动泡泡糖",
+    "work.project.27.client": "流动泡泡糖",
+    "work.project.27.description": "UI作品集设计，展示创意界面作品",
+    "work.project.27.tag1": "UI设计",
+    "work.project.27.tag2": "作品集",
+    "work.project.27.tag3": "设计",
+
+    // Project 28: Web3金融UX視覺設計 (EN)
+    "work.project.28.title": "Web3 Financial UX Design",
+    "work.project.28.client": "Web3",
+    "work.project.28.description": "Web3 financial UX visual design",
+    "work.project.28.tag1": "UX Design",
+    "work.project.28.tag2": "Web3",
+    "work.project.28.tag3": "Finance",
+
+    // Project 29: Style Attempt (EN)
+    "work.project.29.title": "Style Attempt",
+    "work.project.29.client": "kopenLi",
+    "work.project.29.description": "Style attempt brand design collection",
+    "work.project.29.tag1": "Brand Design",
+    "work.project.29.tag2": "Fashion",
+    "work.project.29.tag3": "Visual",
+
+    // Project 28: Web3金融UX視覺設計 (繁體)
+    "work.project.28.title": "Web3 金融 UX 視覺設計",
+    "work.project.28.client": "Web3",
+    "work.project.28.description": "Web3 金融 UX 視覺設計",
+    "work.project.28.tag1": "UX 設計",
+    "work.project.28.tag2": "Web3",
+    "work.project.28.tag3": "金融",
+
+    // Project 29: Style Attempt (繁體)
+    "work.project.29.title": "Style Attempt",
+    "work.project.29.client": "kopenLi",
+    "work.project.29.description": "Style Attempt 品牌設計集合",
+    "work.project.29.tag1": "品牌設計",
+    "work.project.29.tag2": "時尚",
+    "work.project.29.tag3": "視覺",
+
+    // Project 28: Web3金融UX視覺設計 (简体)
+    "work.project.28.title": "Web3 金融 UX 视觉设计",
+    "work.project.28.client": "Web3",
+    "work.project.28.description": "Web3 金融 UX 视觉设计",
+    "work.project.28.tag1": "UX 设计",
+    "work.project.28.tag2": "Web3",
+    "work.project.28.tag3": "金融",
+
+    // Project 29: Style Attempt (简体)
+    "work.project.29.title": "Style Attempt",
+    "work.project.29.client": "kopenLi",
+    "work.project.29.description": "Style Attempt 品牌设计集合",
+    "work.project.29.tag1": "品牌设计",
+    "work.project.29.tag2": "时尚",
+    "work.project.29.tag3": "视觉",
   },
 }
 
