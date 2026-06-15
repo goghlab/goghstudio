@@ -29,6 +29,18 @@ export default function PlansPageClient() {
       ],
     },
     {
+      nameKey: "plans.startup",
+      priceKey: "plans.startup.price",
+      descriptionKey: "plans.startup.desc",
+      featureKeys: [
+        "plans.startup.feature1",
+        "plans.startup.feature2",
+        "plans.startup.feature3",
+        "plans.startup.feature4",
+      ],
+      featured: true,
+    },
+    {
       nameKey: "plans.premium",
       priceKey: "plans.premium.price",
       descriptionKey: "plans.premium.desc",
@@ -39,7 +51,6 @@ export default function PlansPageClient() {
         "plans.premium.feature4",
         "plans.premium.feature5",
       ],
-      featured: true,
     },
     {
       nameKey: "plans.enterprise",

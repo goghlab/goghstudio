@@ -300,6 +300,12 @@ const translations = {
     "services.aesthetics.description": "Our team blends Eastern Zen aesthetics with Western design principles for unique creations.",
     "services.tech.title": "Tech & Design Integration",
     "services.tech.description": "We're not just designers, but technical experts creating beautiful and powerful solutions.",
+    "services.video.title": "AI Video/Ads Production",
+    "services.video.description": "AI-assisted video production, from planning to post-production, bringing creative ideas to life with impact.",
+    "services.website.title": "Website/Program/APP Development",
+    "services.website.description": "Modern website and application development with customized solutions for seamless user experience.",
+    "services.projectManager.title": "Dedicated Project Manager",
+    "services.projectManager.description": "Every project comes with a dedicated manager providing personalized support throughout the entire process.",
     "services.learnMoreButton": "Learn More About Our Services",
 
     // Plans page
@@ -311,6 +317,13 @@ const translations = {
     "plans.essential.feature2": "Website design (up to 5 pages)",
     "plans.essential.feature3": "One round of revisions",
     "plans.essential.feature4": "2 weeks delivery",
+    "plans.startup": "AI Startup",
+    "plans.startup.price": "HK$3,800",
+    "plans.startup.desc": "Everything you need to launch your AI business",
+    "plans.startup.feature1": "Website X1",
+    "plans.startup.feature2": "APP Program X1",
+    "plans.startup.feature3": "AI Ads X3",
+    "plans.startup.feature4": "Dedicated project manager",
     "plans.premium": "Premium",
     "plans.premium.price": "HK$65,000/mo",
     "plans.premium.desc": "Ongoing creative support for growing brands",
@@ -431,6 +444,27 @@ const translations = {
     "projects.project3.tag1": "系统集成",
     "projects.project3.tag2": "零售科技",
     "projects.project3.tag3": "数据分析",
+
+    // APP Production Landing Page
+    "appProduction.badge": "專業服務",
+    "appProduction.subtitle": "將您的想法轉化為強大的流動應用程式。專業 iOS & Android 開發，收費由 $3,000 起。",
+    "appProduction.startingFrom": "起步價",
+    "appProduction.getStarted": "立即開始",
+    "appProduction.whatsIncluded": "包含服務",
+    "appProduction.ourProcess": "我們的流程",
+    "appProduction.simplePricing": "簡單透明的定價",
+    "appProduction.basePrice": "標準 APP 項目基本收費",
+    "appProduction.feature1": "iOS & Android 原生應用",
+    "appProduction.feature2": "定制 UI/UX 設計",
+    "appProduction.feature3": "最多 10 個定制功能",
+    "appProduction.feature4": "應用商店提交支持",
+    "appProduction.feature5": "2 週交付",
+    "appProduction.startProject": "開始您的項目",
+    "appProduction.customQuote": "定制功能可額外收費",
+    "appProduction.ready": "準備好開發您的 APP 了嗎？",
+    "appProduction.contactDesc": "聯絡我們進行免費諮詢和定制報價",
+    "appProduction.contactUs": "聯絡我們",
+    "appProduction.viewWork": "查看我們的作品",
   },
   "zh-Hant": {
     // Navigation
@@ -714,6 +748,12 @@ const translations = {
     "services.aesthetics.description": "我們的團隊將東方禪意美學與西方設計原則融為一體，創造獨特作品。",
     "services.tech.title": "技術與設計的結合",
     "services.tech.description": "我們不僅是設計師，還是技術專家，創造美觀且功能強大的解決方案。",
+    "services.video.title": "AI影片/廣告製作",
+    "services.video.description": "AI輔助影視製作，從策劃到後期一站式完成，讓創意快速落地並產生影響力。",
+    "services.website.title": "網站/程式/APP開發",
+    "services.website.description": "現代化網站、應用程式開發，定製化解決方案，打造流暢用戶體驗。",
+    "services.projectManager.title": "專案經理一對一",
+    "services.projectManager.description": "每個項目配備專屬專案經理，全程貼身跟進，確保需求精準落地。",
     "services.learnMoreButton": "了解更多我們的服務",
 
     // Plans page
@@ -725,6 +765,13 @@ const translations = {
     "plans.essential.feature2": "網站設計（最多5頁）",
     "plans.essential.feature3": "一輪修改",
     "plans.essential.feature4": "2週交付",
+    "plans.startup": "AI創業套餐",
+    "plans.startup.price": "港幣$3800",
+    "plans.startup.desc": "創業必備 AI服務套餐",
+    "plans.startup.feature1": "網站 X1",
+    "plans.startup.feature2": "APP程式 X1",
+    "plans.startup.feature3": "AI廣告 X3",
+    "plans.startup.feature4": "專案經理一對一",
     "plans.premium": "高級方案",
     "plans.premium.price": "港幣$65,000/月",
     "plans.premium.desc": "為成長中的品牌提供持續創意支持",
@@ -916,6 +963,12 @@ const translations = {
     "services.aesthetics.description": "我们的团队将东方禅意美学与西方设计原则融为一体，创造独特作品。",
     "services.tech.title": "技术与设计的结合",
     "services.tech.description": "我们不仅是设计师，还是技术专家，创造美观且功能强大的解决方案。",
+    "services.video.title": "AI影片/广告制作",
+    "services.video.description": "AI辅助影视制作，从策划到后期一站式完成，让创意快速落地并产生影响力。",
+    "services.website.title": "网站/程序/APP开发",
+    "services.website.description": "现代化网站、应用程序开发，定制化解决方案，打造流畅用户体验。",
+    "services.projectManager.title": "专属项目经理一对一",
+    "services.projectManager.description": "每个项目配备专属项目经理，全程贴身跟进，确保需求精准落地。",
     "services.learnMoreButton": "了解更多关于我们的服务",
 
     // Plans page
@@ -926,6 +979,15 @@ const translations = {
     "plans.essential.feature1": "品牌形象设计",
     "plans.essential.feature2": "网站设计（最多5页）",
     "plans.essential.feature3": "一轮修改",
+    "plans.essential.feature4": "2周交付",
+    "plans.startup": "AI创业套餐",
+    "plans.startup.price": "港币$3800",
+    "plans.startup.desc": "创业必备 AI服务套餐",
+    "plans.startup.feature1": "网站 X1",
+    "plans.startup.feature2": "APP程序 X1",
+    "plans.startup.feature3": "AI广告 X3",
+    "plans.startup.feature4": "项目经理一对一",
+    "plans.premium": "高级方案",
 
     // Footer
     "footer.right": "保留所有权利",
@@ -937,6 +999,27 @@ const translations = {
     "contact.email": "邮箱",
     "contact.message": "信息",
     "contact.submit": "发送",
+
+    // APP Production Landing Page
+    "appProduction.badge": "专业服务",
+    "appProduction.subtitle": "将您的想法转化为强大的移动应用程序。专业 iOS & Android 开发，收费由 $3,000 起。",
+    "appProduction.startingFrom": "起步价",
+    "appProduction.getStarted": "立即开始",
+    "appProduction.whatsIncluded": "包含服务",
+    "appProduction.ourProcess": "我们的流程",
+    "appProduction.simplePricing": "简单透明的定价",
+    "appProduction.basePrice": "标准 APP 项目基本收费",
+    "appProduction.feature1": "iOS & Android 原生应用",
+    "appProduction.feature2": "定制 UI/UX 设计",
+    "appProduction.feature3": "最多 10 个定制功能",
+    "appProduction.feature4": "应用商店提交支持",
+    "appProduction.feature5": "2 周交付",
+    "appProduction.startProject": "开始您的项目",
+    "appProduction.customQuote": "定制功能可额外收费",
+    "appProduction.ready": "准备好开发您的 APP 了吗？",
+    "appProduction.contactDesc": "联系我们进行免费咨询和定制报价",
+    "appProduction.contactUs": "联系我们",
+    "appProduction.viewWork": "查看我们的作品",
 
     // Work page
     "work.title": "我们的作品",
@@ -1187,6 +1270,99 @@ const translations = {
     "work.project.29.tag1": "品牌设计",
     "work.project.29.tag2": "时尚",
     "work.project.29.tag3": "视觉",
+
+    // Project 30: Skyarc Smart Home APP (EN)
+    "work.project.30.title": "Skyarc Smart Home APP",
+    "work.project.30.client": "Skyarc",
+    "work.project.30.description": "Smart home APP design with intuitive interface and seamless user experience",
+    "work.project.30.tag1": "APP Design",
+    "work.project.30.tag2": "Smart Home",
+    "work.project.30.tag3": "IoT",
+
+    // Project 30: Skyarc Smart Home APP (繁體)
+    "work.project.30.title": "Skyarc 智能家居 APP",
+    "work.project.30.client": "Skyarc",
+    "work.project.30.description": "智能家居 APP 設計，直觀介面與無縫用戶體驗",
+    "work.project.30.tag1": "APP 設計",
+    "work.project.30.tag2": "智能家居",
+    "work.project.30.tag3": "物聯網",
+
+    // Project 30: Skyarc Smart Home APP (简体)
+    "work.project.30.title": "Skyarc 智能家居 APP",
+    "work.project.30.client": "Skyarc",
+    "work.project.30.description": "智能家居 APP 设计，直观界面与无缝用户体验",
+    "work.project.30.tag1": "APP 设计",
+    "work.project.30.tag2": "智能家居",
+    "work.project.30.tag3": "物联网",
+
+    // Project 31: Zukka (EN)
+    "work.project.31.title": "Zukka",
+    "work.project.31.client": "Zukka",
+    "work.project.31.description": "Fashion brand APP design with modern visual identity",
+    "work.project.31.tag1": "APP Design",
+    "work.project.31.tag2": "Fashion",
+    "work.project.31.tag3": "Brand",
+
+    // Project 31: Zukka (繁體)
+    "work.project.31.title": "Zukka",
+    "work.project.31.client": "Zukka",
+    "work.project.31.description": "時尚品牌 APP 設計，現代視覺識別",
+    "work.project.31.tag1": "APP 設計",
+    "work.project.31.tag2": "時尚",
+    "work.project.31.tag3": "品牌",
+
+    // Project 31: Zukka (简体)
+    "work.project.31.title": "Zukka",
+    "work.project.31.client": "Zukka",
+    "work.project.31.description": "时尚品牌 APP 设计，现代视觉识别",
+    "work.project.31.tag1": "APP 设计",
+    "work.project.31.tag2": "时尚",
+    "work.project.31.tag3": "品牌",
+
+    // Project 32: 宇树商城UI APP Design (EN)
+    "work.project.32.title": "宇树商城UI APP Design",
+    "work.project.32.client": "宇树",
+    "work.project.32.description": "E-commerce APP UI design for robotics products",
+    "work.project.32.tag1": "APP Design",
+    "work.project.32.tag2": "E-commerce",
+    "work.project.32.tag3": "Robotics",
+
+    // Project 32: 宇树商城UI APP Design (繁體)
+    "work.project.32.title": "宇树商城 UI APP 設計",
+    "work.project.32.client": "宇树",
+    "work.project.32.description": "機器人產品電子商務 APP UI 設計",
+    "work.project.32.tag1": "APP 設計",
+    "work.project.32.tag2": "電子商務",
+    "work.project.32.tag3": "機器人",
+
+    // Project 32: 宇树商城UI APP Design (简体)
+    "work.project.32.title": "宇树商城 UI APP 设计",
+    "work.project.32.client": "宇树",
+    "work.project.32.description": "机器人产品电子商务 APP UI 设计",
+    "work.project.32.tag1": "APP 设计",
+    "work.project.32.tag2": "电子商务",
+    "work.project.32.tag3": "机器人",
+
+    // APP Production Landing Page
+    "appProduction.badge": "PROFESSIONAL SERVICE",
+    "appProduction.subtitle": "Transform your idea into a powerful mobile application. Professional iOS & Android development starting from $3,000.",
+    "appProduction.startingFrom": "STARTING FROM",
+    "appProduction.getStarted": "Get Started",
+    "appProduction.whatsIncluded": "What's Included",
+    "appProduction.ourProcess": "Our Process",
+    "appProduction.simplePricing": "Simple, Transparent Pricing",
+    "appProduction.basePrice": "Base price for standard APP projects",
+    "appProduction.feature1": "iOS & Android Native Apps",
+    "appProduction.feature2": "Custom UI/UX Design",
+    "appProduction.feature3": "Up to 10 Custom Features",
+    "appProduction.feature4": "App Store Submission Support",
+    "appProduction.feature5": "2 Weeks Delivery",
+    "appProduction.startProject": "Start Your Project",
+    "appProduction.customQuote": "Custom features available at additional cost",
+    "appProduction.ready": "Ready to Build Your APP?",
+    "appProduction.contactDesc": "Contact us for a free consultation and custom quote",
+    "appProduction.contactUs": "Contact Us",
+    "appProduction.viewWork": "View Our Work",
   },
 }
 
