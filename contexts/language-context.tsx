@@ -349,7 +349,7 @@ const translations = {
       "Ready to transform your brand with minimalist design? We're here to help you create exceptional digital experiences that captivate your audience and elevate your business in Hong Kong and beyond.",
     "contact.email": "Email",
     "contact.location": "Location",
-    "contact.location.value": "Central, Hong Kong",
+    "contact.location.value": "長沙灣聯邦廣場一樓, 香港",
     "contact.consultation.title": "Design Consultation",
     "contact.consultation.desc":
       "Book a free 45-minute consultation with our design team to discuss your brand challenges and explore minimalist solutions.",
@@ -798,7 +798,7 @@ const translations = {
       "準備好通過極簡設計改變您的品牌了嗎？我們將幫助您創造卓越的數碼體驗，吸引您的受眾並提升您在香港及其他地區的業務。",
     "contact.email": "電郵",
     "contact.location": "位置",
-    "contact.location.value": "香港中環",
+    "contact.location.value": "香港長沙灣聯邦廣場一樓",
     "contact.consultation.title": "設計諮詢",
     "contact.consultation.desc": "預約45分鐘免費諮詢，與我們的設計團隊討論您的品牌挑戰並探索極簡解決方案。",
     "contact.consultation.cta": "了解更多 →",
@@ -998,6 +998,8 @@ const translations = {
     "contact.subtitle": "准备好开始了吗？告诉我们您的项目。",
     "contact.name": "姓名",
     "contact.email": "邮箱",
+    "contact.location": "位置",
+    "contact.location.value": "香港長沙灣聯邦廣場一樓",
     "contact.message": "信息",
     "contact.submit": "发送",
 

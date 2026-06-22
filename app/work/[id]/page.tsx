@@ -3,8 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Eye, Heart } from 'lucide-react'
 import { SharedLayout } from '@/components/shared-layout'
-import fs from 'fs'
-import path from 'path'
+
+
 
 // 項目資料（需要與 WorkPageClient.tsx 同步）
 const webDevProjects = [
@@ -15,6 +15,7 @@ const webDevProjects = [
     description: "AI robot product official website, showcasing intelligent dialogue technology and brand image", 
     image: "/portfolio/網站開發/Micbot機器人官網/thumbnail.png",
     folder: "/portfolio/網站開發/Micbot機器人官網",
+    images: ["/portfolio/網站開發/Micbot機器人官網/image1.png","/portfolio/網站開發/Micbot機器人官網/image2.png","/portfolio/網站開發/Micbot機器人官網/image3.png","/portfolio/網站開發/Micbot機器人官網/image4.png","/portfolio/網站開發/Micbot機器人官網/image5.png","/portfolio/網站開發/Micbot機器人官網/image6.png","/portfolio/網站開發/Micbot機器人官網/image7.png","/portfolio/網站開發/Micbot機器人官網/image8.png","/portfolio/網站開發/Micbot機器人官網/image9.png"],
     tags: ["Website", "AI", "Robotics"],
     views: 1234, 
     likes: 89, 
@@ -27,6 +28,7 @@ const webDevProjects = [
     description: "Elevator company corporate website, showcasing elevator products and services", 
     image: "/portfolio/網站開發/北京上云電梯官網/thumbnail.png",
     folder: "/portfolio/網站開發/北京上云電梯官網",
+    images: ["/portfolio/網站開發/北京上云電梯官網/image1.gif","/portfolio/網站開發/北京上云電梯官網/image2.png"],
     tags: ["Corporate Website", "Elevator", "B2B"],
     views: 856, 
     likes: 67, 
@@ -39,6 +41,7 @@ const webDevProjects = [
     description: "Mobile app design with intuitive user experience", 
     image: "/portfolio/網站開發/Four E App/thumbnail.png",
     folder: "/portfolio/網站開發/Four E App",
+    images: ["/portfolio/網站開發/Four E App/image1.png","/portfolio/網站開發/Four E App/image2.png","/portfolio/網站開發/Four E App/image3.png"],
     tags: ["App Design", "UX", "Mobile"],
     views: 1567, 
     likes: 98, 
@@ -51,6 +54,7 @@ const webDevProjects = [
     description: "Lynk & Co mobile app redesign with modern UI/UX", 
     image: "/portfolio/網站開發/领克汽车APP改版设计/thumbnail.png",
     folder: "/portfolio/網站開發/领克汽车APP改版设计",
+    images: ["/portfolio/網站開發/领克汽车APP改版设计/image1.png","/portfolio/網站開發/领克汽车APP改版设计/image2.png","/portfolio/網站開發/领克汽车APP改版设计/image3.png"],
     tags: ["App Design", "Automotive", "UX"],
     views: 2345, 
     likes: 178, 
@@ -63,6 +67,7 @@ const webDevProjects = [
     description: "Complete portfolio showcase with diverse design projects", 
     image: "/portfolio/網站開發/2024作品集/thumbnail.png",
     folder: "/portfolio/網站開發/2024作品集",
+    images: ["/portfolio/網站開發/2024作品集/image1.png","/portfolio/網站開發/2024作品集/image2.png","/portfolio/網站開發/2024作品集/image3.png","/portfolio/網站開發/2024作品集/image4.png","/portfolio/網站開發/2024作品集/image5.png","/portfolio/網站開發/2024作品集/image6.png","/portfolio/網站開發/2024作品集/image7.png"],
     tags: ["Portfolio", "Design", "Showcase"],
     views: 3456, 
     likes: 234, 
@@ -75,6 +80,7 @@ const webDevProjects = [
     description: "Wu Box HEMS APP new product launch with smart home features", 
     image: "/portfolio/網站開發/悟匣HEMS APP新品发布/thumbnail.png",
     folder: "/portfolio/網站開發/悟匣HEMS APP新品发布",
+    images: ["/portfolio/網站開發/悟匣HEMS APP新品发布/image1.png","/portfolio/網站開發/悟匣HEMS APP新品发布/image2.jpg","/portfolio/網站開發/悟匣HEMS APP新品发布/image3.png","/portfolio/網站開發/悟匣HEMS APP新品发布/image4.png"],
     tags: ["App Design", "Smart Home", "Product Launch"],
     views: 2156, 
     likes: 145, 
@@ -87,6 +93,7 @@ const webDevProjects = [
     description: "TOYOTA GR series vehicle management mini program",
     image: "/portfolio/網站開發/TOYOTA_GR系列车辆管理小程序/thumbnail.jpg",
     folder: "/portfolio/網站開發/TOYOTA_GR系列车辆管理小程序",
+    images: ["/portfolio/網站開發/TOYOTA_GR系列车辆管理小程序/image01.jpg"],
     tags: ["Mini Program", "Automotive", "Vehicle Management"],
     views: 1500,
     likes: 120,
@@ -99,6 +106,7 @@ const webDevProjects = [
     description: "Falling cherry blossoms - UI design portfolio",
     image: "/portfolio/網站開發/落至晚樱/thumbnail.png",
     folder: "/portfolio/網站開發/落至晚樱",
+    images: ["/portfolio/網站開發/落至晚樱/image01.png","/portfolio/網站開發/落至晚樱/image02.png","/portfolio/網站開發/落至晚樱/image03.png","/portfolio/網站開發/落至晚樱/image04.png","/portfolio/網站開發/落至晚樱/image05.png","/portfolio/網站開發/落至晚樱/image06.png","/portfolio/網站開發/落至晚樱/image07.png","/portfolio/網站開發/落至晚樱/image08.png","/portfolio/網站開發/落至晚樱/image09.png","/portfolio/網站開發/落至晚樱/image10.png"],
     tags: ["UI Design", "Portfolio", "APP Design"],
     views: 1500,
     likes: 120,
@@ -111,6 +119,7 @@ const webDevProjects = [
     description: "Family microgrid APP UI/UX design and interactive prototype",
     image: "/portfolio/網站開發/家庭微电网APP_UIUX设计稿交互原型/thumbnail.png",
     folder: "/portfolio/網站開發/家庭微电网APP_UIUX设计稿交互原型",
+    images: ["/portfolio/網站開發/家庭微电网APP_UIUX设计稿交互原型/image01.jpg"],
     tags: ["APP Design", "UI/UX", "Smart Home"],
     views: 1500,
     likes: 120,
@@ -123,6 +132,7 @@ const webDevProjects = [
     description: "Security camera UI kit design",
     image: "/portfolio/網站開發/Security Camera UI kit/thumbnail.png",
     folder: "/portfolio/網站開發/Security Camera UI kit",
+    images: ["/portfolio/網站開發/Security Camera UI kit/image01.png","/portfolio/網站開發/Security Camera UI kit/image02.png"],
     tags: ["UI Kit", "Security", "APP Design"],
     views: 1500,
     likes: 120,
@@ -135,6 +145,7 @@ const webDevProjects = [
     description: "Dyson smart home APP iterative design",
     image: "/portfolio/網站開發/Dreame App迭代設計/thumbnail.jpg",
     folder: "/portfolio/網站開發/Dreame App迭代設計",
+    images: ["/portfolio/網站開發/Dreame App迭代設計/image01.jpg","/portfolio/網站開發/Dreame App迭代設計/image02.jpg","/portfolio/網站開發/Dreame App迭代設計/image03.jpg","/portfolio/網站開發/Dreame App迭代設計/image04.jpg","/portfolio/網站開發/Dreame App迭代設計/image05.jpg","/portfolio/網站開發/Dreame App迭代設計/image06.jpg","/portfolio/網站開發/Dreame App迭代設計/image07.jpg","/portfolio/網站開發/Dreame App迭代設計/image08.jpg","/portfolio/網站開發/Dreame App迭代設計/image09.jpg"],
     tags: ["APP Design", "Smart Home", "Iterative Design"],
     views: 1500,
     likes: 120,
@@ -147,6 +158,7 @@ const webDevProjects = [
     description: "2026 UI works collection by designer Loooo",
     image: "/portfolio/網站開發/2026UI作品集/thumbnail.jpg",
     folder: "/portfolio/網站開發/2026UI作品集",
+    images: ["/portfolio/網站開發/2026UI作品集/image01.jpg","/portfolio/網站開發/2026UI作品集/image02.jpg"],
     tags: ["UI Design", "Portfolio", "2026"],
     views: 1500,
     likes: 120,
@@ -159,23 +171,13 @@ const webDevProjects = [
     description: "Cultural artifact RWA project APP UI/UX design",
     image: "/portfolio/網站開發/Ncollecto/thumbnail.jpg",
     folder: "/portfolio/網站開發/Ncollecto",
+    images: ["/portfolio/網站開發/Ncollecto/image01.jpg"],
     tags: ["APP Design", "RWA", "Blockchain"],
     views: 1500,
     likes: 120,
     category: "網站開發"
   },
-  {
-    id: 17,
-    title: "携程国际事业部设计年鉴",
-    client: "携程",
-    description: "Ctrip International Business Division design annual",
-    image: "/portfolio/網站開發/携程国际事业部设计年鉴/thumbnail.gif",
-    folder: "/portfolio/網站開發/携程国际事业部设计年鉴",
-    tags: ["Design Annual", "Travel", "Corporate"],
-    views: 1500,
-    likes: 120,
-    category: "網站開發"
-  },
+  
   {
     id: 18,
     title: "智能婴童看护APP",
@@ -183,6 +185,7 @@ const webDevProjects = [
     description: "Smart baby care APP design",
     image: "/portfolio/網站開發/智能婴童看护APP/thumbnail.gif",
     folder: "/portfolio/網站開發/智能婴童看护APP",
+    images: ["/portfolio/網站開發/智能婴童看护APP/image01.gif","/portfolio/網站開發/智能婴童看护APP/image02.jpg","/portfolio/網站開發/智能婴童看护APP/image03.jpg","/portfolio/網站開發/智能婴童看护APP/image04.jpg"],
     tags: ["APP Design", "Baby Care", "Smart Home"],
     views: 1500,
     likes: 120,
@@ -195,6 +198,7 @@ const webDevProjects = [
     description: "Capy personal finance APP design",
     image: "/portfolio/網站開發/Capy個人理財APP/thumbnail.png",
     folder: "/portfolio/網站開發/Capy個人理財APP",
+    images: ["/portfolio/網站開發/Capy個人理財APP/image01.png","/portfolio/網站開發/Capy個人理財APP/image02.png","/portfolio/網站開發/Capy個人理財APP/image03.png","/portfolio/網站開發/Capy個人理財APP/image04.png","/portfolio/網站開發/Capy個人理財APP/image05.png","/portfolio/網站開發/Capy個人理財APP/image06.png","/portfolio/網站開發/Capy個人理財APP/image07.png"],
     tags: ["APP Design", "Finance", "Personal"],
     views: 1500,
     likes: 120,
@@ -207,6 +211,7 @@ const webDevProjects = [
     description: "Blockchain X-MATE wallet project UI design, showcasing innovative crypto wallet interface and user experience",
     image: "/portfolio/網站開發/X-MATE錢包項目/thumbnail.png",
     folder: "/portfolio/網站開發/X-MATE錢包項目",
+    images: ["/portfolio/網站開發/X-MATE錢包項目/image01.png","/portfolio/網站開發/X-MATE錢包項目/image02.png","/portfolio/網站開發/X-MATE錢包項目/image03.png","/portfolio/網站開發/X-MATE錢包項目/image04.png","/portfolio/網站開發/X-MATE錢包項目/image05.png","/portfolio/網站開發/X-MATE錢包項目/image06.png","/portfolio/網站開發/X-MATE錢包項目/image07.png","/portfolio/網站開發/X-MATE錢包項目/image08.png","/portfolio/網站開發/X-MATE錢包項目/image09.png"],
     tags: ["APP Design", "Blockchain", "Wallet"],
     views: 1500,
     likes: 120,
@@ -219,6 +224,7 @@ const webDevProjects = [
     description: "Richland gemstone trading app, featuring elegant UI design and seamless user experience for luxury gem authentication and trading",
     image: "/portfolio/網站開發/Richland宝石app项目/thumbnail.jpg",
     folder: "/portfolio/網站開發/Richland宝石app项目",
+    images: ["/portfolio/網站開發/Richland宝石app项目/image01.jpg","/portfolio/網站開發/Richland宝石app项目/image02.jpg","/portfolio/網站開發/Richland宝石app项目/image03.jpg","/portfolio/網站開發/Richland宝石app项目/image04.jpg"],
     tags: ["App Design", "Luxury", "E-commerce"],
     views: 1500,
     likes: 120,
@@ -231,6 +237,7 @@ const webDevProjects = [
     description: "UI portfolio design showcasing creative interface works",
     image: "/portfolio/網站開發/流动泡泡糖/thumbnail.png",
     folder: "/portfolio/網站開發/流动泡泡糖",
+    images: ["/portfolio/網站開發/流动泡泡糖/image01.png","/portfolio/網站開發/流动泡泡糖/image02.png","/portfolio/網站開發/流动泡泡糖/image03.png","/portfolio/網站開發/流动泡泡糖/image04.png","/portfolio/網站開發/流动泡泡糖/image05.png","/portfolio/網站開發/流动泡泡糖/image06.png"],
     tags: ["UI Design", "Portfolio", "Design"],
     views: 1500,
     likes: 120,
@@ -243,7 +250,47 @@ const webDevProjects = [
     description: "Web3 financial UX visual design",
     image: "/portfolio/網站開發/Web3金融UX視覺設計/thumbnail.png",
     folder: "/portfolio/網站開發/Web3金融UX視覺設計",
+    images: ["/portfolio/網站開發/Web3金融UX視覺設計/image01.png","/portfolio/網站開發/Web3金融UX視覺設計/image02.png","/portfolio/網站開發/Web3金融UX視覺設計/image03.jpg","/portfolio/網站開發/Web3金融UX視覺設計/image04.jpg"],
     tags: ["UX Design", "Web3", "Finance"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 30,
+    title: "Skyarc Smart Home APP",
+    client: "Skyarc",
+    description: "Smart home APP design with intuitive interface and seamless user experience",
+    image: "/portfolio/網站開發/Skyarc智能家居APP/thumbnail.png",
+    folder: "/portfolio/網站開發/Skyarc智能家居APP",
+    images: ["/portfolio/網站開發/Skyarc智能家居APP/image1.png","/portfolio/網站開發/Skyarc智能家居APP/image2.png","/portfolio/網站開發/Skyarc智能家居APP/image3.png"],
+    tags: ["APP Design", "Smart Home", "IoT"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 31,
+    title: "Zukka",
+    client: "Zukka",
+    description: "Fashion brand APP design with modern visual identity",
+    image: "/portfolio/網站開發/Zukka/thumbnail.png",
+    folder: "/portfolio/網站開發/Zukka",
+    images: ["/portfolio/網站開發/Zukka/image01.png","/portfolio/網站開發/Zukka/image02.png","/portfolio/網站開發/Zukka/image03.png","/portfolio/網站開發/Zukka/image04.png","/portfolio/網站開發/Zukka/image05.png"],
+    tags: ["APP Design", "Fashion", "Brand"],
+    views: 1500,
+    likes: 120,
+    category: "網站開發"
+  },
+  {
+    id: 32,
+    title: "宇树商城UI APP Design",
+    client: "宇树",
+    description: "E-commerce APP UI design for robotics products",
+    image: "/portfolio/網站開發/宇树商城UI APP设计/thumbnail.jpg",
+    folder: "/portfolio/網站開發/宇树商城UI APP设计",
+    images: ["/portfolio/網站開發/宇树商城UI APP设计/image01.jpg","/portfolio/網站開發/宇树商城UI APP设计/image02.jpg","/portfolio/網站開發/宇树商城UI APP设计/image03.jpg","/portfolio/網站開發/宇树商城UI APP设计/image04.jpg","/portfolio/網站開發/宇树商城UI APP设计/image05.jpg"],
+    tags: ["APP Design", "E-commerce", "Robotics"],
     views: 1500,
     likes: 120,
     category: "網站開發"
@@ -258,6 +305,7 @@ const brandProjects = [
     description: "Hisense washing machine brand visual design, blending technology with lifestyle aesthetics", 
     image: "/portfolio/品牌設計/響鯨海信洗衣機/thumbnail.jpg",
     folder: "/portfolio/品牌設計/響鯨海信洗衣機",
+    images: ["/portfolio/品牌設計/響鯨海信洗衣機/image1.gif","/portfolio/品牌設計/響鯨海信洗衣機/image2.jpg","/portfolio/品牌設計/響鯨海信洗衣機/image3.jpg","/portfolio/品牌設計/響鯨海信洗衣機/image4.jpg","/portfolio/品牌設計/響鯨海信洗衣機/image5.jpg","/portfolio/品牌設計/響鯨海信洗衣機/image6.jpg","/portfolio/品牌設計/響鯨海信洗衣機/image7.jpg"],
     tags: ["Brand Design", "Home Appliance", "Visual System"],
     views: 2341, 
     likes: 156, 
@@ -270,6 +318,7 @@ const brandProjects = [
     description: "OMS brand design",
     image: "/portfolio/品牌設計/OMS/thumbnail.png",
     folder: "/portfolio/品牌設計/OMS",
+    images: ["/portfolio/品牌設計/OMS/image01.png","/portfolio/品牌設計/OMS/image02.png","/portfolio/品牌設計/OMS/image03.png"],
     tags: ["Brand Design", "Corporate", "Visual Identity"],
     views: 1500,
     likes: 120,
@@ -282,6 +331,7 @@ const brandProjects = [
     description: "Style attempt brand design collection",
     image: "/portfolio/品牌設計/Style Attempt/thumbnail.png",
     folder: "/portfolio/品牌設計/Style Attempt",
+    images: ["/portfolio/品牌設計/Style Attempt/image01.png","/portfolio/品牌設計/Style Attempt/image02.png","/portfolio/品牌設計/Style Attempt/image03.png"],
     tags: ["Brand Design", "Fashion", "Visual"],
     views: 1500,
     likes: 120,
@@ -297,6 +347,7 @@ const aiAutoProjects = [
     description: "2026 portfolio summary - AI automation works collection",
     image: "/portfolio/AI自動化/ZNzMwNzA0MjA=/thumbnail.png",
     folder: "/portfolio/AI自動化/ZNzMwNzA0MjA=",
+    images: ["/portfolio/AI自動化/ZNzMwNzA0MjA=/image01.png","/portfolio/AI自動化/ZNzMwNzA0MjA=/image02.png","/portfolio/AI自動化/ZNzMwNzA0MjA=/image03.png"],
     tags: ["AI Automation", "Portfolio", "2026"],
     views: 1500,
     likes: 120,
@@ -309,6 +360,7 @@ const aiAutoProjects = [
     description: "2025 smart home UI portfolio",
     image: "/portfolio/AI自動化/2025智能家居UI作品集/thumbnail.jpg",
     folder: "/portfolio/AI自動化/2025智能家居UI作品集",
+    images: ["/portfolio/AI自動化/2025智能家居UI作品集/image01.jpg","/portfolio/AI自動化/2025智能家居UI作品集/image02.jpg","/portfolio/AI自動化/2025智能家居UI作品集/image03.jpg","/portfolio/AI自動化/2025智能家居UI作品集/image04.jpg","/portfolio/AI自動化/2025智能家居UI作品集/image05.jpg"],
     tags: ["AI Automation", "Smart Home", "UI Design"],
     views: 1500,
     likes: 120,
@@ -321,6 +373,7 @@ const aiAutoProjects = [
     description: "Beck UI works collection 2026 - GIF format",
     image: "/portfolio/AI自動化/Beck_UI作品集/thumbnail.gif",
     folder: "/portfolio/AI自動化/Beck_UI作品集",
+    images: ["/portfolio/AI自動化/Beck_UI作品集/image01.gif","/portfolio/AI自動化/Beck_UI作品集/image02.gif","/portfolio/AI自動化/Beck_UI作品集/image03.gif","/portfolio/AI自動化/Beck_UI作品集/image04.gif","/portfolio/AI自動化/Beck_UI作品集/image05.gif","/portfolio/AI自動化/Beck_UI作品集/image06.gif","/portfolio/AI自動化/Beck_UI作品集/image07.gif","/portfolio/AI自動化/Beck_UI作品集/image08.gif","/portfolio/AI自動化/Beck_UI作品集/image09.gif"],
     tags: ["UI Design", "Portfolio", "GIF"],
     views: 1500,
     likes: 120,
@@ -349,24 +402,9 @@ export default async function ProjectDetailPage({
     notFound()
   }
 
-  // 讀取資料夾中的所有檔案
-  const publicDir = path.join(process.cwd(), 'public')
-  const projectPath = path.join(publicDir, project.folder)
-  
-  let images: string[] = []
-  let videos: string[] = []
-  
-  try {
-    const files = fs.readdirSync(projectPath)
-    images = files
-      .filter(f => f.match(/\.(jpg|jpeg|png|gif|webp)$/i) && !f.includes('thumbnail'))
-      .map(f => `${project.folder}/${f}`)
-    videos = files
-      .filter(f => f.match(/\.(mp4|mov|webm)$/i))
-      .map(f => `${project.folder}/${f}`)
-  } catch (e) {
-    // 資料夾可能不存在
-  }
+  // Images from static array (set in project data above)
+  const images = project.images || []
+  const videos: string[] = []
 
   return (
     <SharedLayout>

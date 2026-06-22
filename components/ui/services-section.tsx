@@ -115,11 +115,11 @@ function ServicesSection() {
                                     <Video className="h-5 w-5 text-cyan-400" />
                                 </div>
                                 <h3 className="text-lg font-semibold text-white font-sans">
-                                    AI影片/廣告製作
+                                    {t('services.video.title') || 'AI影片/廣告製作'}
                                 </h3>
                             </div>
                             <p className="text-white/60 font-sans">
-                                AI輔助影視製作，從策劃到後期一站式完成，讓創意快速落地並產生影響力。
+                                {t('services.video.description') || 'AI輔助影視製作，從策劃到後期一站式完成，讓創意快速落地並產生影響力。'}
                             </p>
                         </motion.div>
 
@@ -135,11 +135,11 @@ function ServicesSection() {
                                     <Globe className="h-5 w-5 text-green-400" />
                                 </div>
                                 <h3 className="text-lg font-semibold text-white font-sans">
-                                    網站/程式/APP開發
+                                    {t('services.website.title') || '網站/程式/APP開發'}
                                 </h3>
                             </div>
                             <p className="text-white/60 font-sans">
-                                現代化網站、應用程式開發，定製化解決方案，打造流暢用戶體驗。
+                                {t('services.website.description') || '現代化網站、應用程式開發，定製化解決方案，打造流暢用戶體驗。'}
                             </p>
                         </motion.div>
 
@@ -155,11 +155,11 @@ function ServicesSection() {
                                     <Users className="h-5 w-5 text-orange-400" />
                                 </div>
                                 <h3 className="text-lg font-semibold text-white font-sans">
-                                    專案經理一對一
+                                    {t('services.projectManager.title') || '專案經理一對一'}
                                 </h3>
                             </div>
                             <p className="text-white/60 font-sans">
-                                每個項目配備專屬專案經理，全程貼身跟進，確保需求精準落地。
+                                {t('services.projectManager.description') || '每個項目配備專屬專案經理，全程貼身跟進，確保需求精準落地。'}
                             </p>
                         </motion.div>
                     </div>

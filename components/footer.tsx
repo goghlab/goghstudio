@@ -94,7 +94,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Mail className="h-4 w-4 text-white/70 mt-0.5" />
-                <span className="text-white/70 text-sm font-sans">hello@gogh.studio</span>
+                <span className="text-white/70 text-sm font-sans">goghlab851013@gmail.com</span>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="h-4 w-4 text-white/70 mt-0.5" />

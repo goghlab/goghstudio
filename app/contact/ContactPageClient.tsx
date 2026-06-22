@@ -24,7 +24,7 @@ export default function ContactPageClient() {
                 <Mail className="h-5 w-5 text-white mt-0.5" />
                 <div>
                   <h3 className="text-sm font-medium text-white/90 font-sans">{t("contact.email")}</h3>
-                  <p className="text-white/70 font-sans">hello@gogh.studio</p>
+                  <p className="text-white/70 font-sans">goghlab851013@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
