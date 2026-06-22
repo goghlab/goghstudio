@@ -17,7 +17,7 @@ export function SharedLayout({ children }: SharedLayoutProps) {
 
   return (
     <div className="min-h-screen bg-background text-white flex flex-col grid-pattern">
-      <header className="flex justify-between items-center p-5 md:px-10 lg:px-16">
+      <header className="sticky top-0 z-50 flex justify-between items-center p-5 md:px-10 lg:px-16 bg-[#030303]/90 backdrop-blur-md">
         <div className="flex items-center">
           <Link
             href="/"

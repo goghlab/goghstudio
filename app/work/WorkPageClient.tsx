@@ -42,7 +42,11 @@ const categories = [
 ]
 
 // AI影片製作 projects
-const aiVideoProjects: Project[] = []
+const aiVideoProjects: Project[] = [
+  { id: 53, title: "動效練習", client: "大江大海", description: "2021上半年動效練習作品", image: "/portfolio/AI影片製作/動效練習/thumbnail.png", tags: ["Motion", "Animation", "Design"], views: 1500, likes: 120, category: "AI影片製作" },
+  { id: 54, title: "光年五彩敦煌插畫", client: "麥子YNL", description: "光年五彩敦煌系列插畫", image: "/portfolio/AI影片製作/光年五彩敦煌插畫/thumbnail.png", tags: ["Illustration", "敦煌", "Series"], views: 1500, likes: 120, category: "AI影片製作" },
+  { id: 55, title: "COTO多想商業插畫", client: "mucro", description: "COTO多想商業插畫作品", image: "/portfolio/AI影片製作/COTO多想商業插畫/thumbnail.jpg", tags: ["Commercial", "Illustration", "COTO"], views: 1500, likes: 120, category: "AI影片製作" },
+]
 
 // 網站開發 projects
 const webDevProjects: Project[] = [
@@ -69,6 +73,11 @@ const webDevProjects: Project[] = [
   { id: 30, title: "Skyarc Smart Home APP", client: "Skyarc", description: "Smart home APP design with intuitive interface and seamless user experience", image: "/portfolio/網站開發/Skyarc智能家居APP/thumbnail.png", tags: ["APP Design", "Smart Home", "IoT"], views: 1500, likes: 120, category: "網站開發" },
   { id: 31, title: "Zukka", client: "Zukka", description: "Fashion brand APP design with modern visual identity", image: "/portfolio/網站開發/Zukka/thumbnail.png", tags: ["APP Design", "Fashion", "Brand"], views: 1500, likes: 120, category: "網站開發" },
   { id: 32, title: "宇树商城UI APP Design", client: "宇树", description: "E-commerce APP UI design for robotics products", image: "/portfolio/網站開發/宇树商城UI APP设计/thumbnail.jpg", tags: ["APP Design", "E-commerce", "Robotics"], views: 1500, likes: 120, category: "網站開發" },
+  { id: 44, title: "UI_Ux作品集_邂逅好運氣", client: "邂逅好運氣", description: "2025 UI&UX作品集", image: "/portfolio/網站開發/UI_Ux作品集_邂逅好運氣/thumbnail.png", tags: ["UI Design", "UX", "Portfolio"], views: 1500, likes: 120, category: "網站開發" },
+  { id: 45, title: "MasterGo官網設計", client: "大江大海", description: "MasterGo官網設計練習", image: "/portfolio/網站開發/MasterGo官網設計/thumbnail.jpg", tags: ["Website", "UI Design", "MasterGo"], views: 1500, likes: 120, category: "網站開發" },
+  { id: 46, title: "AChat互動社交支付", client: "大江大海", description: "AChat互動社交/移動支付APP設計", image: "/portfolio/網站開發/AChat互動社交支付/thumbnail.png", tags: ["APP Design", "Social", "Payment"], views: 1500, likes: 120, category: "網站開發" },
+  { id: 47, title: "2026_UI作品集_z29881159", client: "Z29881159", description: "2026 UI作品集整理", image: "/portfolio/網站開發/2026_UI作品集_z29881159/thumbnail.png", tags: ["UI Design", "Portfolio", "2026"], views: 1500, likes: 120, category: "網站開發" },
+  { id: 48, title: "Icon設計", client: "大江大海", description: "Icon設計作品集", image: "/portfolio/網站開發/Icon設計/thumbnail.png", tags: ["Icon", "Design", "UI"], views: 1500, likes: 120, category: "網站開發" },
 ]
 
 // 品牌設計 projects
@@ -76,13 +85,22 @@ const brandProjects: Project[] = [
   { id: 3, title: "Xiangjing Hisense Washing Machine", client: "Hisense", description: "Hisense washing machine brand visual design", image: "/portfolio/品牌設計/響鯨海信洗衣機/thumbnail.jpg", tags: ["Brand Design", "Home Appliance", "Visual System"], views: 2341, likes: 156, category: "品牌設計" },
   { id: 24, title: "OMS", client: "OMS", description: "OMS brand design", image: "/portfolio/品牌設計/OMS/thumbnail.png", tags: ["Brand Design", "Corporate", "Visual Identity"], views: 1500, likes: 120, category: "品牌設計" },
   { id: 29, title: "Style Attempt", client: "kopenLi", description: "Style attempt brand design collection", image: "/portfolio/品牌設計/Style Attempt/thumbnail.png", tags: ["Brand Design", "Fashion", "Visual"], views: 1500, likes: 120, category: "品牌設計" },
+  { id: 34, title: "布鲁猫茶饮品牌", client: "布鲁猫", description: "布鲁猫茶饮品牌全案设计，LOGO/IP/VI设计", image: "/portfolio/品牌設計/布魯貓茶飲品牌/thumbnail.jpg", tags: ["Brand Design", "LOGO", "IP Design"], views: 1500, likes: 120, category: "品牌設計" },
+  { id: 36, title: "局气餐厅品牌设计", client: "容品牌", description: "局气餐厅VI升级、新店空间升级设计", image: "/portfolio/品牌設計/局氣餐廳品牌設計/thumbnail.jpg", tags: ["Brand Design", "Restaurant", "VI"], views: 1500, likes: 120, category: "品牌設計" },
+  { id: 37, title: "大卡司DAKASI茶饮品牌", client: "赤犬制造所", description: "大卡司DAKASI茶饮品牌IP视觉升级", image: "/portfolio/品牌設計/大卡司DAKASI茶飲品牌/thumbnail.jpg", tags: ["Brand Design", "IP", "Tea & Coffee"], views: 1500, likes: 120, category: "品牌設計" },
+  { id: 39, title: "莓超疯茶饮IP设计", client: "赤犬制造所", description: "莓超疯茶饮品牌IP设计，打造时尚艺术化吉祥物", image: "/portfolio/品牌設計/莓超瘋茶飲IP設計/thumbnail.jpg", tags: ["Brand Design", "IP", "Tea & Coffee"], views: 1500, likes: 120, category: "品牌設計" },
+  { id: 41, title: "LOGO_VI设计", client: "郑昌洪", description: "LOGO设计、VI设计合集", image: "/portfolio/品牌設計/LOGO_VI設計/thumbnail.jpg", tags: ["Brand Design", "LOGO", "VI"], views: 1500, likes: 120, category: "品牌設計" },
 ]
 
 // AI自動化 projects
 const aiAutoProjects: Project[] = [
+  { id: 49, title: "2026項目作品合集", client: "南翊丶", description: "2026項目作品合集，涵蓋多個設計領域", image: "/portfolio/AI自動化/2026項目作品合集/thumbnail.png", tags: ["Portfolio", "2026", "Multi-design"], views: 1500, likes: 120, category: "AI自動化" },
   { id: 20, title: "2026作品集匯總", client: "2026", description: "2026 portfolio summary - AI automation works collection", image: "/portfolio/AI自動化/ZNzMwNzA0MjA=/thumbnail.png", tags: ["AI Automation", "Portfolio", "2026"], views: 1500, likes: 120, category: "AI自動化" },
   { id: 21, title: "2025智能家居UI作品集", client: "周游0626", description: "2025 smart home UI portfolio", image: "/portfolio/AI自動化/2025智能家居UI作品集/thumbnail.jpg", tags: ["AI Automation", "Smart Home", "UI Design"], views: 1500, likes: 120, category: "AI自動化" },
   { id: 23, title: "Beck_UI作品集", client: "Beck_z", description: "Beck UI works collection 2026 - GIF format", image: "/portfolio/AI自動化/Beck_UI作品集/thumbnail.gif", tags: ["UI Design", "Portfolio", "GIF"], views: 1500, likes: 120, category: "AI自動化" },
+  { id: 50, title: "品牌VIS設計案例", client: "萬視風設計", description: "品牌VIS設計案例作品集", image: "/portfolio/AI自動化/品牌VIS設計案例/thumbnail.jpg", tags: ["Brand Design", "VIS", "Case Study"], views: 1500, likes: 120, category: "AI自動化" },
+  { id: 51, title: "ZAOV罐設計", client: "召物少年", description: "ZAOV｜罐設計作品", image: "/portfolio/AI自動化/ZAOV罐設計/thumbnail.jpg", tags: ["Brand Design", "Product", "Packaging"], views: 1500, likes: 120, category: "AI自動化" },
+  { id: 52, title: "AIGC商業場景圖", client: "AICG", description: "AIGC從白底結構圖到商業場景圖的提示詞教學", image: "/portfolio/AI自動化/AIGC商業場景圖/thumbnail.jpg", tags: ["AIGC", "Commercial", "Tutorial"], views: 1500, likes: 120, category: "AI自動化" },
 ]
 
 const allProjects = [...aiVideoProjects, ...webDevProjects, ...brandProjects, ...aiAutoProjects]

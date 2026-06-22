@@ -59,10 +59,10 @@ function LandingHero() {
   const { t } = useLanguage();
   
   return (
-    <section className="w-full h-screen overflow-hidden md:overflow-visible flex flex-col items-center justify-center relative bg-[#030303]">
+    <section className="w-full min-h-screen overflow-hidden md:overflow-visible flex flex-col items-center justify-center relative bg-[#030303]">
       <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] via-transparent to-white/[0.05] blur-3xl" />
       
-      <Floating sensitivity={-0.5} className="h-full">
+      <Floating sensitivity={-0.2} className="h-full">
         <FloatingElement
           depth={0.5}
           className="top-[15%] left-[2%] md:top-[25%] md:left-[5%]"
@@ -163,7 +163,7 @@ function LandingHero() {
                 mainClassName="overflow-hidden pr-3 py-0 pb-2 md:pb-4 rounded-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-5xl sm:text-5xl md:text-7xl lg:text-8xl"
                 staggerDuration={0.03}
                 staggerFrom="last"
-                rotationInterval={3000}
+                rotationInterval={6000}
                 transition={{ type: "spring", damping: 30, stiffness: 400 }}
               />
             </motion.span>

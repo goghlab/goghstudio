@@ -245,6 +245,30 @@ const translations = {
     "work.project.23.tag2": "Portfolio",
     "work.project.23.tag3": "GIF",
 
+    // Project 50: 品牌VIS設計案例 (EN)
+    "work.project.50.title": "Brand VIS Design Cases",
+    "work.project.50.client": "萬視風設計",
+    "work.project.50.description": "Brand VIS design case works collection",
+    "work.project.50.tag1": "Brand Design",
+    "work.project.50.tag2": "VIS",
+    "work.project.50.tag3": "Case Study",
+
+    // Project 51: ZAOV罐設計 (EN)
+    "work.project.51.title": "ZAOV Can Design",
+    "work.project.51.client": "召物少年",
+    "work.project.51.description": "ZAOV | Can design works",
+    "work.project.51.tag1": "Brand Design",
+    "work.project.51.tag2": "Product",
+    "work.project.51.tag3": "Packaging",
+
+    // Project 52: AIGC商業場景圖 (EN)
+    "work.project.52.title": "AIGC Commercial Scene Images",
+    "work.project.52.client": "AICG",
+    "work.project.52.description": "AIGC prompt teaching from white background structural images to commercial scene images",
+    "work.project.52.tag1": "AIGC",
+    "work.project.52.tag2": "Commercial",
+    "work.project.52.tag3": "Tutorial",
+
     // Project 24: OMS (EN)
     "work.project.24.title": "OMS",
     "work.project.24.client": "OMS",
@@ -408,6 +432,12 @@ const translations = {
 
     // Clients section
     "clients.title": "Trusted by Leading Brands",
+    "clients.trustedBy": "Trusted By",
+    "clients.header": "Working with world-class brands",
+    "clients.projects": "Projects Completed",
+    "clients.clients": "Happy Clients",
+    "clients.years": "Years Experience",
+    "clients.satisfaction": "Satisfaction",
 
     // CTA section
     "cta.title": "Ready to Transform Your Brand?",
@@ -693,6 +723,30 @@ const translations = {
     "work.project.23.tag2": "作品集",
     "work.project.23.tag3": "GIF",
 
+    // Project 50: 品牌VIS設計案例 (繁體)
+    "work.project.50.title": "品牌VIS設計案例",
+    "work.project.50.client": "萬視風設計",
+    "work.project.50.description": "品牌VIS設計案例作品集",
+    "work.project.50.tag1": "品牌設計",
+    "work.project.50.tag2": "VIS",
+    "work.project.50.tag3": "案例",
+
+    // Project 51: ZAOV罐設計 (繁體)
+    "work.project.51.title": "ZAOV罐設計",
+    "work.project.51.client": "召物少年",
+    "work.project.51.description": "ZAOV｜罐設計作品",
+    "work.project.51.tag1": "品牌設計",
+    "work.project.51.tag2": "產品",
+    "work.project.51.tag3": "包裝",
+
+    // Project 52: AIGC商業場景圖 (繁體)
+    "work.project.52.title": "AIGC商業場景圖",
+    "work.project.52.client": "AICG",
+    "work.project.52.description": "AIGC從白底結構圖到商業場景圖的提示詞教學",
+    "work.project.52.tag1": "AIGC",
+    "work.project.52.tag2": "商業",
+    "work.project.52.tag3": "教學",
+
     // Project 24: OMS (繁體)
     "work.project.24.title": "OMS",
     "work.project.24.client": "OMS",
@@ -854,6 +908,12 @@ const translations = {
 
     // Clients section
     "clients.title": "受領先品牌信賴",
+    "clients.trustedBy": "合作夥伴",
+    "clients.header": "與世界級品牌合作",
+    "clients.projects": "已完成項目",
+    "clients.clients": "滿意客戶",
+    "clients.years": "年經驗",
+    "clients.satisfaction": "滿意度",
 
     // CTA section
     "cta.title": "準備好改變您的品牌了嗎？",
@@ -1194,6 +1254,30 @@ const translations = {
     "work.project.23.tag2": "作品集",
     "work.project.23.tag3": "GIF",
 
+    // Project 50: 品牌VIS設計案例 (简体)
+    "work.project.50.title": "品牌VIS设计案例",
+    "work.project.50.client": "万视风设计",
+    "work.project.50.description": "品牌VIS设计案例作品集",
+    "work.project.50.tag1": "品牌设计",
+    "work.project.50.tag2": "VIS",
+    "work.project.50.tag3": "案例",
+
+    // Project 51: ZAOV罐設計 (简体)
+    "work.project.51.title": "ZAOV罐设计",
+    "work.project.51.client": "召物少年",
+    "work.project.51.description": "ZAOV｜罐设计作品",
+    "work.project.51.tag1": "品牌设计",
+    "work.project.51.tag2": "产品",
+    "work.project.51.tag3": "包装",
+
+    // Project 52: AIGC商業場景圖 (简体)
+    "work.project.52.title": "AIGC商业场景图",
+    "work.project.52.client": "AICG",
+    "work.project.52.description": "AIGC从白底结构图到商业场景图的提示词教学",
+    "work.project.52.tag1": "AIGC",
+    "work.project.52.tag2": "商业",
+    "work.project.52.tag3": "教学",
+
     // Project 24: OMS (简体)
     "work.project.24.title": "OMS",
     "work.project.24.client": "OMS",
@@ -1242,6 +1326,86 @@ const translations = {
     "work.project.29.tag2": "Fashion",
     "work.project.29.tag3": "Visual",
 
+    // Project 33: LOGO設計合集茶飲咖啡 (EN)
+    "work.project.33.title": "LOGO Design Collection - Tea & Coffee",
+    "work.project.33.client": "麥子YNL",
+    "work.project.33.description": "Tea and coffee brand LOGO design collection, featuring multiple food & beverage brand visual solutions",
+    "work.project.33.tag1": "Brand Design",
+    "work.project.33.tag2": "LOGO",
+    "work.project.33.tag3": "Food & Beverage",
+
+    // Project 34: 布魯貓茶飲品牌 (EN)
+    "work.project.34.title": "布鲁猫茶饮品牌",
+    "work.project.34.client": "布鲁猫",
+    "work.project.34.description": "布鲁猫茶饮品牌全案设计，LOGO/IP/VI设计",
+    "work.project.34.tag1": "Brand Design",
+    "work.project.34.tag2": "LOGO",
+    "work.project.34.tag3": "IP Design",
+
+    // Project 35: XIAOSHU辣醬品牌設計 (EN)
+    "work.project.35.title": "XIAOSHU辣酱品牌设计",
+    "work.project.35.client": "觅艺品牌设计",
+    "work.project.35.description": "XIAOSHU辣酱品牌视觉设计",
+    "work.project.35.tag1": "Brand Design",
+    "work.project.35.tag2": "Food",
+    "work.project.35.tag3": "Visual",
+
+    // Project 36: 局氣餐廳品牌設計 (EN)
+    "work.project.36.title": "局气餐厅品牌设计",
+    "work.project.36.client": "容品牌",
+    "work.project.36.description": "局气餐厅VI升级、新店空间升级设计",
+    "work.project.36.tag1": "Brand Design",
+    "work.project.36.tag2": "Restaurant",
+    "work.project.36.tag3": "VI",
+
+    // Project 37: 大卡司DAKASI茶飲品牌 (EN)
+    "work.project.37.title": "大卡司DAKASI茶饮品牌",
+    "work.project.37.client": "赤犬制造所",
+    "work.project.37.description": "大卡司DAKASI茶饮品牌IP视觉升级",
+    "work.project.37.tag1": "Brand Design",
+    "work.project.37.tag2": "IP",
+    "work.project.37.tag3": "Tea & Coffee",
+
+    // Project 38: 金栗門品牌升級 (EN)
+    "work.project.38.title": "金栗门品牌升级",
+    "work.project.38.client": "核桃设计",
+    "work.project.38.description": "金栗门原创新鲜零食品牌升级设计",
+    "work.project.38.tag1": "Brand Design",
+    "work.project.38.tag2": "Snack",
+    "work.project.38.tag3": "Upgrade",
+
+    // Project 39: 莓超瘋茶飲IP設計 (EN)
+    "work.project.39.title": "莓超疯茶饮IP设计",
+    "work.project.39.client": "赤犬制造所",
+    "work.project.39.description": "莓超疯茶饮品牌IP设计，打造时尚艺术化吉祥物",
+    "work.project.39.tag1": "Brand Design",
+    "work.project.39.tag2": "IP",
+    "work.project.39.tag3": "Tea & Coffee",
+
+    // Project 40: BANZAI_KOYA品牌視覺 (EN)
+    "work.project.40.title": "BANZAI_KOYA品牌视觉",
+    "work.project.40.client": "叁上品牌设计",
+    "work.project.40.description": "BANZAI KOYA万岁小屋品牌视觉形象设计",
+    "work.project.40.tag1": "Brand Design",
+    "work.project.40.tag2": "Visual",
+    "work.project.40.tag3": "Brand Identity",
+
+    // Project 41: LOGO_VI設計 (EN)
+    "work.project.41.title": "LOGO_VI设计",
+    "work.project.41.client": "郑昌洪",
+    "work.project.41.description": "LOGO设计、VI设计合集",
+    "work.project.41.tag1": "Brand Design",
+    "work.project.41.tag2": "LOGO",
+    "work.project.41.tag3": "VI",
+
+    // Project 42: 雞醬品牌設計 (EN)
+    "work.project.42.title": "鸡酱品牌设计",
+    "work.project.42.client": "BUFF品牌设计",
+    "work.project.42.description": "【耶！是鸡酱】品牌设计",
+    "work.project.42.tag1": "Brand Design",
+    "work.project.42.tag2": "Food",
+    "work.project.42.tag3": "Brand Identity",
+
     // Project 28: Web3金融UX視覺設計 (繁體)
     "work.project.28.title": "Web3 金融 UX 視覺設計",
     "work.project.28.client": "Web3",
@@ -1258,6 +1422,86 @@ const translations = {
     "work.project.29.tag2": "時尚",
     "work.project.29.tag3": "視覺",
 
+    // Project 33: LOGO設計合集茶飲咖啡 (繁體)
+    "work.project.33.title": "LOGO設計合集茶飲咖啡",
+    "work.project.33.client": "麥子YNL",
+    "work.project.33.description": "茶飲咖啡品牌LOGO設計合集，包含多個餐飲品牌視覺方案",
+    "work.project.33.tag1": "品牌設計",
+    "work.project.33.tag2": "LOGO",
+    "work.project.33.tag3": "餐飲",
+
+    // Project 34: 布魯貓茶飲品牌 (繁體)
+    "work.project.34.title": "布魯貓茶飲品牌",
+    "work.project.34.client": "布魯貓",
+    "work.project.34.description": "布魯貓茶飲品牌全案設計，LOGO/IP/VI設計",
+    "work.project.34.tag1": "品牌設計",
+    "work.project.34.tag2": "LOGO",
+    "work.project.34.tag3": "IP設計",
+
+    // Project 35: XIAOSHU辣醬品牌設計 (繁體)
+    "work.project.35.title": "XIAOSHU辣醬品牌設計",
+    "work.project.35.client": "覓藝品牌設計",
+    "work.project.35.description": "XIAOSHU辣醬品牌視覺設計",
+    "work.project.35.tag1": "品牌設計",
+    "work.project.35.tag2": "食品",
+    "work.project.35.tag3": "視覺",
+
+    // Project 36: 局氣餐廳品牌設計 (繁體)
+    "work.project.36.title": "局氣餐廳品牌設計",
+    "work.project.36.client": "容品牌",
+    "work.project.36.description": "局氣餐廳VI升級、新店空間升級設計",
+    "work.project.36.tag1": "品牌設計",
+    "work.project.36.tag2": "餐廳",
+    "work.project.36.tag3": "VI",
+
+    // Project 37: 大卡司DAKASI茶飲品牌 (繁體)
+    "work.project.37.title": "大卡司DAKASI茶飲品牌",
+    "work.project.37.client": "赤犬製造所",
+    "work.project.37.description": "大卡司DAKASI茶飲品牌IP視覺升級",
+    "work.project.37.tag1": "品牌設計",
+    "work.project.37.tag2": "IP",
+    "work.project.37.tag3": "茶飲",
+
+    // Project 38: 金栗門品牌升級 (繁體)
+    "work.project.38.title": "金栗門品牌升級",
+    "work.project.38.client": "核桃設計",
+    "work.project.38.description": "金栗門原創新鮮零食品牌升級設計",
+    "work.project.38.tag1": "品牌設計",
+    "work.project.38.tag2": "零食",
+    "work.project.38.tag3": "升級",
+
+    // Project 39: 莓超瘋茶飲IP設計 (繁體)
+    "work.project.39.title": "莓超瘋茶飲IP設計",
+    "work.project.39.client": "赤犬製造所",
+    "work.project.39.description": "莓超瘋茶飲品牌IP設計，打造時尚藝術化吉祥物",
+    "work.project.39.tag1": "品牌設計",
+    "work.project.39.tag2": "IP",
+    "work.project.39.tag3": "茶飲",
+
+    // Project 40: BANZAI_KOYA品牌視覺 (繁體)
+    "work.project.40.title": "BANZAI_KOYA品牌視覺",
+    "work.project.40.client": "叁上品牌設計",
+    "work.project.40.description": "BANZAI KOYA萬歲小屋品牌視覺形象設計",
+    "work.project.40.tag1": "品牌設計",
+    "work.project.40.tag2": "視覺",
+    "work.project.40.tag3": "品牌識別",
+
+    // Project 41: LOGO_VI設計 (繁體)
+    "work.project.41.title": "LOGO_VI設計",
+    "work.project.41.client": "鄭昌洪",
+    "work.project.41.description": "LOGO設計、VI設計合集",
+    "work.project.41.tag1": "品牌設計",
+    "work.project.41.tag2": "LOGO",
+    "work.project.41.tag3": "VI",
+
+    // Project 42: 雞醬品牌設計 (繁體)
+    "work.project.42.title": "雞醬品牌設計",
+    "work.project.42.client": "BUFF品牌設計",
+    "work.project.42.description": "【耶！是雞醬】品牌設計",
+    "work.project.42.tag1": "品牌設計",
+    "work.project.42.tag2": "食品",
+    "work.project.42.tag3": "品牌識別",
+
     // Project 28: Web3金融UX視覺設計 (简体)
     "work.project.28.title": "Web3 金融 UX 视觉设计",
     "work.project.28.client": "Web3",
@@ -1273,6 +1517,86 @@ const translations = {
     "work.project.29.tag1": "品牌设计",
     "work.project.29.tag2": "时尚",
     "work.project.29.tag3": "视觉",
+
+    // Project 33: LOGO設計合集茶飲咖啡 (简体)
+    "work.project.33.title": "LOGO设计合集茶饮咖啡",
+    "work.project.33.client": "麦子YNL",
+    "work.project.33.description": "茶饮咖啡品牌LOGO设计合集，包含多个餐饮品牌视觉方案",
+    "work.project.33.tag1": "品牌设计",
+    "work.project.33.tag2": "LOGO",
+    "work.project.33.tag3": "餐饮",
+
+    // Project 34: 布魯貓茶飲品牌 (简体)
+    "work.project.34.title": "布鲁猫茶饮品牌",
+    "work.project.34.client": "布鲁猫",
+    "work.project.34.description": "布鲁猫茶饮品牌全案设计，LOGO/IP/VI设计",
+    "work.project.34.tag1": "品牌设计",
+    "work.project.34.tag2": "LOGO",
+    "work.project.34.tag3": "IP设计",
+
+    // Project 35: XIAOSHU辣醬品牌設計 (简体)
+    "work.project.35.title": "XIAOSHU辣酱品牌设计",
+    "work.project.35.client": "觅艺品牌设计",
+    "work.project.35.description": "XIAOSHU辣酱品牌视觉设计",
+    "work.project.35.tag1": "品牌设计",
+    "work.project.35.tag2": "食品",
+    "work.project.35.tag3": "视觉",
+
+    // Project 36: 局氣餐廳品牌設計 (简体)
+    "work.project.36.title": "局气餐厅品牌设计",
+    "work.project.36.client": "容品牌",
+    "work.project.36.description": "局气餐厅VI升级、新店空间升级设计",
+    "work.project.36.tag1": "品牌设计",
+    "work.project.36.tag2": "餐厅",
+    "work.project.36.tag3": "VI",
+
+    // Project 37: 大卡司DAKASI茶飲品牌 (简体)
+    "work.project.37.title": "大卡司DAKASI茶饮品牌",
+    "work.project.37.client": "赤犬制造所",
+    "work.project.37.description": "大卡司DAKASI茶饮品牌IP视觉升级",
+    "work.project.37.tag1": "品牌设计",
+    "work.project.37.tag2": "IP",
+    "work.project.37.tag3": "茶饮",
+
+    // Project 38: 金栗門品牌升級 (简体)
+    "work.project.38.title": "金栗门品牌升级",
+    "work.project.38.client": "核桃设计",
+    "work.project.38.description": "金栗门原创新鲜零食品牌升级设计",
+    "work.project.38.tag1": "品牌设计",
+    "work.project.38.tag2": "零食",
+    "work.project.38.tag3": "升级",
+
+    // Project 39: 莓超瘋茶飲IP設計 (简体)
+    "work.project.39.title": "莓超疯茶饮IP设计",
+    "work.project.39.client": "赤犬制造所",
+    "work.project.39.description": "莓超疯茶饮品牌IP设计，打造时尚艺术化吉祥物",
+    "work.project.39.tag1": "品牌设计",
+    "work.project.39.tag2": "IP",
+    "work.project.39.tag3": "茶饮",
+
+    // Project 40: BANZAI_KOYA品牌視覺 (简体)
+    "work.project.40.title": "BANZAI_KOYA品牌视觉",
+    "work.project.40.client": "叁上品牌设计",
+    "work.project.40.description": "BANZAI KOYA万岁小屋品牌视觉形象设计",
+    "work.project.40.tag1": "品牌设计",
+    "work.project.40.tag2": "视觉",
+    "work.project.40.tag3": "品牌识别",
+
+    // Project 41: LOGO_VI設計 (简体)
+    "work.project.41.title": "LOGO_VI设计",
+    "work.project.41.client": "郑昌洪",
+    "work.project.41.description": "LOGO设计、VI设计合集",
+    "work.project.41.tag1": "品牌设计",
+    "work.project.41.tag2": "LOGO",
+    "work.project.41.tag3": "VI",
+
+    // Project 42: 雞醬品牌設計 (简体)
+    "work.project.42.title": "鸡酱品牌设计",
+    "work.project.42.client": "BUFF品牌设计",
+    "work.project.42.description": "【耶！是鸡酱】品牌设计",
+    "work.project.42.tag1": "品牌设计",
+    "work.project.42.tag2": "食品",
+    "work.project.42.tag3": "品牌识别",
 
     // Project 30: Skyarc Smart Home APP (EN)
     "work.project.30.title": "Skyarc Smart Home APP",
@@ -1345,6 +1669,54 @@ const translations = {
     "work.project.32.tag1": "APP 设计",
     "work.project.32.tag2": "电子商务",
     "work.project.32.tag3": "机器人",
+
+    // Project 44: UI_Ux作品集_邂逅好運氣 (EN)
+    "work.project.44.title": "UI/UX Portfolio - Encountering Good Luck",
+    "work.project.44.client": "邂逅好運氣",
+    "work.project.44.description": "2025 UI&UX design portfolio collection",
+    "work.project.44.tag1": "UI Design",
+    "work.project.44.tag2": "UX",
+    "work.project.44.tag3": "Portfolio",
+
+    // Project 45: MasterGo官網設計 (EN)
+    "work.project.45.title": "MasterGo Official Website Design",
+    "work.project.45.client": "大江大海",
+    "work.project.45.description": "MasterGo official website design practice",
+    "work.project.45.tag1": "Website",
+    "work.project.45.tag2": "UI Design",
+    "work.project.45.tag3": "MasterGo",
+
+    // Project 44: UI_Ux作品集_邂逅好運氣 (繁體)
+    "work.project.44.title": "UI_Ux作品集_邂逅好運氣",
+    "work.project.44.client": "邂逅好運氣",
+    "work.project.44.description": "2025 UI&UX作品集",
+    "work.project.44.tag1": "UI 設計",
+    "work.project.44.tag2": "UX",
+    "work.project.44.tag3": "作品集",
+
+    // Project 45: MasterGo官網設計 (繁體)
+    "work.project.45.title": "MasterGo官網設計",
+    "work.project.45.client": "大江大海",
+    "work.project.45.description": "MasterGo官網設計練習",
+    "work.project.45.tag1": "官網",
+    "work.project.45.tag2": "UI 設計",
+    "work.project.45.tag3": "MasterGo",
+
+    // Project 44: UI_Ux作品集_邂逅好運氣 (简体)
+    "work.project.44.title": "UI_Ux作品集_邂逅好运气",
+    "work.project.44.client": "邂逅好运气",
+    "work.project.44.description": "2025 UI&UX作品集",
+    "work.project.44.tag1": "UI 设计",
+    "work.project.44.tag2": "UX",
+    "work.project.44.tag3": "作品集",
+
+    // Project 45: MasterGo官網設計 (简体)
+    "work.project.45.title": "MasterGo官网设计",
+    "work.project.45.client": "大江大海",
+    "work.project.45.description": "MasterGo官网设计练习",
+    "work.project.45.tag1": "官网",
+    "work.project.45.tag2": "UI 设计",
+    "work.project.45.tag3": "MasterGo",
 
     // APP Production Landing Page
     "appProduction.badge": "PROFESSIONAL SERVICE",
