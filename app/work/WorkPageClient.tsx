@@ -19,20 +19,6 @@ interface Project {
   category: string
 }
 
-// Helper function to get translated project data
-function getTranslatedProject(id: number, t: (key: string) => string): Partial<Project> {
-  return {
-    title: t(`work.project.${id}.title`),
-    client: t(`work.project.${id}.client`),
-    description: t(`work.project.${id}.description`),
-    tags: [
-      t(`work.project.${id}.tag1`),
-      t(`work.project.${id}.tag2`),
-      t(`work.project.${id}.tag3`),
-    ],
-  }
-}
-
 const categories = [
   { key: "all", label: "" },
   { key: "AI影片製作", label: "" },
@@ -122,11 +108,8 @@ export default function WorkPageClient() {
     ? allProjects 
     : allProjects.filter(p => p.category === activeCategory)
 
-  // Apply translations to projects
-  const displayProjects = filteredProjects.map(project => ({
-    ...project,
-    ...getTranslatedProject(project.id, t),
-  }))
+  // Use projects directly (titles already in correct language)
+  const displayProjects = filteredProjects
 
   return (
     <SharedLayout>

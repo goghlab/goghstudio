@@ -46,7 +46,7 @@ export function SharedLayout({ children }: SharedLayoutProps) {
             {t("nav.what")}
           </Link>
           <Link href="/app-production" className="text-purple-400 hover:text-purple-300 transition-colors minimal-link font-sans font-semibold">
-            APP $3,000
+            APP
           </Link>
         </nav>
 

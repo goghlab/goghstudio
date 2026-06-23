@@ -67,7 +67,7 @@ export function MobileMenu() {
               className="text-2xl font-light py-2 border-b border-white/10 text-purple-400 hover:text-purple-300 transition-colors"
               onClick={handleLinkClick}
             >
-              APP $3,000
+              APP
             </Link>
           </nav>
 

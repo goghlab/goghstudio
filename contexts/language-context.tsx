@@ -477,7 +477,7 @@ const translations = {
 
     // APP Production Landing Page
     "appProduction.badge": "專業服務",
-    "appProduction.subtitle": "將您的想法轉化為強大的流動應用程式。專業 iOS & Android 開發，收費由 $3,000 起。",
+    "appProduction.subtitle": "將您的想法轉化為強大的流動應用程式。專業 iOS & Android 開發，收費由 $3,880 起。",
     "appProduction.startingFrom": "起步價",
     "appProduction.getStarted": "立即開始",
     "appProduction.whatsIncluded": "包含服務",
@@ -1065,7 +1065,7 @@ const translations = {
 
     // APP Production Landing Page
     "appProduction.badge": "专业服务",
-    "appProduction.subtitle": "将您的想法转化为强大的移动应用程序。专业 iOS & Android 开发，收费由 $3,000 起。",
+    "appProduction.subtitle": "将您的想法转化为强大的移动应用程序。专业 iOS & Android 开发，收费由 $3,880 起。",
     "appProduction.startingFrom": "起步价",
     "appProduction.getStarted": "立即开始",
     "appProduction.whatsIncluded": "包含服务",
@@ -1686,6 +1686,62 @@ const translations = {
     "work.project.45.tag2": "UI Design",
     "work.project.45.tag3": "MasterGo",
 
+    // Project 46: AChat互動社交支付 (EN)
+    "work.project.46.title": "AChat Interactive Social Payment",
+    "work.project.46.client": "大江大海",
+    "work.project.46.description": "AChat interactive social/mobile payment APP design",
+    "work.project.46.tag1": "APP Design",
+    "work.project.46.tag2": "Social",
+    "work.project.46.tag3": "Payment",
+
+    // Project 47: 2026_UI作品集_z29881159 (EN)
+    "work.project.47.title": "2026 UI Portfolio z29881159",
+    "work.project.47.client": "Z29881159",
+    "work.project.47.description": "2026 UI portfolio collection",
+    "work.project.47.tag1": "UI Design",
+    "work.project.47.tag2": "Portfolio",
+    "work.project.47.tag3": "2026",
+
+    // Project 48: Icon設計 (EN)
+    "work.project.48.title": "Icon Design",
+    "work.project.48.client": "大江大海",
+    "work.project.48.description": "Icon design portfolio",
+    "work.project.48.tag1": "Icon",
+    "work.project.48.tag2": "Design",
+    "work.project.48.tag3": "UI",
+
+    // Project 49: 2026項目作品合集 (EN)
+    "work.project.49.title": "2026 Project Portfolio Collection",
+    "work.project.49.client": "南翊丶",
+    "work.project.49.description": "2026 project portfolio covering multiple design fields",
+    "work.project.49.tag1": "Portfolio",
+    "work.project.49.tag2": "2026",
+    "work.project.49.tag3": "Multi-design",
+
+    // Project 53: 動效練習 (EN)
+    "work.project.53.title": "Motion Effect Practice",
+    "work.project.53.client": "大江大海",
+    "work.project.53.description": "2021 first half motion effect practice works",
+    "work.project.53.tag1": "Motion",
+    "work.project.53.tag2": "Animation",
+    "work.project.53.tag3": "Design",
+
+    // Project 54: 光年五彩敦煌插畫 (EN)
+    "work.project.54.title": "Light Year Colorful Dunhuang Illustration",
+    "work.project.54.client": "麥子YNL",
+    "work.project.54.description": "Light year colorful Dunhuang series illustration",
+    "work.project.54.tag1": "Illustration",
+    "work.project.54.tag2": "Dunhuang",
+    "work.project.54.tag3": "Series",
+
+    // Project 55: COTO多想商業插畫 (EN)
+    "work.project.55.title": "COTO Commercial Illustration",
+    "work.project.55.client": "mucro",
+    "work.project.55.description": "COTO commercial illustration works",
+    "work.project.55.tag1": "Commercial",
+    "work.project.55.tag2": "Illustration",
+    "work.project.55.tag3": "COTO",
+
     // Project 44: UI_Ux作品集_邂逅好運氣 (繁體)
     "work.project.44.title": "UI_Ux作品集_邂逅好運氣",
     "work.project.44.client": "邂逅好運氣",
@@ -1702,7 +1758,63 @@ const translations = {
     "work.project.45.tag2": "UI 設計",
     "work.project.45.tag3": "MasterGo",
 
-    // Project 44: UI_Ux作品集_邂逅好運氣 (简体)
+    // Project 46: AChat互動社交支付 (繁體)
+    "work.project.46.title": "AChat互動社交支付",
+    "work.project.46.client": "大江大海",
+    "work.project.46.description": "AChat互動社交/移動支付APP設計",
+    "work.project.46.tag1": "APP設計",
+    "work.project.46.tag2": "社交",
+    "work.project.46.tag3": "支付",
+
+    // Project 47: 2026_UI作品集_z29881159 (繁體)
+    "work.project.47.title": "2026_UI作品集_z29881159",
+    "work.project.47.client": "Z29881159",
+    "work.project.47.description": "2026 UI作品集整理",
+    "work.project.47.tag1": "UI設計",
+    "work.project.47.tag2": "作品集",
+    "work.project.47.tag3": "2026",
+
+    // Project 48: Icon設計 (繁體)
+    "work.project.48.title": "Icon設計",
+    "work.project.48.client": "大江大海",
+    "work.project.48.description": "Icon設計作品集",
+    "work.project.48.tag1": "Icon",
+    "work.project.48.tag2": "設計",
+    "work.project.48.tag3": "UI",
+
+    // Project 49: 2026項目作品合集 (繁體)
+    "work.project.49.title": "2026項目作品合集",
+    "work.project.49.client": "南翊丶",
+    "work.project.49.description": "2026項目作品合集，涵蓋多個設計領域",
+    "work.project.49.tag1": "作品集",
+    "work.project.49.tag2": "2026",
+    "work.project.49.tag3": "多元設計",
+
+    // Project 53: 動效練習 (繁體)
+    "work.project.53.title": "動效練習",
+    "work.project.53.client": "大江大海",
+    "work.project.53.description": "2021上半年動效練習作品",
+    "work.project.53.tag1": "動效",
+    "work.project.53.tag2": "動畫",
+    "work.project.53.tag3": "設計",
+
+    // Project 54: 光年五彩敦煌插畫 (繁體)
+    "work.project.54.title": "光年五彩敦煌插畫",
+    "work.project.54.client": "麥子YNL",
+    "work.project.54.description": "光年五彩敦煌系列插畫",
+    "work.project.54.tag1": "插畫",
+    "work.project.54.tag2": "敦煌",
+    "work.project.54.tag3": "系列",
+
+    // Project 55: COTO多想商業插畫 (繁體)
+    "work.project.55.title": "COTO多想商業插畫",
+    "work.project.55.client": "mucro",
+    "work.project.55.description": "COTO多想商業插畫作品",
+    "work.project.55.tag1": "商業",
+    "work.project.55.tag2": "插畫",
+    "work.project.55.tag3": "COTO",
+
+    // Project 44: UI_Ux作品集_邂逅好运气 (简体)
     "work.project.44.title": "UI_Ux作品集_邂逅好运气",
     "work.project.44.client": "邂逅好运气",
     "work.project.44.description": "2025 UI&UX作品集",
@@ -1718,9 +1830,65 @@ const translations = {
     "work.project.45.tag2": "UI 设计",
     "work.project.45.tag3": "MasterGo",
 
+    // Project 46: AChat互動社交支付 (简体)
+    "work.project.46.title": "AChat互动社交支付",
+    "work.project.46.client": "大江大海",
+    "work.project.46.description": "AChat互动社交/移动支付APP设计",
+    "work.project.46.tag1": "APP设计",
+    "work.project.46.tag2": "社交",
+    "work.project.46.tag3": "支付",
+
+    // Project 47: 2026_UI作品集_z29881159 (简体)
+    "work.project.47.title": "2026_UI作品集_z29881159",
+    "work.project.47.client": "Z29881159",
+    "work.project.47.description": "2026 UI作品集整理",
+    "work.project.47.tag1": "UI设计",
+    "work.project.47.tag2": "作品集",
+    "work.project.47.tag3": "2026",
+
+    // Project 48: Icon設計 (简体)
+    "work.project.48.title": "Icon设计",
+    "work.project.48.client": "大江大海",
+    "work.project.48.description": "Icon设计作品集",
+    "work.project.48.tag1": "Icon",
+    "work.project.48.tag2": "设计",
+    "work.project.48.tag3": "UI",
+
+    // Project 49: 2026項目作品合集 (简体)
+    "work.project.49.title": "2026项目作品合集",
+    "work.project.49.client": "南翊丶",
+    "work.project.49.description": "2026项目作品合集，涵盖多个设计领域",
+    "work.project.49.tag1": "作品集",
+    "work.project.49.tag2": "2026",
+    "work.project.49.tag3": "多元设计",
+
+    // Project 53: 動效練習 (简体)
+    "work.project.53.title": "动效练习",
+    "work.project.53.client": "大江大海",
+    "work.project.53.description": "2021上半年动效练习作品",
+    "work.project.53.tag1": "动效",
+    "work.project.53.tag2": "动画",
+    "work.project.53.tag3": "设计",
+
+    // Project 54: 光年五彩敦煌插畫 (简体)
+    "work.project.54.title": "光年五彩敦煌插画",
+    "work.project.54.client": "麦子YNL",
+    "work.project.54.description": "光年五彩敦煌系列插画",
+    "work.project.54.tag1": "插画",
+    "work.project.54.tag2": "敦煌",
+    "work.project.54.tag3": "系列",
+
+    // Project 55: COTO多想商業插畫 (简体)
+    "work.project.55.title": "COTO多想商业插画",
+    "work.project.55.client": "mucro",
+    "work.project.55.description": "COTO多想商业插画作品",
+    "work.project.55.tag1": "商业",
+    "work.project.55.tag2": "插画",
+    "work.project.55.tag3": "COTO",
+
     // APP Production Landing Page
     "appProduction.badge": "PROFESSIONAL SERVICE",
-    "appProduction.subtitle": "Transform your idea into a powerful mobile application. Professional iOS & Android development starting from $3,000.",
+    "appProduction.subtitle": "Transform your idea into a powerful mobile application. Professional iOS & Android development starting from $3,880.",
     "appProduction.startingFrom": "STARTING FROM",
     "appProduction.getStarted": "Get Started",
     "appProduction.whatsIncluded": "What's Included",
