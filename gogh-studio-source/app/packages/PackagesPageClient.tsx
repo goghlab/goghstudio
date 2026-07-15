@@ -65,19 +65,19 @@ const plans = [
 ]
 
 const industries = [
-  { emoji: "🏭", name: "製造業", description: "快速建立品牌形象 + AI 自動化營銷", features: ["品牌視覺系統", "產品目錄網站", "AI 客戶服務機械人"] },
-  { emoji: "🛒", name: "電子商務", description: "產品視覺化 + 社交媒體自動化", features: ["AI 產品圖生成", "一鍵多平台發佈", "智能庫存管理"] },
-  { emoji: "🍽️", name: "餐飲連鎖", description: "品牌升級 + 會員系統 + 外賣平台整合", features: ["品牌升級設計", "O2O 會員系統", "外賣平台整合"] },
-  { emoji: "💻", name: "科技 Startup", description: "MVP 快速落地 + SEO 搶佔市場", features: ["快速網站交付", "SEO 搶佔排名", "MVP 產品開發"] },
+  { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>, name: "製造業", description: "快速建立品牌形象 + AI 自動化營銷", features: ["品牌視覺系統", "產品目錄網站", "AI 客戶服務機械人"] },
+  { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>, name: "電子商務", description: "產品視覺化 + 社交媒體自動化", features: ["AI 產品圖生成", "一鍵多平台發佈", "智能庫存管理"] },
+  { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>, name: "餐飲連鎖", description: "品牌升級 + 會員系統 + 外賣平台整合", features: ["品牌升級設計", "O2O 會員系統", "外賣平台整合"] },
+  { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>, name: "科技 Startup", description: "MVP 快速落地 + SEO 搶佔市場", features: ["快速網站交付", "SEO 搶佔排名", "MVP 產品開發"] },
 ]
 
 const guarantees = [
-  { icon: "✅", title: "14天滿意保證", desc: "不滿意可退款，無條件約束" },
-  { icon: "🔒", title: "資料保密", desc: "NDA 可簽署，確保商業秘密安全" },
-  { icon: "📋", title: "清晰報價單", desc: "無隱藏費用，報價即最終價格" },
-  { icon: "👨💼", title: "專人客戶經理", desc: "全程一對一跟進，響應及時" },
-  { icon: "⏱️", title: "準時交付承諾", desc: "延誤即減費，時間表透明" },
-  { icon: "📱", title: "終身技術支援", desc: "交付後仍提供技術支援服務" },
+  { icon: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>, title: "14天滿意保證", desc: "不滿意可退款，無條件約束" },
+  { icon: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>, title: "資料保密", desc: "NDA 可簽署，確保商業秘密安全" },
+  { icon: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>, title: "清晰報價單", desc: "無隱藏費用，報價即最終價格" },
+  { icon: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>, title: "專人客戶經理", desc: "全程一對一跟進，響應及時" },
+  { icon: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>, title: "準時交付承諾", desc: "延誤即減費，時間表透明" },
+  { icon: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>, title: "終身技術支援", desc: "交付後仍提供技術支援服務" },
 ]
 
 const steps = [
@@ -143,7 +143,7 @@ export default function PackagesPageClient() {
   }
 
   return (
-    <div className="w-full min-h-screen bg-white font-serif antialiased">
+    <div className="w-full min-h-screen bg-white font-sans antialiased">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white border-b border-[rgba(55,50,47,0.12)]">
         <div className="max-w-[1060px] mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
@@ -161,18 +161,18 @@ export default function PackagesPageClient() {
       {/* Hero Section */}
       <section className="pt-16 pb-8 px-4 md:px-8">
         <div className="max-w-[1060px] mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-[rgba(2,6,23,0.08)] shadow-sm mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-none border border-[rgba(2,6,23,0.08)] shadow-sm mb-6">
             <span className="text-xs font-medium text-[#37322F]">方案與定價</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-[80px] font-serif text-[#37322F] leading-tight mb-6">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-sans text-[#37322F] leading-tight mb-6 tracking-tight">
             AI 製作套餐服務<br />by Gogh AI Studio
           </h1>
-          <p className="text-lg text-[rgba(55,50,47,0.80)] max-w-xl mx-auto mb-8">
+          <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-[rgba(55,50,47,0.80)] max-w-xl mx-auto mb-8 font-sans">
             專業AI自動化服務，輕鬆定製你的商業方案<br />由 Gogh AI Studio 打造。
           </p>
           <button
             onClick={() => scrollToForm('professional')}
-            className="inline-block h-12 px-8 bg-gradient-to-b from-[#37322F] to-[#1a1816] text-white rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg leading-[48px]"
+            className="inline-block h-12 px-8 bg-gradient-to-b from-[#37322F] to-[#1a1816] text-white rounded-none font-sans font-semibold tracking-tight hover:opacity-90 transition-opacity shadow-lg leading-[48px]"
           >
             免費開始
           </button>
@@ -182,7 +182,7 @@ export default function PackagesPageClient() {
       {/* Hero Image */}
       <section className="px-4 md:px-8 py-8">
         <div className="max-w-[960px] mx-auto">
-          <div className="relative rounded-xl overflow-hidden shadow-2xl">
+          <div className="relative rounded-none overflow-hidden shadow-2xl">
             <img src="/packages/ai-studio-hero-1.png" alt="AI Studio Dashboard" className="w-full h-auto" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
           </div>
@@ -196,12 +196,12 @@ export default function PackagesPageClient() {
             <p className="text-sm font-medium text-[#8A8278] uppercase tracking-wider mb-3">Trusted by Leading Brands</p>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60 grayscale">
               {["科技初創", "餐飲連鎖", "電子商務", "製造業"].map((brand) => (
-                <div key={brand} className="text-2xl font-serif font-bold text-[#37322F]">{brand}</div>
+                <div key={brand} className="text-2xl font-sans font-bold text-[#37322F]">{brand}</div>
               ))}
             </div>
           </div>
           <div className="text-center">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-full border border-[rgba(55,50,47,0.12)] shadow-sm">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-none border border-[rgba(55,50,47,0.12)] shadow-sm">
               <span className="text-2xl font-bold text-[#37322F]">50+</span>
               <span className="text-sm text-[#605A57]">企業客戶信任之選</span>
             </div>
@@ -214,7 +214,7 @@ export default function PackagesPageClient() {
         <div className="max-w-[1060px] mx-auto">
           <div className="flex items-end justify-between mb-6">
             <div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-[#49423D] tracking-tight mb-1">瀏覽我們的作品</h2>
+              <h2 className="text-2xl md:text-3xl font-sans font-semibold text-[#49423D] tracking-tight mb-1">瀏覽我們的作品</h2>
               <p className="text-[#605A57]">查看不同類型的項目案例</p>
             </div>
             <Link href="/work" className="hidden md:flex items-center gap-1 text-sm text-[#605A57] hover:text-[#37322F] transition-colors">
@@ -227,7 +227,7 @@ export default function PackagesPageClient() {
           <div className="flex gap-4 w-max pb-4">
             {portfolioItems.map((item) => (
               <Link key={item.id} href={`/work/${item.id}`} className="group flex-shrink-0 w-[260px] snap-start">
-                <div className="relative w-[260px] h-[180px] rounded-lg overflow-hidden bg-[#F7F5F3] mb-3">
+                <div className="relative w-[260px] h-[180px] rounded-none overflow-hidden bg-[#F7F5F3] mb-3">
                   <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   <div className="hidden absolute inset-0 flex items-center justify-center bg-[#F7F5F3]"><span className="text-4xl">🎨</span></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -244,18 +244,18 @@ export default function PackagesPageClient() {
       <section className="py-16 px-4 md:px-8">
         <div className="max-w-[900px] mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#49423D] tracking-tight mb-3">💰 投資回報計算</h2>
+            <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[#49423D] tracking-tight mb-3">💰 投資回報計算</h2>
             <p className="text-[#605A57]">選擇你的套餐，睇吓你可以慳幾多</p>
           </div>
           <div className="flex justify-center gap-3 mb-8">
             {plans.map((plan) => (
-              <button key={plan.key} onClick={() => setSelectedPlan(plan.key)} className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${selectedPlan === plan.key ? "bg-[#37322F] text-white" : "bg-[#F7F5F3] text-[#605A57] hover:bg-[#E8E4E0]"}`}>
+              <button key={plan.key} onClick={() => setSelectedPlan(plan.key)} className={`px-4 py-2 rounded-none text-sm font-medium transition-all ${selectedPlan === plan.key ? "bg-[#37322F] text-white" : "bg-[#F7F5F3] text-[#605A57] hover:bg-[#E8E4E0]"}`}>
                 {plan.name} HK${plan.price}
               </button>
             ))}
           </div>
           {plans.filter(p => p.key === selectedPlan).map((plan) => (
-          <div key={plan.key} className="bg-gradient-to-br from-[#F7F5F3] to-white rounded-2xl p-8 border border-[rgba(55,50,47,0.1)]">
+          <div key={plan.key} className="bg-gradient-to-br from-[#F7F5F3] to-white rounded-none p-8 border border-[rgba(55,50,47,0.1)]">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-sm font-medium text-[#8A8278] uppercase tracking-wider mb-4">成本對比</h3>
@@ -277,16 +277,16 @@ export default function PackagesPageClient() {
               <div>
                 <h3 className="text-sm font-medium text-[#8A8278] uppercase tracking-wider mb-4">你的收益</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3 p-4 bg-white rounded-xl border border-[rgba(55,50,47,0.1)]">
-                    <span className="text-2xl">✅</span>
+                  <div className="flex items-center gap-3 p-4 bg-white rounded-none border border-[rgba(55,50,47,0.1)]">
+                    <svg className="w-5 h-5 text-[#37322F]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
                     <div><span className="text-2xl font-bold text-[#37322F]">慳 {Math.round((1 - parseInt(plan.price.replace(',','')) / parseInt(plan.traditionalPrice.replace(',',''))) * 100)}%</span><p className="text-sm text-[#605A57]">成本</p></div>
                   </div>
-                  <div className="flex items-center gap-3 p-4 bg-white rounded-xl border border-[rgba(55,50,47,0.1)]">
-                    <span className="text-2xl">✅</span>
+                  <div className="flex items-center gap-3 p-4 bg-white rounded-none border border-[rgba(55,50,47,0.1)]">
+                    <svg className="w-5 h-5 text-[#37322F]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
                     <div><span className="text-2xl font-bold text-[#37322F]">快 {Math.round((1 - parseInt(plan.deliveryWeeks) / parseInt(plan.traditionalWeeks)) * 100)}%</span><p className="text-sm text-[#605A57]">交付時間</p></div>
                   </div>
-                  <div className="flex items-center gap-3 p-4 bg-white rounded-xl border border-[rgba(55,50,47,0.1)]">
-                    <span className="text-2xl">✅</span>
+                  <div className="flex items-center gap-3 p-4 bg-white rounded-none border border-[rgba(55,50,47,0.1)]">
+                    <svg className="w-5 h-5 text-[#37322F]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
                     <div><span className="text-2xl font-bold text-[#37322F]">HK${plan.price}</span><p className="text-sm text-[#605A57]">性價比極致</p></div>
                   </div>
                 </div>
@@ -301,13 +301,13 @@ export default function PackagesPageClient() {
       <section className="py-16 px-4 md:px-8 bg-[#F7F5F3]">
         <div className="max-w-[1060px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#49423D] tracking-tight mb-3">專為行業優化</h2>
+            <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[#49423D] tracking-tight mb-3">專為行業優化</h2>
             <p className="text-[#605A57]">我哋嘅 AI 方案專為以下行業設計，幫你快速提升競爭力</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {industries.map((industry) => (
-              <div key={industry.name} className="bg-white rounded-2xl p-6 border border-[rgba(55,50,47,0.1)] hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-4">{industry.emoji}</div>
+              <div key={industry.name} className="bg-white rounded-none p-6 border border-[rgba(55,50,47,0.1)] hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center text-[#37322F]">{industry.icon}</div>
                 <h3 className="text-lg font-semibold text-[#37322F] mb-2">{industry.name}</h3>
                 <p className="text-sm text-[#605A57] mb-4">{industry.description}</p>
                 <ul className="space-y-2">
@@ -323,7 +323,7 @@ export default function PackagesPageClient() {
       <div className="w-full border-y border-[rgba(55,50,47,0.12)]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-8 py-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-semibold text-[#49423D] tracking-tight mb-4">選擇你的 AI 服務方案</h2>
+            <h2 className="text-3xl md:text-5xl font-sans font-semibold text-[#49423D] tracking-tight mb-4">選擇你的 AI 服務方案</h2>
             <p className="text-[#605A57] text-lg">一站式 AI 數碼營銷方案，助你快速拓展業務</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -335,12 +335,12 @@ export default function PackagesPageClient() {
                 </div>
                 <div className="mb-6">
                   <div className="flex items-baseline gap-1">
-                    <span className={`text-5xl font-serif ${plan.featured ? "text-[#F0EFEE]" : "text-[#37322F]"}`}>HK$</span>
-                    <span className={`text-5xl font-serif ${plan.featured ? "text-[#F0EFEE]" : "text-[#37322F]"}`}>{plan.price}</span>
+                    <span className={`text-5xl font-sans ${plan.featured ? "text-[#F0EFEE]" : "text-[#37322F]"}`}>HK$</span>
+                    <span className={`text-5xl font-sans ${plan.featured ? "text-[#F0EFEE]" : "text-[#37322F]"}`}>{plan.price}</span>
                   </div>
                   <p className={`text-sm font-medium ${plan.featured ? "text-[#D2C6BF]" : "text-[#847971]"}`}>一次性收費</p>
                 </div>
-                <button onClick={() => scrollToForm(plan.key)} className={`w-full py-3 rounded-full font-medium mb-8 transition-opacity hover:opacity-90 shadow-md text-center ${plan.featured ? "bg-gradient-to-b from-[#FBFAF9] to-[#E8E4E0] text-[#37322F]" : "bg-gradient-to-b from-[#37322F] to-[#1a1816] text-white"}`}>
+                <button onClick={() => scrollToForm(plan.key)} className={`w-full py-3 rounded-none font-medium mb-8 transition-opacity hover:opacity-90 shadow-md text-center ${plan.featured ? "bg-gradient-to-b from-[#FBFAF9] to-[#E8E4E0] text-[#37322F]" : "bg-gradient-to-b from-[#37322F] to-[#1a1816] text-white"}`}>
                   {plan.cta}
                 </button>
                 <div className="flex-1">
@@ -363,13 +363,13 @@ export default function PackagesPageClient() {
       <section className="py-16 px-4 md:px-8">
         <div className="max-w-[1060px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#49423D] tracking-tight mb-3">企業級服務保障</h2>
+            <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[#49423D] tracking-tight mb-3">企業級服務保障</h2>
             <p className="text-[#605A57]">選擇 Gogh AI Studio，選擇安心</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {guarantees.map((g) => (
-              <div key={g.title} className="flex items-start gap-4 p-5 bg-[#F7F5F3] rounded-xl">
-                <span className="text-2xl flex-shrink-0">{g.icon}</span>
+              <div key={g.title} className="flex items-start gap-4 p-5 bg-[#F7F5F3] rounded-none">
+                <span className="text-[#37322F] flex-shrink-0">{g.icon}</span>
                 <div><h3 className="font-semibold text-[#37322F] mb-1">{g.title}</h3><p className="text-sm text-[#605A57]">{g.desc}</p></div>
               </div>
             ))}
@@ -381,13 +381,13 @@ export default function PackagesPageClient() {
       <section className="py-16 px-4 md:px-8">
         <div className="max-w-[1060px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#49423D] tracking-tight mb-3">📊 成功案例</h2>
+            <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[#49423D] tracking-tight mb-3">📊 成功案例</h2>
             <p className="text-[#605A57]">看看我哋點樣幫企業提升業績</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {caseStudies.map((c) => (
-              <div key={c.title} className="bg-white rounded-2xl p-6 border border-[rgba(55,50,47,0.1)] hover:shadow-lg transition-shadow">
-                <div className="flex items-center gap-2 mb-3"><span className="px-2 py-1 bg-[#F7F5F3] rounded text-xs text-[#605A57]">{c.tag}</span></div>
+              <div key={c.title} className="bg-white rounded-none p-6 border border-[rgba(55,50,47,0.1)] hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-2 mb-3"><span className="px-2 py-1 bg-[#F7F5F3] text-xs text-[#605A57]">{c.tag}</span></div>
                 <h3 className="text-lg font-semibold text-[#37322F] mb-2">{c.title}</h3>
                 <div className="space-y-3 mb-4">
                   <div><span className="text-xs text-[#8A8278] uppercase">問題</span><p className="text-sm text-[#49423D]">{c.problem}</p></div>
@@ -412,7 +412,7 @@ export default function PackagesPageClient() {
             {steps.map((step, i) => (
               <div key={step.num} className="text-center relative">
                 {i < 3 && <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-white/20"></div>}
-                <div className="relative z-10 w-16 h-16 mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center">
+                <div className="relative z-10 w-16 h-16 mx-auto mb-4 rounded-none bg-white/10 flex items-center justify-center">
                   <span className="text-2xl font-bold text-white">{step.num}</span>
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
@@ -421,7 +421,7 @@ export default function PackagesPageClient() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <a href="https://wa.me/85291709891?text=你好，我想預約免費咨詢，了解 AI 製作套餐服務" target="_blank" rel="noopener noreferrer" className="inline-block h-14 px-10 bg-white text-[#37322F] rounded-full font-semibold hover:bg-[#F7F5F3] transition-colors shadow-lg leading-[56px]">
+            <a href="https://wa.me/85291709891?text=你好，我想預約免費咨詢，了解 AI 製作套餐服務" target="_blank" rel="noopener noreferrer" className="inline-block h-14 px-10 bg-white text-[#37322F] rounded-none font-semibold hover:bg-[#F7F5F3] transition-colors shadow-lg leading-[56px]">
               立即預約免費咨詢
             </a>
           </div>
@@ -432,13 +432,13 @@ export default function PackagesPageClient() {
       <section className="py-16 px-4 md:px-8">
         <div className="max-w-[1060px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#49423D] tracking-tight mb-3">一站式 AI 服務</h2>
+            <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[#49423D] tracking-tight mb-3">一站式 AI 服務</h2>
             <p className="text-[#605A57]">從創意到交付，全方位支援你的業務增長</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service) => (
-              <div key={service.title} className="p-6 bg-[#F7F5F3] rounded-2xl hover:bg-[#EFECEA] transition-colors">
-                <div className="w-14 h-14 mb-4 flex items-center justify-center bg-white rounded-xl text-[#37322F]">{service.icon}</div>
+              <div key={service.title} className="p-6 bg-[#F7F5F3] rounded-none hover:bg-[#EFECEA] transition-colors">
+                <div className="w-14 h-14 mb-4 flex items-center justify-center bg-white rounded-none text-[#37322F]">{service.icon}</div>
                 <h3 className="text-lg font-semibold text-[#37322F] mb-2">{service.title}</h3>
                 <p className="text-sm text-[#605A57]">{service.desc}</p>
               </div>
@@ -450,11 +450,11 @@ export default function PackagesPageClient() {
       {/* Testimonials */}
       <section className="py-16 px-4 md:px-8 bg-[#F7F5F3]">
         <div className="max-w-[800px] mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#49423D] tracking-tight mb-8">客戶怎麼說</h2>
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[#49423D] tracking-tight mb-8">客戶怎麼說</h2>
+          <div className="bg-white rounded-none p-8 shadow-sm">
             <p className="text-lg md:text-xl text-[#49423D] leading-relaxed mb-6">"Gogh AI Studio has revolutionized how we handle custom contracts. The automation saves us hours every week and eliminates errors completely."</p>
             <div className="flex items-center justify-center gap-3">
-              <div className="w-12 h-12 bg-[#F7F5F3] rounded-full flex items-center justify-center text-lg font-semibold text-[#37322F]">SC</div>
+              <div className="w-12 h-12 bg-[#F7F5F3] flex items-center justify-center text-lg font-semibold text-[#37322F]">SC</div>
               <div className="text-left"><p className="font-medium text-[#37322F]">Sarah Chen</p><p className="text-sm text-[#605A57]">VP Operations, TechFlow</p></div>
             </div>
           </div>
@@ -465,12 +465,12 @@ export default function PackagesPageClient() {
       <section className="py-16 px-4 md:px-8 border-t border-[rgba(55,50,47,0.12)]">
         <div className="max-w-[800px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#49423D] tracking-tight mb-3">常見問題</h2>
+            <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[#49423D] tracking-tight mb-3">常見問題</h2>
             <p className="text-[#605A57]">有其他問題？聯絡我們的銷售團隊獲取更多資訊。</p>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
-              <div key={i} className="border border-[rgba(55,50,47,0.12)] rounded-xl overflow-hidden">
+              <div key={i} className="border border-[rgba(55,50,47,0.12)] rounded-none overflow-hidden">
                 <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-[#F7F5F3] transition-colors">
                   <span className="font-medium text-[#37322F]">{faq.q}</span>
                   <svg className={`w-5 h-5 text-[#605A57] flex-shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -489,22 +489,22 @@ export default function PackagesPageClient() {
           <p className="text-lg text-[#B2AEA9] mb-8">填寫以下表單，讓 AI 助你快速拓展業務</p>
           
           <form action="https://formspree.io/f/xlgqeoeq" method="POST" className="max-w-md mx-auto space-y-4 mb-8">
-            <input type="text" name="name" placeholder="你的名字" required className="w-full px-4 py-3 rounded-full border border-white/20 bg-white/10 text-white placeholder:text-white/60" />
-            <input type="email" name="email" placeholder="電郵地址" required className="w-full px-4 py-3 rounded-full border border-white/20 bg-white/10 text-white placeholder:text-white/60" />
-            <input type="text" name="company" placeholder="公司名稱" className="w-full px-4 py-3 rounded-full border border-white/20 bg-white/10 text-white placeholder:text-white/60" />
-            <select name="plan" required value={formPlan} onChange={(e) => setFormPlan(e.target.value)} className="w-full px-4 py-3 rounded-full border border-white/20 bg-white/10 text-white/80">
+            <input type="text" name="name" placeholder="你的名字" required className="w-full px-4 py-3 rounded-none border border-white/20 bg-white/10 text-white placeholder:text-white/60" />
+            <input type="email" name="email" placeholder="電郵地址" required className="w-full px-4 py-3 rounded-none border border-white/20 bg-white/10 text-white placeholder:text-white/60" />
+            <input type="text" name="company" placeholder="公司名稱" className="w-full px-4 py-3 rounded-none border border-white/20 bg-white/10 text-white placeholder:text-white/60" />
+            <select name="plan" required value={formPlan} onChange={(e) => setFormPlan(e.target.value)} className="w-full px-4 py-3 rounded-none border border-white/20 bg-white/10 text-white/80">
               <option value="" className="text-[#37322F]">選擇套餐</option>
               <option value="起步版" className="text-[#37322F]">AI 起步版 (HK$3,888)</option>
               <option value="專業版" className="text-[#37322F]">AI 專業版 (HK$6,888)</option>
               <option value="企業版" className="text-[#37322F]">AI 企業版 (HK$9,888)</option>
             </select>
-            <textarea name="message" placeholder="你想我哋幫你完成乜嘢？" rows={3} required className="w-full px-4 py-3 rounded-xl border border-white/20 bg-white/10 text-white placeholder:text-white/60 resize-none" />
-            <button type="submit" className="w-full py-3 bg-white text-[#37322F] rounded-full font-medium hover:bg-[#F7F5F3] transition-colors shadow-lg">發送查詢</button>
+            <textarea name="message" placeholder="你想我哋幫你完成乜嘢？" rows={3} required className="w-full px-4 py-3 rounded-none border border-white/20 bg-white/10 text-white placeholder:text-white/60 resize-none" />
+            <button type="submit" className="w-full py-3 bg-white text-[#37322F] rounded-none font-medium hover:bg-[#F7F5F3] transition-colors shadow-lg">發送查詢</button>
           </form>
           
           <p className="text-sm text-[#B2AEA9] mb-6">或直接聯絡我們</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/85291709891?text=你好，我想立即開始使用AI製作套餐服務" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white rounded-full font-medium hover:bg-white/20 transition-colors">
+            <a href="https://wa.me/85291709891?text=你好，我想立即開始使用AI製作套餐服務" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white rounded-none font-medium hover:bg-white/20 transition-colors">
               WhatsApp 聯絡
             </a>
           </div>

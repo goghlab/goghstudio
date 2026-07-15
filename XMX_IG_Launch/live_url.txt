@@ -1,0 +1,4 @@
+XMX_Waitlist: https://site-lime-rho-47.vercel.app
+Formspree: https://formspree.io/f/xzdnpwnj
+Updated: 2026-07-13 14:10
+GOLDEN v3: X symmetry ratio = 1.000

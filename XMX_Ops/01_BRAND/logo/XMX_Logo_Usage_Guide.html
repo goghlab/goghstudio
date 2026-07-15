@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>XMX Logo Usage Guide</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Inter, system-ui, sans-serif; background: #f5f5f5; color: #111; padding: 40px 24px 80px; }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  h1 { font-weight: 500; font-size: 28px; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .sub { color: #666; font-size: 14px; margin-bottom: 32px; }
+  .card { background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  h2 { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #888; margin-bottom: 16px; font-weight: 600; }
+  .logo-row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .logo-box { flex: 1; min-width: 200px; height: 140px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px solid #eee; }
+  .logo-box.dark { background: #1a1a1a; }
+  .logo-box.light { background: #f0f0f0; }
+  .logo-box.gold { background: linear-gradient(145deg, #c5b59a, #a89070); }
+  /* Exact-feel wordmark: geometric, thin, open tracking — matches product laser marks */
+  .wordmark {
+    font-family: "Avenir Next", "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.42em;
+    font-size: 36px;
+    padding-left: 0.42em; /* optical center with tracking */
+    text-transform: uppercase;
+  }
+  .wordmark.white { color: #f2f2f2; }
+  .wordmark.black { color: #1a1a1a; }
+  .wordmark.darkgold { color: #3d3428; }
+  .wordmark.sm { font-size: 18px; letter-spacing: 0.38em; padding-left: 0.38em; }
+  ul { padding-left: 18px; line-height: 1.7; font-size: 14px; color: #333; }
+  li { margin-bottom: 6px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
+  .do { border-left: 3px solid #22c55e; padding-left: 12px; }
+  .dont { border-left: 3px solid #ef4444; padding-left: 12px; }
+  .mono { font-family: ui-monospace, monospace; font-size: 13px; background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #eee; }
+  th { color: #888; font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+  .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: middle; margin-right: 6px; border: 1px solid rgba(0,0,0,.08); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>XMX Brand Mark — Usage Guide</h1>
+    <p class="sub">Matched to existing product laser engrave &amp; marketing: thin geometric sans, open tracking, no ornament.</p>
+
+    <div class="card">
+      <h2>Primary wordmark</h2>
+      <div class="logo-row">
+        <div class="logo-box dark"><span class="wordmark white">XMX</span></div>
+        <div class="logo-box light"><span class="wordmark black">XMX</span></div>
+        <div class="logo-box gold"><span class="wordmark darkgold">XMX</span></div>
+      </div>
+      <p style="margin-top:16px;font-size:13px;color:#666;line-height:1.6;">
+        Construction: four characters as a single mark <span class="mono">XMX</span>.
+        X = two sharp diagonals crossing; M = verticals + sharp center V (not rounded).
+        Weight ≈ light / thin. Tracking ≈ <span class="mono">0.35–0.45em</span>. Never bold condensed.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>On-product scale</h2>
+      <div class="logo-row">
+        <div class="logo-box light" style="height:100px"><span class="wordmark black sm">XMX</span></div>
+        <div class="logo-box dark" style="height:100px"><span class="wordmark white sm">XMX</span></div>
+      </div>
+      <p style="margin-top:12px;font-size:13px;color:#666;">Charging case front: center, subtle deboss or tone-on-tone. Stem: micro laser, same proportions.</p>
+    </div>
+
+    <div class="card grid2">
+      <div class="do">
+        <h2 style="color:#16a34a">Do</h2>
+        <ul>
+          <li>Use open letter-spacing</li>
+          <li>Keep sharp corners on X</li>
+          <li>Tone-on-tone on metal/champagne shells</li>
+          <li>White on charcoal marketing</li>
+          <li>Clear space ≥ height of “X” on all sides</li>
+        </ul>
+      </div>
+      <div class="dont">
+        <h2 style="color:#dc2626">Don’t</h2>
+        <ul>
+          <li>Stretch or outline the mark</li>
+          <li>Add drop shadows / neon gradients</li>
+          <li>Replace with heavy black logo fonts</li>
+          <li>Write “xmx” lowercase as primary</li>
+          <li>Crowd logo against icons</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Color system (from current line)</h2>
+      <table>
+        <tr><th>Role</th><th>Use</th><th>Approx</th></tr>
+        <tr><td><span class="swatch" style="background:#1a1a1a"></span>Charcoal Black</td><td>Case / buds / type on light</td><td>#1A1A1A</td></tr>
+        <tr><td><span class="swatch" style="background:#c4b5a0"></span>Champagne</td><td>Shell finish</td><td>#C4B5A0</td></tr>
+        <tr><td><span class="swatch" style="background:#b8b8b8"></span>Silver</td><td>Shell finish</td><td>#B8B8B8</td></tr>
+        <tr><td><span class="swatch" style="background:#f7f5f2"></span>Warm White</td><td>Studio BG</td><td>#F7F5F2</td></tr>
+        <tr><td><span class="swatch" style="background:#2b6cff"></span>UI Signal Blue</td><td>Waveform / translate UI only</td><td>#2B6CFF</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Factory marking note (中英)</h2>
+      <p style="font-size:14px;line-height:1.7;color:#333;">
+        Please laser-engrave or pad-print the wordmark <strong>XMX</strong> using a light geometric sans,
+        wide tracking, sharp X terminals. Do not use Arial Black / Impact / rounded logos.
+        Minimum height on case: 3.5 mm. Depth of laser: subtle, matching champagne / black finish samples.<br/><br/>
+        外殼絲印／鐳射字標請使用細線幾何無襯線「XMX」，字距偏寬，X 字尖角清晰；
+        禁止粗黑體。充電盒正面居中，顏色與殼同色系暗紋或淺灰白（視底色）。
+      </p>
+    </div>
+  </div>
+</body>
+</html>

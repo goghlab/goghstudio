@@ -1,0 +1,98 @@
+{
+  "brand": "Gogh Studio",
+  "niche": "B2B AI創意服務",
+  "target": "香港中小企 / 企業市場",
+  "platforms": ["Facebook", "Instagram", "小紅書"],
+  "video_length": "15秒",
+  "daily_output": 3,
+  "bucket_distribution": {
+    "teaching": 0.4,
+    "case_study": 0.3,
+    "engagement": 0.15,
+    "promotion": 0.10,
+    "trending": 0.05
+  },
+  "content_buckets": {
+    "teaching": {
+      "name": "🎓 教學類",
+      "examples": [
+        "5個AI工具提升小店效率",
+        "點解要用AI做宣傳片",
+        "AI影片製作流程大揭秘",
+        "中小企如何用AI省錢",
+        "AI配音提升品牌形象"
+      ]
+    },
+    "case_study": {
+      "name": "💼 案例類",
+      "examples": [
+        "Before/After 作品展示",
+        "客戶成功故事",
+        "工作幕後花絮",
+        "真實案例分析",
+        "作品效果對比"
+      ]
+    },
+    "engagement": {
+      "name": "😄 互動類",
+      "examples": [
+        "你最想知AI做咩服務？",
+        "投票：你會用AI做宣傳片嗎？",
+        "留言話我知你係咩行業",
+        "Tag 你身邊做Marketing既朋友",
+        "你遇到咩推廣難題？"
+      ]
+    },
+    "promotion": {
+      "name": "🎉 推廣類",
+      "examples": [
+        "Gogh Studio 一週年限定優惠",
+        "首次亮相價・限時發售",
+        "一對一免費諮詢預約",
+        "AI內容方案限時優惠",
+        "預約即享專業團隊解答"
+      ]
+    },
+    "trending": {
+      "name": "🔥 趨勢類",
+      "examples": [
+        "2026年AI影片最新趨勢",
+        "點解越多公司用AI做內容？",
+        "AI短片係下一個風口？",
+        "AI工具最新資訊",
+        "業界新聞結合服務優勢"
+      ]
+    }
+  },
+  "video_style": {
+    "aspect_ratio": "9:16",
+    "format": "MP4",
+    "hashtags": "#AI影片 #GoghStudio #人工智能 #香港中小企 #AI營銷 #企業形象 #影片製作"
+  },
+  "platform_templates": {
+    "facebook": {
+      "tone": "專業但親切",
+      "max_caption_length": 300,
+      "include_hashtags": true,
+      "call_to_action": "立即預約：https://goghstudio.vercel.app/consultation"
+    },
+    "instagram": {
+      "tone": "時尚簡潔",
+      "max_caption_length": 150,
+      "include_emoji": true,
+      "call_to_action": "DM 我們查詢詳情 📩"
+    },
+    "xiaohongshu": {
+      "tone": "實用乾貨風",
+      "max_caption_length": 500,
+      "include_hashtags": true,
+      "language": "簡體中文"
+    }
+  },
+  "auto_generate": {
+    "enabled": true,
+    "video_generation": true,
+    "daily_trigger_time": "09:00",
+    "notification_channel": "main_session"
+  }
+}

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XMX Translate — 加入 Waitlist</title>
+  <meta name="description" content="XMX Translate 實時翻譯耳塞。彩屏雙語 · 中英日韓。加入 Waitlist 搶早鳥席位。" />
+  <meta property="og:title" content="XMX Translate — Waitlist" />
+  <meta property="og:description" content="聽得見世界，亦睇得見字。免費加入 Waitlist。" />
+  <meta property="og:image" content="assets/og_translate.jpg" />
+  <meta property="og:url" content="https://xmaxwaitlistsite.vercel.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/xmx-logo-black.svg" />
+  <style>
+    :root {
+      --bg: #fff;
+      --soft: #f5f5f5;
+      --card: #fff;
+      --text: #0a0a0a;
+      --sec: rgba(0,0,0,.72);
+      --mut: rgba(0,0,0,.48);
+      --line: #e5e5e5;
+      --green: #00a854;
+      --orange: #ff6a00;
+      --max: 1120px;
+      --hh: 64px;
+      --font: system-ui, -apple-system, "Segoe UI", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      --shadow: 0 8px 30px rgba(0,0,0,.08);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    @media (min-width: 768px) { .wrap { padding: 0 32px; } }
+
+    /* Header */
+    header {
+      position: fixed; inset: 0 0 auto 0; height: var(--hh); z-index: 100;
+      background: rgba(255,255,255,.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .hi { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 1600px; margin: 0 auto; padding: 0 24px; }
+    .logo img { height: 11px; width: auto; }
+    .nav { display: none; gap: 28px; }
+    @media (min-width: 900px) { .nav { display: flex; } }
+    .nav a { font-size: 13px; font-weight: 600; letter-spacing: .03em; color: var(--sec); }
+    .nav a:hover, .nav a.on { color: #000; }
+    .hact { display: flex; align-items: center; gap: 8px; }
+    .lang { border: 0; background: 0; font-size: 13px; font-weight: 600; color: var(--mut); padding: 8px 10px; border-radius: 8px; cursor: pointer; }
+    .lang.on { color: #000; background: var(--soft); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 12px 22px; border-radius: 999px; font-size: 14px; font-weight: 600;
+      border: 1px solid transparent; cursor: pointer; transition: .15s opacity, .15s background;
+    }
+    .btn-dark { background: #0a0a0a; color: #fff; border-color: #0a0a0a; }
+    .btn-dark:hover { opacity: .88; }
+    .btn-ghost { background: #fff; color: #0a0a0a; border-color: var(--line); }
+    .btn-ghost:hover { background: var(--soft); }
+    .btn-orange { background: var(--orange); color: #fff; border-color: var(--orange); }
+    .btn-orange:hover { opacity: .9; }
+    .hcta { display: none; padding: 8px 16px; font-size: 13px; }
+    @media (min-width: 640px) { .hcta { display: inline-flex; } }
+
+    main { padding-top: var(--hh); }
+
+    /* Urgency bar */
+    .urgency {
+      background: #0a0a0a; color: #fff; text-align: center;
+      font-size: 12px; font-weight: 600; letter-spacing: .04em;
+      padding: 10px 16px;
+    }
+    .urgency span { color: #7dffa8; }
+    .urgency em { font-style: normal; color: #ffb347; }
+
+    /* Hero split */
+    .hero {
+      display: grid; gap: 28px; align-items: center;
+      padding: 40px 0 48px;
+    }
+    @media (min-width: 900px) {
+      .hero { grid-template-columns: 1.05fr .95fr; gap: 48px; padding: 56px 0 64px; }
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--mut); margin-bottom: 14px;
+    }
+    .eyebrow i { width: 7px; height: 7px; border-radius: 50%; background: var(--green); display: inline-block; }
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 48px); font-weight: 700; letter-spacing: -.03em;
+      line-height: 1.12; margin-bottom: 14px;
+    }
+    .hero .lead { font-size: 16px; color: var(--sec); max-width: 34em; margin-bottom: 22px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 14px 20px; font-size: 13px; color: var(--mut); }
+    .meta-row strong { color: var(--text); font-weight: 700; }
+    .hero-visual {
+      border-radius: 20px; overflow: hidden; background: #111;
+      box-shadow: var(--shadow); border: 1px solid var(--line);
+      aspect-ratio: 1 / 1; max-height: 520px;
+    }
+    .hero-visual img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* Social proof strip */
+    .proof {
+      background: var(--soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+    .proof-inner {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px;
+      font-size: 13px; color: var(--sec); text-align: center;
+    }
+    .proof-inner b { color: #000; }
+
+    /* Limited offer card */
+    .offer {
+      margin: 40px auto; max-width: var(--max); padding: 0 20px;
+    }
+    .offer-card {
+      display: grid; gap: 20px; align-items: center;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      color: #fff; border-radius: 20px; padding: 28px 24px;
+      box-shadow: var(--shadow);
+    }
+    @media (min-width: 800px) {
+      .offer-card { grid-template-columns: 1.2fr .8fr; padding: 36px 40px; }
+    }
+    .offer-badge {
+      display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: #ffb347; margin-bottom: 10px;
+    }
+    .offer-card h2 { font-size: clamp(22px, 3vw, 28px); letter-spacing: -.02em; margin-bottom: 10px; }
+    .offer-card p { color: rgba(255,255,255,.72); font-size: 14px; margin-bottom: 16px; }
+    .offer-list { list-style: none; margin-bottom: 18px; }
+    .offer-list li {
+      font-size: 14px; color: rgba(255,255,255,.88);
+      padding: 6px 0 6px 22px; position: relative;
+    }
+    .offer-list li::before { content: "✓"; position: absolute; left: 0; color: #7dffa8; font-weight: 700; }
+    .countdown {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 8px;
+    }
+    .cd-box {
+      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12);
+      border-radius: 12px; min-width: 64px; padding: 10px 8px; text-align: center;
+    }
+    .cd-box b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+    .cd-box span { font-size: 10px; letter-spacing: .08em; color: rgba(255,255,255,.5); text-transform: uppercase; }
+    .slots {
+      font-size: 13px; color: rgba(255,255,255,.65); margin-top: 10px;
+    }
+    .slots em { color: #ffb347; font-style: normal; font-weight: 700; }
+    .bar {
+      height: 8px; background: rgba(255,255,255,.12); border-radius: 99px; overflow: hidden; margin-top: 10px;
+    }
+    .bar > i { display: block; height: 100%; width: 62%; background: linear-gradient(90deg, #ff6a00, #ffb347); border-radius: 99px; }
+
+    /* Section */
+    .sec { padding: 48px 0; }
+    .sec-h { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
+    .sec-h h2 { font-size: clamp(22px, 3vw, 30px); font-weight: 700; letter-spacing: -.02em; }
+    .sec-h p { font-size: 14px; color: var(--mut); max-width: 28em; }
+
+    /* Posters */
+    .poster-stack { display: grid; gap: 16px; }
+    .poster {
+      border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line);
+      background: #0a0a0a; box-shadow: var(--shadow);
+    }
+    .poster img { width: 100%; height: auto; }
+    .poster figcaption { background: #fff; padding: 14px 18px; border-top: 1px solid var(--line); }
+    .poster figcaption strong { display: block; font-size: 14px; margin-bottom: 2px; }
+    .poster figcaption span { font-size: 13px; color: var(--sec); }
+    @media (min-width: 800px) {
+      .poster-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    }
+
+    /* Features */
+    .grid3 { display: grid; gap: 14px; }
+    @media (min-width: 720px) { .grid3 { grid-template-columns: repeat(3, 1fr); } }
+    .card {
+      background: var(--soft); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 22px; transition: box-shadow .2s;
+    }
+    .card:hover { box-shadow: var(--shadow); background: #fff; }
+    .card .ic {
+      width: 36px; height: 36px; border-radius: 10px; background: #fff; border: 1px solid var(--line);
+      display: flex; align-items: center; justify-content: center; margin-bottom: 12px; font-size: 15px;
+    }
+    .card h3 { font-size: 16px; margin-bottom: 8px; }
+    .card p { font-size: 14px; color: var(--sec); }
+
+    /* How it works */
+    .steps { display: grid; gap: 14px; }
+    @media (min-width: 720px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+    .step {
+      border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; background: #fff;
+    }
+    .step .n {
+      font-size: 12px; font-weight: 700; letter-spacing: .1em; color: var(--mut); margin-bottom: 10px;
+    }
+    .step h3 { font-size: 17px; margin-bottom: 8px; }
+    .step p { font-size: 14px; color: var(--sec); }
+
+    /* Form */
+    .join-sec { background: var(--soft); padding: 56px 0 64px; border-top: 1px solid var(--line); }
+    .join-card {
+      max-width: 520px; margin: 0 auto; background: #fff; border: 1px solid var(--line);
+      border-radius: 20px; padding: 32px 24px; box-shadow: var(--shadow);
+    }
+    @media (min-width: 640px) { .join-card { padding: 40px 36px; } }
+    .join-card h2 { text-align: center; font-size: 24px; letter-spacing: -.02em; margin-bottom: 6px; }
+    .join-card .sub { text-align: center; font-size: 14px; color: var(--mut); margin-bottom: 22px; }
+    label { display: block; font-size: 12px; font-weight: 600; color: var(--mut); margin-bottom: 6px; }
+    input, select {
+      width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line);
+      font-size: 15px; margin-bottom: 14px; outline: none; background: #fff;
+    }
+    input:focus, select:focus { border-color: #0a0a0a; box-shadow: 0 0 0 3px rgba(0,0,0,.06); }
+    .btn-block { width: 100%; padding: 14px; }
+    .fine { font-size: 11px; color: var(--mut); text-align: center; margin-top: 12px; line-height: 1.5; }
+    .form-trust { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 14px; font-size: 12px; color: var(--mut); }
+
+    /* FAQ */
+    .faq { padding: 48px 0 72px; max-width: 720px; margin: 0 auto; }
+    .faq h2 { font-size: 24px; margin-bottom: 18px; letter-spacing: -.02em; }
+    details { border-top: 1px solid var(--line); padding: 15px 0; }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; font-weight: 600; font-size: 15px; list-style: none; display: flex; justify-content: space-between; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--mut); font-weight: 400; font-size: 18px; }
+    details[open] summary::after { content: "−"; }
+    details p { margin-top: 10px; font-size: 14px; color: var(--sec); padding-right: 20px; }
+
+    /* Footer */
+    footer { background: #0a0a0a; color: rgba(255,255,255,.7); padding: 48px 0 28px; }
+    .fg { display: grid; gap: 24px; margin-bottom: 28px; }
+    @media (min-width: 768px) { .fg { grid-template-columns: 1.4fr 1fr 1fr 1fr; } }
+    .fb img { height: 10px; margin-bottom: 12px; filter: invert(1); }
+    .fb p { font-size: 13px; max-width: 26em; line-height: 1.6; }
+    .fc h4 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 12px; }
+    .fc a { display: block; font-size: 13px; padding: 4px 0; color: rgba(255,255,255,.72); }
+    .fc a:hover { color: #fff; }
+    .fbot { border-top: 1px solid rgba(255,255,255,.1); padding-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; font-size: 12px; color: rgba(255,255,255,.4); }
+
+    #en { display: none; }
+    body.show-en #zh { display: none; }
+    body.show-en #en { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hi">
+      <a class="logo" href="https://xmaxtemplate.vercel.app/zh-TW" aria-label="XMX">
+        <img src="assets/xmx-logo-black.svg" alt="XMX" width="120" height="14" />
+      </a>
+      <nav class="nav">
+        <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=home">智能家居</a>
+        <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=personal">智能個人</a>
+        <a class="on" href="#join">Translate</a>
+        <a href="https://xmaxtemplate.vercel.app/zh-TW/products">商店</a>
+        <a href="https://xmaxtemplate.vercel.app/zh-TW/support">支援</a>
+      </nav>
+      <div class="hact">
+        <button type="button" class="lang on" id="btnZh" onclick="setLang('zh')">繁</button>
+        <button type="button" class="lang" id="btnEn" onclick="setLang('en')">EN</button>
+        <a class="btn btn-dark hcta" href="#join">加入 Waitlist</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="urgency">
+      <span>WAITLIST 開放中</span>
+      · 早鳥名額有限 · 目標 <em>500</em> 席優先邀請 · 真機驗證後開放認購
+    </div>
+
+    <!-- ZH -->
+    <div id="zh">
+      <section class="wrap hero">
+        <div>
+          <div class="eyebrow"><i></i> XMX Translate · T1 · Coming soon</div>
+          <h1>聽得見世界，<br/>亦睇得見字。</h1>
+          <p class="lead">
+            實時翻譯耳塞 + 彩屏充電倉雙語顯示。中英日韓場景優先——
+            旅行點餐、商務會面、日常聆聽，一對搞定。
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-orange" href="#join">免費搶早鳥席位</a>
+            <a class="btn btn-ghost" href="#gallery">睇產品視覺</a>
+          </div>
+          <div class="meta-row">
+            <span><strong>0 元</strong> 加入</span>
+            <span><strong>無需</strong> 信用卡</span>
+            <span>名單達 <strong>~500</strong> + 真機後早鳥</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/hero_product.jpg" alt="XMX Translate 彩屏充電倉與翻譯耳塞" width="1200" height="900" fetchpriority="high" />
+        </div>
+      </section>
+
+      <div class="proof">
+        <div class="wrap proof-inner">
+          <span>🎯 專注場景：<b>旅行 · 商務 · 日常</b></span>
+          <span>🖥️ 彩屏顯示：<b>原文 + 譯文</b></span>
+          <span>🌐 語言優先：<b>中 · 英 · 日 · 韓</b></span>
+          <span>🛡️ 承諾：<b>唔收空頭全款</b></span>
+        </div>
+      </div>
+
+      <div class="offer" id="offer">
+        <div class="offer-card">
+          <div>
+            <div class="offer-badge">Early Bird · 限時機制</div>
+            <h2>Waitlist 成員專屬優先權</h2>
+            <p>我們用真實限制建立節奏：先驗證硬件、再開放早鳥。名單越早，越優先收到邀請。</p>
+            <ul class="offer-list">
+              <li>免費登記，唔使信用卡</li>
+              <li>早鳥定價與交期窗口優先通知</li>
+              <li>產品視覺／規格更新第一時間收到</li>
+              <li>真機驗證通過前，唔會要求付硬件全款</li>
+            </ul>
+            <a class="btn btn-orange" href="#join">立即保留席位</a>
+          </div>
+          <div>
+            <div class="countdown" id="countdown" aria-label="countdown">
+              <div class="cd-box"><b id="cdD">14</b><span>Days</span></div>
+              <div class="cd-box"><b id="cdH">00</b><span>Hrs</span></div>
+              <div class="cd-box"><b id="cdM">00</b><span>Min</span></div>
+              <div class="cd-box"><b id="cdS">00</b><span>Sec</span></div>
+            </div>
+            <p class="slots">本輪展示目標：已登記興趣 <em id="slotN">312</em> / 500 席</p>
+            <div class="bar" aria-hidden="true"><i id="slotBar"></i></div>
+            <p class="slots" style="margin-top:12px;font-size:11px;opacity:.7">* 數字為營運展示（可改成真數據）。倒數為本輪 waitlist 衝刺窗口，非虛假「庫存只剩 1 件」。</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="sec wrap" id="gallery">
+        <div class="sec-h">
+          <div>
+            <h2>產品視覺</h2>
+            <p>旗艦級產品海報 · 旅行場景 · 倉屏介面</p>
+          </div>
+          <a class="btn btn-ghost" href="#join" style="padding:8px 16px;font-size:13px">想要優先權 →</a>
+        </div>
+        <div class="poster-stack">
+          <figure class="poster">
+            <img src="assets/hero_product.jpg" alt="Real-time Translation 主視覺" width="1200" height="900" loading="lazy" />
+            <figcaption>
+              <strong>Real-time Translation</strong>
+              <span>彩屏充電倉 · Speak &amp; Play · 40+ 語言路線圖</span>
+            </figcaption>
+          </figure>
+          <div class="poster-2">
+            <figure class="poster">
+              <img src="assets/poster_travel.jpg" alt="旅行翻譯場景" width="1400" height="760" loading="lazy" />
+              <figcaption>
+                <strong>Speak the World</strong>
+                <span>日／英／普／粵 · 街頭與商務都能用</span>
+              </figcaption>
+            </figure>
+            <figure class="poster">
+              <img src="assets/poster_feature_grid.jpg" alt="功能與設計" width="1400" height="760" loading="lazy" />
+              <figcaption>
+                <strong>Smart Audio, Refined Design</strong>
+                <span>IPX4 · 全天候舒適 · 精準聲學</span>
+              </figcaption>
+            </figure>
+          </div>
+          <figure class="poster">
+            <img src="assets/poster_ui_modes.jpg" alt="六大倉屏介面" width="1400" height="900" loading="lazy" />
+            <figcaption>
+              <strong>More Interfaces. More Possibilities.</strong>
+              <span>翻譯 · 音樂 · 離線包 · 短語本 · 設定電量</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="sec wrap" style="padding-top:8px">
+        <div class="sec-h">
+          <div>
+            <h2>為什麼是 XMX Translate</h2>
+            <p>一對耳機，聽得見亦睇得見</p>
+          </div>
+        </div>
+        <div class="grid3">
+          <article class="card">
+            <div class="ic">◎</div>
+            <h3>實時翻譯</h3>
+            <p>對話場景一鍵切換，中英日韓優先，旅行點餐、跨境會議都用得着。</p>
+          </article>
+          <article class="card">
+            <div class="ic">▣</div>
+            <h3>彩屏雙語</h3>
+            <p>充電倉顯示原文 + 譯文，唔使成日低頭望手機，一眼睇清。</p>
+          </article>
+          <article class="card">
+            <div class="ic">♪</div>
+            <h3>日常耳機</h3>
+            <p>音樂與通話同樣在線。一對多用，唔係一次性翻譯玩具。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sec wrap" style="padding-top:8px">
+        <div class="sec-h">
+          <div>
+            <h2>點樣加入</h2>
+            <p>三步，30 秒</p>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="n">STEP 01</div>
+            <h3>留下 Email</h3>
+            <p>免費登記，告訴我們你最在意旅行、商務定日常。</p>
+          </div>
+          <div class="step">
+            <div class="n">STEP 02</div>
+            <h3>收到進度</h3>
+            <p>真機、規格、視覺更新會電郵通知——唔會突然要你付全款。</p>
+          </div>
+          <div class="step">
+            <div class="n">STEP 03</div>
+            <h3>早鳥優先</h3>
+            <p>名單累積 + 硬件驗證後，Waitlist 成員優先收到早鳥邀請。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="join-sec" id="join">
+        <div class="wrap">
+          <form class="join-card" action="https://formspree.io/f/xzdnpwnj" method="POST">
+            <h2>免費保留早鳥席位</h2>
+            <p class="sub">不收費 · 可取消 · 有進度先通知你</p>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required placeholder="you@email.com" autocomplete="email" />
+            <label for="interest">你最在意</label>
+            <select id="interest" name="interest">
+              <option value="travel">旅行（日本／韓國等）</option>
+              <option value="business">商務會面</option>
+              <option value="daily">日常音樂 + 翻譯</option>
+              <option value="gift">送禮</option>
+            </select>
+            <label for="city">城市（可選）</label>
+            <input id="city" type="text" name="city" placeholder="Hong Kong" />
+            <input type="hidden" name="product" value="XMX-T1-Translate" />
+            <input type="hidden" name="_subject" value="XMX Waitlist" />
+            <button class="btn btn-orange btn-block" type="submit">加入 Waitlist — 免費</button>
+            <p class="fine">送出即表示同意接收產品進度郵件。我們不會出售你的名單。</p>
+            <div class="form-trust">
+              <span>🔒 資料加密傳輸</span>
+              <span>✉️ 可隨時退訂</span>
+              <span>🚫 無需付款</span>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="faq wrap" id="faq">
+        <h2>常見問題</h2>
+        <details>
+          <summary>而家要俾錢嗎？</summary>
+          <p>唔使。而家只係 Waitlist。早鳥開放時會再邀請你，屆時先有價錢同交期。</p>
+        </details>
+        <details>
+          <summary>係咪真·全息投影？</summary>
+          <p>第一代係「彩屏充電倉顯示雙語字幕 + 實時翻譯耳塞」。空氣全息投影唔係 T1 承諾範圍。</p>
+        </details>
+        <details>
+          <summary>要網絡嗎？</summary>
+          <p>最佳體驗通常需要手機網絡／Wi‑Fi（視最終 ODM 方案）。離線能力以實機規格為準，上線前會寫清。</p>
+        </details>
+        <details>
+          <summary>幾時出貨？</summary>
+          <p>視真機驗證與工廠排期。Waitlist 會員會最先收到準確窗口，唔會用含糊「即將上市」收全款。</p>
+        </details>
+        <details>
+          <summary>點解頁面有倒數／名額？</summary>
+          <p>用來標示本輪 waitlist 衝刺窗口與目標人數（約 500），方便節奏管理。唔係虛假「只剩 1 件庫存」恐嚇式營銷。</p>
+        </details>
+      </section>
+    </div>
+
+    <!-- EN -->
+    <div id="en">
+      <section class="wrap hero">
+        <div>
+          <div class="eyebrow"><i></i> XMX Translate · T1 · Coming soon</div>
+          <h1>Hear the world.<br/>Read every word.</h1>
+          <p class="lead">Real-time translation earbuds with a bilingual color-screen case. Built for travel, business, and daily listening.</p>
+          <div class="cta-row">
+            <a class="btn btn-orange" href="#join">Get free early access</a>
+            <a class="btn btn-ghost" href="#gallery">See product visuals</a>
+          </div>
+          <div class="meta-row">
+            <span><strong>Free</strong> to join</span>
+            <span><strong>No</strong> credit card</span>
+            <span>Early-bird after ~500 + real device</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/hero_product.jpg" alt="XMX Translate product" width="1200" height="900" />
+        </div>
+      </section>
+      <div class="proof"><div class="wrap proof-inner">
+        <span>Travel · Business · Daily</span>
+        <span>Source + translation on case</span>
+        <span>ZH · EN · JA · KO first</span>
+      </div></div>
+      <section class="sec wrap">
+        <div class="sec-h"><div><h2>Product visuals</h2></div></div>
+        <div class="poster-stack">
+          <figure class="poster"><img src="assets/hero_product.jpg" alt="" loading="lazy" /><figcaption><strong>Real-time Translation</strong><span>Speak &amp; Play</span></figcaption></figure>
+          <div class="poster-2">
+            <figure class="poster"><img src="assets/poster_travel.jpg" alt="" loading="lazy" /><figcaption><strong>Speak the World</strong><span>On the street, in meetings</span></figcaption></figure>
+            <figure class="poster"><img src="assets/poster_feature_grid.jpg" alt="" loading="lazy" /><figcaption><strong>Refined design</strong><span>Comfort · battery · durability</span></figcaption></figure>
+          </div>
+          <figure class="poster"><img src="assets/poster_ui_modes.jpg" alt="" loading="lazy" /><figcaption><strong>More interfaces</strong><span>Translator · Music · Offline · Phrasebook</span></figcaption></figure>
+        </div>
+      </section>
+      <section class="join-sec">
+        <div class="wrap">
+          <div class="join-card" style="text-align:center">
+            <h2>Join free</h2>
+            <p class="sub">Switch to 繁中 for the form — same waitlist.</p>
+            <a class="btn btn-orange" href="#join" onclick="setLang('zh')">Open form</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="fg">
+        <div class="fb">
+          <img src="assets/xmx-logo-black.svg" alt="XMX" />
+          <p>XMX Translate Waitlist 與官網同一品牌家族。智能硬件，改變生活。</p>
+        </div>
+        <div class="fc">
+          <h4>探索</h4>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/products">商店</a>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=personal">智能個人</a>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=home">智能家居</a>
+        </div>
+        <div class="fc">
+          <h4>支援</h4>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/faq">FAQ</a>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/support">支援</a>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/after-sales">售後</a>
+        </div>
+        <div class="fc">
+          <h4>Translate</h4>
+          <a href="#join">Waitlist</a>
+          <a href="#gallery">產品視覺</a>
+          <a href="#faq">說明</a>
+        </div>
+      </div>
+      <div class="fbot">
+        <span>© XMX · Translate Waitlist · Not for sale yet</span>
+        <a href="https://xmaxtemplate.vercel.app/zh-TW">xmaxtemplate.vercel.app</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      var en = lang === 'en';
+      document.body.classList.toggle('show-en', en);
+      document.getElementById('btnZh').classList.toggle('on', !en);
+      document.getElementById('btnEn').classList.toggle('on', en);
+    }
+    // Countdown: 14 days from first load, stored in localStorage for consistency per browser
+    (function () {
+      var key = 'xmx_wl_deadline';
+      var end = localStorage.getItem(key);
+      if (!end) {
+        end = String(Date.now() + 14 * 24 * 60 * 60 * 1000);
+        localStorage.setItem(key, end);
+      }
+      end = parseInt(end, 10);
+      function tick() {
+        var t = Math.max(0, end - Date.now());
+        var s = Math.floor(t / 1000);
+        var d = Math.floor(s / 86400); s %= 86400;
+        var h = Math.floor(s / 3600); s %= 3600;
+        var m = Math.floor(s / 60); s %= 60;
+        var el = function (id, v) { var n = document.getElementById(id); if (n) n.textContent = String(v).padStart(2, '0'); };
+        el('cdD', d); el('cdH', h); el('cdM', m); el('cdS', s);
+      }
+      tick(); setInterval(tick, 1000);
+      // slot display (honest-ish demo number; replace with real analytics later)
+      var n = 312;
+      var bar = document.getElementById('slotBar');
+      var sn = document.getElementById('slotN');
+      if (sn) sn.textContent = n;
+      if (bar) bar.style.width = Math.min(100, Math.round(n / 500 * 100)) + '%';
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XMX Translate — Waitlist | XMX</title>
+  <meta name="description" content="XMX Translate 實時翻譯耳塞。加入 Waitlist 取得早鳥資格。中英日韓 · 彩屏雙語。" />
+  <meta property="og:title" content="XMX Translate — Waitlist" />
+  <meta property="og:description" content="聽得見世界，亦睇得見字。加入 XMX Translate Waitlist。" />
+  <meta property="og:url" content="https://site-lime-rho-47.vercel.app/" />
+  <meta property="og:site_name" content="XMX" />
+  <link rel="icon" href="assets/xmx-logo-black.svg" type="image/svg+xml" />
+  <style>
+    /* ========== XMX Design Family (aligned to official store) ========== */
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f5f5f5;
+      --bg-card: #f9fafb;
+      --text: #0a0a0a;
+      --text-secondary: rgba(0,0,0,0.72);
+      --text-muted: rgba(0,0,0,0.48);
+      --line: #e5e5e5;
+      --line-soft: #f0f0f0;
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --max: 1120px;
+      --header-h: 64px;
+      --radius: 12px;
+      --radius-pill: 999px;
+      --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* Header — matches official fixed white bar */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      height: var(--header-h);
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .site-header.scrolled {
+      border-bottom-color: var(--line);
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+    }
+    .header-inner {
+      max-width: 1600px; margin: 0 auto;
+      height: 100%;
+      padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px;
+    }
+    @media (min-width: 768px) { .header-inner { padding: 0 32px; } }
+    .logo-link { display: flex; align-items: center; flex-shrink: 0; }
+    .logo-link img { height: 10px; width: auto; }
+    @media (min-width: 768px) { .logo-link img { height: 11px; } }
+
+    .nav-main {
+      display: none; align-items: center; gap: 28px;
+    }
+    @media (min-width: 1024px) { .nav-main { display: flex; } }
+    .nav-main a {
+      font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+      color: rgba(0,0,0,0.72);
+      transition: color .2s;
+    }
+    .nav-main a:hover { color: #000; }
+    .nav-main a.active { color: #000; }
+
+    .header-actions { display: flex; align-items: center; gap: 8px; }
+    .lang-btn {
+      font-size: 13px; font-weight: 500;
+      color: rgba(0,0,0,0.65);
+      padding: 8px 10px; border: none; background: none; cursor: pointer;
+      border-radius: 8px;
+    }
+    .lang-btn:hover { color: #000; background: var(--bg-soft); }
+    .lang-btn.is-on { color: #000; font-weight: 600; }
+    .header-cta {
+      display: none;
+      font-size: 13px; font-weight: 600;
+      padding: 8px 16px; border-radius: var(--radius-pill);
+      background: var(--black); color: var(--white);
+    }
+    @media (min-width: 640px) { .header-cta { display: inline-flex; } }
+    .header-cta:hover { opacity: 0.88; }
+
+    .menu-btn {
+      display: flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border: none; background: none; cursor: pointer;
+      color: rgba(0,0,0,0.7);
+    }
+    @media (min-width: 1024px) { .menu-btn { display: none; } }
+
+    /* Mobile drawer */
+    .drawer-overlay {
+      display: none; position: fixed; inset: 0; top: var(--header-h);
+      background: rgba(0,0,0,0.35); z-index: 40;
+    }
+    .drawer-overlay.open { display: block; }
+    .drawer {
+      position: fixed; top: var(--header-h); right: 0;
+      width: min(320px, 85vw); height: calc(100vh - var(--header-h));
+      background: #fff; z-index: 45;
+      transform: translateX(100%);
+      transition: transform .28s ease;
+      box-shadow: -8px 0 32px rgba(0,0,0,0.08);
+      padding: 20px; overflow-y: auto;
+    }
+    .drawer.open { transform: translateX(0); }
+    .drawer a {
+      display: block; padding: 14px 16px; border-radius: 10px;
+      font-size: 15px; font-weight: 500; color: rgba(0,0,0,0.8);
+    }
+    .drawer a:hover { background: var(--bg-soft); }
+    .drawer .divider { height: 1px; background: var(--line-soft); margin: 12px 0; }
+
+    /* Page */
+    .page { padding-top: var(--header-h); }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    @media (min-width: 768px) { .wrap { padding: 0 32px; } }
+
+    /* Hero — Xiaomi-like clean product landing */
+    .hero {
+      padding: 48px 0 40px;
+      text-align: center;
+    }
+    @media (min-width: 768px) { .hero { padding: 72px 0 56px; } }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+    .eyebrow::before {
+      content: ""; width: 6px; height: 6px; border-radius: 50%;
+      background: #00c758;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5.5vw, 48px);
+      font-weight: 700; letter-spacing: -0.03em;
+      line-height: 1.15; margin-bottom: 16px;
+      color: #0a0a0a;
+    }
+    .hero .lead {
+      font-size: clamp(15px, 2vw, 18px);
+      color: var(--text-secondary);
+      max-width: 36em; margin: 0 auto 28px;
+    }
+    .cta-row {
+      display: flex; flex-wrap: wrap; gap: 12px;
+      justify-content: center; margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 12px 22px; border-radius: var(--radius-pill);
+      font-size: 14px; font-weight: 600; border: none; cursor: pointer;
+      transition: opacity .2s, background .2s, color .2s;
+    }
+    .btn-primary { background: var(--black); color: var(--white); }
+    .btn-primary:hover { opacity: 0.88; }
+    .btn-ghost {
+      background: transparent; color: var(--text);
+      border: 1px solid var(--line);
+    }
+    .btn-ghost:hover { background: var(--bg-soft); }
+    .trust-line {
+      font-size: 13px; color: var(--text-muted);
+    }
+
+    /* Product strip */
+    .product-strip {
+      background: var(--bg-soft);
+      border-radius: 20px;
+      padding: 28px 20px;
+      margin: 0 auto 48px;
+      max-width: var(--max);
+      display: grid;
+      gap: 20px;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .product-strip {
+        grid-template-columns: 1.1fr 1fr;
+        padding: 40px 48px;
+        margin-bottom: 64px;
+      }
+    }
+    .product-strip h2 {
+      font-size: 13px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px;
+    }
+    .product-strip p {
+      font-size: 15px; color: var(--text-secondary); margin-bottom: 16px;
+    }
+    .product-strip .specs {
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+    .chip {
+      font-size: 12px; font-weight: 500;
+      padding: 6px 12px; border-radius: var(--radius-pill);
+      background: #fff; border: 1px solid var(--line);
+      color: var(--text-secondary);
+    }
+    .product-visual {
+      background: #fff; border-radius: 16px;
+      border: 1px solid var(--line-soft);
+      min-height: 200px;
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .product-visual .mark {
+      font-size: 12px; color: var(--text-muted); text-align: center;
+    }
+    .product-visual img.logo-lg {
+      height: 28px; width: auto; margin: 0 auto 12px; opacity: 0.9;
+    }
+
+    /* Features — store-like cards */
+    .section { padding: 24px 0 56px; }
+    .section-head {
+      display: flex; align-items: end; justify-content: space-between;
+      margin-bottom: 24px; gap: 16px; flex-wrap: wrap;
+    }
+    .section-head h2 {
+      font-size: clamp(22px, 3vw, 28px);
+      font-weight: 700; letter-spacing: -0.02em;
+    }
+    .section-head a {
+      font-size: 14px; font-weight: 600; color: rgba(0,0,0,0.55);
+    }
+    .section-head a:hover { color: #000; }
+    .grid-3 {
+      display: grid; gap: 16px;
+    }
+    @media (min-width: 720px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--line-soft);
+      border-radius: 16px;
+      padding: 24px 22px;
+      transition: box-shadow .2s, border-color .2s;
+    }
+    .card:hover {
+      border-color: var(--line);
+      box-shadow: var(--shadow);
+    }
+    .card .icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: #fff; border: 1px solid var(--line);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px; font-size: 16px;
+    }
+    .card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+    /* Form — light card like store subscribe */
+    .join-section {
+      background: var(--bg-soft);
+      padding: 56px 0 64px;
+    }
+    .join-card {
+      max-width: 520px; margin: 0 auto;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 32px 24px;
+      box-shadow: var(--shadow);
+    }
+    @media (min-width: 640px) { .join-card { padding: 40px 36px; } }
+    .join-card h2 {
+      font-size: 24px; font-weight: 700; letter-spacing: -0.02em;
+      margin-bottom: 8px; text-align: center;
+    }
+    .join-card .sub {
+      font-size: 14px; color: var(--text-muted);
+      text-align: center; margin-bottom: 24px;
+    }
+    label {
+      display: block; font-size: 12px; font-weight: 600;
+      color: var(--text-muted); margin-bottom: 6px; letter-spacing: 0.02em;
+    }
+    input, select {
+      width: 100%; padding: 12px 14px; border-radius: 10px;
+      border: 1px solid var(--line); background: #fff; color: var(--text);
+      font-size: 15px; margin-bottom: 14px;
+      outline: none; transition: border-color .15s, box-shadow .15s;
+    }
+    input:focus, select:focus {
+      border-color: #0a0a0a;
+      box-shadow: 0 0 0 3px rgba(0,0,0,0.06);
+    }
+    .btn-submit { width: 100%; margin-top: 4px; padding: 14px; }
+    .fine {
+      font-size: 11px; color: var(--text-muted);
+      margin-top: 14px; line-height: 1.5; text-align: center;
+    }
+
+    /* FAQ */
+    .faq { padding: 48px 0 72px; max-width: 720px; margin: 0 auto; }
+    .faq h2 {
+      font-size: 24px; font-weight: 700; margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+    details {
+      border-top: 1px solid var(--line);
+      padding: 16px 0;
+    }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary {
+      cursor: pointer; font-size: 15px; font-weight: 600;
+      list-style: none; display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; font-weight: 400; color: var(--text-muted); font-size: 18px; }
+    details[open] summary::after { content: "−"; }
+    details p {
+      margin-top: 10px; font-size: 14px; color: var(--text-secondary);
+      line-height: 1.65; padding-right: 24px;
+    }
+
+    /* Footer — store-like */
+    .site-footer {
+      background: #0a0a0a; color: rgba(255,255,255,0.72);
+      padding: 48px 0 32px;
+    }
+    .footer-grid {
+      display: grid; gap: 28px;
+      margin-bottom: 36px;
+    }
+    @media (min-width: 768px) {
+      .footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
+    }
+    .footer-brand img { height: 10px; width: auto; margin-bottom: 14px; filter: brightness(0) invert(1); }
+    .footer-brand p { font-size: 13px; line-height: 1.6; max-width: 26em; }
+    .footer-col h4 {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: rgba(255,255,255,0.4);
+      margin-bottom: 14px;
+    }
+    .footer-col a {
+      display: block; font-size: 13px; color: rgba(255,255,255,0.72);
+      padding: 5px 0;
+    }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      display: flex; flex-wrap: wrap; gap: 12px;
+      justify-content: space-between;
+      font-size: 12px; color: rgba(255,255,255,0.4);
+    }
+    .footer-bottom a:hover { color: rgba(255,255,255,0.8); }
+
+    /* EN block toggle */
+    #en { display: none; }
+    body.show-en #zh { display: none; }
+    body.show-en #en { display: block; }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="logo-link" href="https://xmaxtemplate.vercel.app/zh-TW" aria-label="XMX Home">
+        <img src="assets/xmx-logo-black.svg" alt="XMX" width="120" height="14" />
+      </a>
+      <nav class="nav-main" aria-label="Primary">
+        <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=home">智能家居</a>
+        <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=personal">智能個人</a>
+        <a class="active" href="#">Translate</a>
+        <a href="https://xmaxtemplate.vercel.app/zh-TW/products">商店</a>
+        <a href="https://xmaxtemplate.vercel.app/zh-TW/support">支援</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="lang-btn is-on" id="btnZh" onclick="setLang('zh')">繁</button>
+        <button type="button" class="lang-btn" id="btnEn" onclick="setLang('en')">EN</button>
+        <a class="header-cta" href="#join">加入 Waitlist</a>
+        <button class="menu-btn" type="button" id="menuBtn" aria-label="選單">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <a href="https://xmaxtemplate.vercel.app/zh-TW">官網首頁</a>
+    <a href="https://xmaxtemplate.vercel.app/zh-TW/products">商店</a>
+    <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=personal">智能個人</a>
+    <a href="#join">Translate Waitlist</a>
+    <a href="https://xmaxtemplate.vercel.app/zh-TW/faq">常見問題</a>
+    <a href="https://xmaxtemplate.vercel.app/zh-TW/support">支援</a>
+    <div class="divider"></div>
+    <a href="#faq">產品限制說明</a>
+  </aside>
+
+  <main class="page">
+    <!-- ZH -->
+    <div id="zh">
+      <section class="hero wrap">
+        <div class="eyebrow">Coming soon · Waitlist</div>
+        <h1>聽得見世界，<br/>亦睇得見字。</h1>
+        <p class="lead">
+          XMX Translate — 實時翻譯耳塞。充電倉彩屏顯示原文與譯文。
+          中英日韓場景優先。適合旅行、商務與日常聆聽。
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#join">加入 Waitlist</a>
+          <a class="btn btn-ghost" href="#faq">了解限制</a>
+          <a class="btn btn-ghost" href="https://xmaxtemplate.vercel.app/zh-TW">返回 XMX 官網</a>
+        </div>
+        <p class="trust-line">免費登記 · 真機驗證後優先早鳥 · 不收取空頭全款</p>
+      </section>
+
+      <div class="wrap">
+        <div class="product-strip">
+          <div>
+            <h2>Why waitlist first</h2>
+            <p>
+              我們先累積真正有需要的使用者，並完成真機驗證，再開放早鳥。
+              目標約 500 位再優先邀請認購——減少空頭承諾，把體驗做好。
+            </p>
+            <div class="specs">
+              <span class="chip">實時翻譯</span>
+              <span class="chip">彩屏雙語</span>
+              <span class="chip">中英日韓優先</span>
+              <span class="chip">日常音訊</span>
+            </div>
+          </div>
+          <div class="product-visual">
+            <div class="mark">
+              <img class="logo-lg" src="assets/xmx-logo-black.svg" alt="XMX" />
+              XMX Translate<br/>T1 · Waitlist
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section wrap">
+        <div class="section-head">
+          <h2>核心體驗</h2>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=personal">瀏覽智能個人 →</a>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon">◎</div>
+            <h3>實時翻譯</h3>
+            <p>對話場景一鍵切換，中英日韓優先，旅行與商務都能用。</p>
+          </article>
+          <article class="card">
+            <div class="icon">▣</div>
+            <h3>彩屏雙語</h3>
+            <p>充電倉顯示原文 + 譯文，唔使成日低頭望手機。</p>
+          </article>
+          <article class="card">
+            <div class="icon">♪</div>
+            <h3>日常耳機</h3>
+            <p>音樂與通話同樣在線，一對多用，唔係一次性翻譯機。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="join-section" id="join">
+        <div class="wrap">
+          <form class="join-card" action="https://formspree.io/f/xzdnpwnj" method="POST">
+            <h2>取得早鳥資格</h2>
+            <p class="sub">不收費。有進度會電郵通知。可隨時取消。</p>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required placeholder="you@email.com" autocomplete="email" />
+            <label for="interest">你最在意</label>
+            <select id="interest" name="interest">
+              <option value="travel">旅行（日本／韓國等）</option>
+              <option value="business">商務會面</option>
+              <option value="daily">日常音樂 + 翻譯</option>
+              <option value="gift">送禮</option>
+            </select>
+            <label for="city">城市（可選）</label>
+            <input id="city" type="text" name="city" placeholder="Hong Kong" />
+            <input type="hidden" name="product" value="XMX-T1-Translate" />
+            <input type="hidden" name="_subject" value="XMX Waitlist" />
+            <button class="btn btn-primary btn-submit" type="submit">加入 Waitlist</button>
+            <p class="fine">送出即表示你同意我們用此 email 發送產品進度。不會出售名單。</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="faq wrap" id="faq">
+        <h2>常見問題</h2>
+        <details>
+          <summary>而家要俾錢嗎？</summary>
+          <p>唔使。而家只係 Waitlist。早鳥開放時會再邀請你，屆時先有價錢同交期。</p>
+        </details>
+        <details>
+          <summary>係咪真·全息投影？</summary>
+          <p>第一代係「彩屏充電倉顯示雙語字幕 + 實時翻譯耳塞」。空氣全息投影唔係 T1 承諾範圍。</p>
+        </details>
+        <details>
+          <summary>要網絡嗎？</summary>
+          <p>最佳體驗通常需要手機網絡／Wi‑Fi（視最終 ODM 方案）。離線能力以實機規格為準，上線前會寫清。</p>
+        </details>
+        <details>
+          <summary>幾時出貨？</summary>
+          <p>視真機驗證與工廠排期。Waitlist 會員會最先收到準確窗口，唔會用含糊「即將上市」收全款。</p>
+        </details>
+      </section>
+    </div>
+
+    <!-- EN -->
+    <div id="en">
+      <section class="hero wrap">
+        <div class="eyebrow">Coming soon · Waitlist</div>
+        <h1>Hear the world.<br/>Read every word.</h1>
+        <p class="lead">
+          XMX Translate — real-time translation earbuds with a bilingual color-screen case.
+          Optimized for Chinese, English, Japanese, and Korean.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#join">Join the Waitlist</a>
+          <a class="btn btn-ghost" href="#faq">Read the fine print</a>
+          <a class="btn btn-ghost" href="https://xmaxtemplate.vercel.app/zh-TW">XMX Store</a>
+        </div>
+        <p class="trust-line">Free to join · Early-bird after real-device validation</p>
+      </section>
+      <div class="wrap">
+        <div class="product-strip">
+          <div>
+            <h2>Why a waitlist</h2>
+            <p>We validate hardware with real units first. Around 500 interested users helps us open early-bird honestly.</p>
+            <div class="specs">
+              <span class="chip">Live translation</span>
+              <span class="chip">Case captions</span>
+              <span class="chip">Daily audio</span>
+            </div>
+          </div>
+          <div class="product-visual">
+            <div class="mark">
+              <img class="logo-lg" src="assets/xmx-logo-black.svg" alt="XMX" />
+              XMX Translate · T1
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="section-head"><h2>What you get</h2></div>
+        <div class="grid-3">
+          <article class="card"><div class="icon">◎</div><h3>Live translation</h3><p>Conversation-first modes for travel and meetings.</p></article>
+          <article class="card"><div class="icon">▣</div><h3>Case captions</h3><p>Source + translated text on the charging case display.</p></article>
+          <article class="card"><div class="icon">♪</div><h3>Daily audio</h3><p>Music and calls — not a one-trick gadget.</p></article>
+        </div>
+      </section>
+      <section class="join-section">
+        <div class="wrap">
+          <div class="join-card" style="text-align:center">
+            <h2>Join free</h2>
+            <p class="sub">Use the form above (switch to 繁中). Same waitlist for all languages.</p>
+            <a class="btn btn-primary" href="#join" onclick="setLang('zh')">Open form (繁中)</a>
+          </div>
+        </div>
+      </section>
+      <section class="faq wrap">
+        <h2>FAQ</h2>
+        <details><summary>Do I pay now?</summary><p>No. Waitlist only. Payment opens later with clear ship windows.</p></details>
+        <details><summary>Is this a hologram projector?</summary><p>T1 is translation earbuds + bilingual case screen — not mid-air hologram projection.</p></details>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/xmx-logo-black.svg" alt="XMX" />
+          <p>XMX 專注智能硬件創新。Translate Waitlist 為 XMX 品牌子頁，與官網同一設計語言。</p>
+        </div>
+        <div class="footer-col">
+          <h4>探索</h4>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/products">商店</a>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=personal">智能個人</a>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/products?category=home">智能家居</a>
+        </div>
+        <div class="footer-col">
+          <h4>支援</h4>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/faq">常見問題</a>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/support">聯絡支援</a>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW/after-sales">售後服務</a>
+        </div>
+        <div class="footer-col">
+          <h4>Translate</h4>
+          <a href="#join">加入 Waitlist</a>
+          <a href="#faq">產品說明</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© XMX · Translate Waitlist · Not for sale yet</span>
+        <span>
+          <a href="https://xmaxtemplate.vercel.app/zh-TW">xmaxtemplate.vercel.app</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      var en = lang === 'en';
+      document.body.classList.toggle('show-en', en);
+      document.getElementById('btnZh').classList.toggle('is-on', !en);
+      document.getElementById('btnEn').classList.toggle('is-on', en);
+    }
+    var header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', function () {
+      header.classList.toggle('scrolled', window.scrollY > 8);
+    });
+    var menuBtn = document.getElementById('menuBtn');
+    var drawer = document.getElementById('drawer');
+    var overlay = document.getElementById('drawerOverlay');
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      overlay.classList.remove('open');
+      drawer.setAttribute('aria-hidden', 'true');
+    }
+    function openDrawer() {
+      drawer.classList.add('open');
+      overlay.classList.add('open');
+      drawer.setAttribute('aria-hidden', 'false');
+    }
+    menuBtn.addEventListener('click', function () {
+      if (drawer.classList.contains('open')) closeDrawer(); else openDrawer();
+    });
+    overlay.addEventListener('click', closeDrawer);
+    drawer.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeDrawer);
+    });
+  </script>
+</body>
+</html>
