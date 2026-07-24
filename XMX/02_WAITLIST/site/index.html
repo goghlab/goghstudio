@@ -692,6 +692,194 @@
     img.img-loaded, img:not(.img-loading) {
       opacity: 1;
     }
+
+    /* ========== TRANSLATION DEMO ========== */
+    .demo-section {
+      padding: 80px 0;
+      background: #05070b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .demo-label {
+      color: #fff;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .demo-sub {
+      color: #5a6070;
+      font-size: 11px;
+      margin-bottom: 24px;
+    }
+    .demo-case {
+      width: 440px;
+      height: 300px;
+      background: linear-gradient(160deg, #2e2e33, #151518);
+      border-radius: 36px;
+      padding: 14px;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .demo-bezel {
+      width: 100%;
+      height: 100%;
+      background: #08080a;
+      border-radius: 26px;
+      padding: 10px;
+      box-shadow: inset 0 3px 12px rgba(0,0,0,1), inset 0 0 0 1px rgba(255,255,255,0.06);
+    }
+    .demo-screen {
+      width: 320px;
+      height: 240px;
+      margin: 0 auto;
+      background: radial-gradient(100% 70% at 50% 0%, #0e1e3a 0%, #081426 32%, #020509 78%);
+      border-radius: 18px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #101b2e;
+      overflow: hidden;
+      position: relative;
+    }
+    .demo-logo-area {
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding-top: 6px;
+    }
+    .demo-logo-area svg {
+      height: 14px;
+      filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
+    }
+    .demo-original-block {
+      height: 40px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .demo-original-label {
+      font-size: 6px;
+      color: #4a5670;
+      letter-spacing: 1.5px;
+      font-family: 'JetBrains Mono', monospace;
+      position: absolute;
+      top: 0;
+      left: 12px;
+    }
+    .demo-original-text {
+      color: #8e9ab0;
+      font-size: 12.5px;
+      line-height: 1.35;
+      text-align: center;
+      max-width: 90%;
+      padding-top: 8px;
+    }
+    .demo-wave-wrap {
+      height: 64px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .demo-wave-wrap canvas {
+      width: 100%;
+      height: 64px;
+    }
+    .demo-translation-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      position: relative;
+    }
+    .demo-translation-label {
+      font-size: 6px;
+      color: #5a6a8a;
+      letter-spacing: 1.5px;
+      font-family: 'JetBrains Mono', monospace;
+      position: absolute;
+      top: 0;
+      left: 12px;
+    }
+    .demo-translation-text {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.35;
+      text-align: center;
+      text-shadow: 0 0 12px rgba(255,255,255,0.55), 0 0 22px rgba(0,216,255,0.35);
+      max-width: 96%;
+      padding-top: 10px;
+    }
+    .demo-langs {
+      height: 28px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 10px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      background: rgba(0,0,0,0.3);
+    }
+    .demo-langs .dot {
+      width: 2.5px;
+      height: 2.5px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 5px #fff;
+    }
+    .demo-langs .dim {
+      opacity: 0.3;
+    }
+    .demo-controls {
+      width: 320px;
+      margin-top: 14px;
+      display: flex;
+      gap: 6px;
+    }
+    .demo-controls button {
+      flex: 1;
+      background: #1c1c20;
+      border: 1px solid #2a2a30;
+      color: #777;
+      border-radius: 8px;
+      padding: 9px 6px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+    .demo-controls button.active {
+      background: #fff;
+      color: #000;
+      font-weight: 700;
+      border-color: #fff;
+    }
+    @media (max-width: 500px) {
+      .demo-case {
+        width: 340px;
+        height: 232px;
+        padding: 10px;
+      }
+      .demo-bezel {
+        padding: 8px;
+      }
+      .demo-screen {
+        width: 248px;
+        height: 186px;
+      }
+      .demo-controls {
+        width: 248px;
+      }
+    }
   </style>
 
 </head>
@@ -832,6 +1020,43 @@
           <p>唔只係翻譯耳塞，仲係日常音樂與通話的好幫手，一對多用。</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- TRANSLATION DEMO -->
+  <section class="demo-section">
+    <div class="demo-label">XMX Translate 彩屏翻譯演示</div>
+    <div class="demo-sub">充电仓彩屏即時顯示雙語字幕</div>
+    <div class="demo-case">
+      <div class="demo-bezel">
+        <div class="demo-screen">
+          <div class="demo-logo-area">
+            <svg viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="15" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="white" letter-spacing="2">XMX</text>
+            </svg>
+          </div>
+          <div class="demo-original-block">
+            <div class="demo-original-label">ORIGINAL</div>
+            <div class="demo-original-text" id="demo-orig">你好，請問東京站怎麼走？</div>
+          </div>
+          <div class="demo-wave-wrap">
+            <canvas id="demo-wave" width="640" height="128"></canvas>
+          </div>
+          <div class="demo-translation-area">
+            <div class="demo-translation-label">日本語 • 譯文</div>
+            <div class="demo-translation-text" id="demo-trans">すみません、東京駅はどう行けばいいですか？</div>
+          </div>
+          <div class="demo-langs">
+            <span class="dim">中</span><span class="dot"></span><span>JP</span><span class="dot"></span><span class="dim">EN</span><span class="dot"></span><span class="dim">韓</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="demo-controls">
+      <button class="active" onclick="setDemo(0,this)">中→日問路</button>
+      <button onclick="setDemo(1,this)">中→日點菜</button>
+      <button onclick="setDemo(2,this)">EN→JP</button>
+      <button onclick="setDemo(3,this)">長句測試</button>
     </div>
   </section>
 
@@ -1018,6 +1243,81 @@
         if (!isOpen) item.classList.add('open');
       });
     });
+
+    // Translation Demo Waveform
+    (function(){
+      const canvas=document.getElementById('demo-wave'), ctx=canvas?canvas.getContext('2d'):null;
+      if(!canvas) return;
+      let phase=0;
+      function env(nx){
+        let e=0;
+        e+=Math.exp(-Math.pow(nx-0.23,2)/0.01)*0.2;
+        e+=Math.exp(-Math.pow(nx-0.38,2)/0.0032)*1.1;
+        e+=Math.exp(-Math.pow(nx-0.56,2)/0.0055)*0.55;
+        e+=Math.exp(-Math.pow(nx-0.72,2)/0.004)*0.75;
+        e+=0.06;
+        return e;
+      }
+      function waveY(nx){
+        const en=env(nx), x=nx*640;
+        let y=0;
+        y+=Math.sin(x*0.022+phase*0.9)*1;
+        y+=Math.sin(x*0.055+phase*1.25)*12*en;
+        y+=Math.sin(x*0.11+phase*1.7)*6*en;
+        y+=Math.sin(x*0.18+phase*2.2)*2.5*en;
+        return y;
+      }
+      function draw(){
+        if(!ctx) return;
+        const w=canvas.width, h=canvas.height;
+        ctx.clearRect(0,0,w,h);
+        const cy=h/2;
+        for(let x=0;x<w;x+=3){
+          const nx=x/w, en=env(nx);
+          if(en<0.1) continue;
+          const yOff=waveY(nx), py=cy+yOff;
+          if(yOff>-1){
+            ctx.beginPath();
+            ctx.strokeStyle='rgba(0,216,255,'+(0.04+en*0.12)+')';
+            ctx.lineWidth=0.6;
+            ctx.moveTo(x,py);
+            ctx.lineTo(x,py+14+en*18);
+            ctx.stroke();
+          }
+        }
+        [{blur:16,color:'rgba(0,216,255,0.8)',width:3,scol:'#00D8FF'},{blur:6,color:'rgba(255,255,255,0.9)',width:1,scol:'#FFF'}].forEach(function(L){
+          ctx.beginPath();
+          ctx.shadowBlur=L.blur;
+          ctx.shadowColor=L.scol;
+          ctx.strokeStyle=L.color;
+          ctx.lineWidth=L.width;
+          for(let x=0;x<w;x++){
+            const y=cy+waveY(x/w);
+            if(x===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+          }
+          ctx.stroke();
+          ctx.shadowBlur=0;
+        });
+        phase+=0.032;
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+
+    // Demo translation texts
+    const demos=[
+      {orig:'你好，請問東京站怎麼走？', trans:'すみません、東京駅はどう行けばいいですか？'},
+      {orig:'這個不要放香菜，謝謝', trans:'パクチー抜きでお願いします'},
+      {orig:'How much is this shirt?', trans:'このシャツはいくらですか？'},
+      {orig:'你好，請問東京站地鐵出口在哪邊？', trans:'すみません、東京駅の地下鉄出口はどちらですか？'}
+    ];
+    function setDemo(i,btn){
+      document.querySelectorAll('.demo-controls button').forEach(function(b){b.classList.remove('active')});
+      if(btn) btn.classList.add('active');
+      var o=document.getElementById('demo-orig'), t=document.getElementById('demo-trans');
+      if(o) o.textContent=demos[i].orig;
+      if(t) t.textContent=demos[i].trans;
+    }
   </script>
 
 </body>
