@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>多謝你！ - XMX Translate</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0a0a0a;
+      --text-secondary: rgba(0,0,0,0.65);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 32px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    p {
+      font-size: 18px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 400px;
+      margin-bottom: 32px;
+    }
+    .countdown {
+      font-size: 14px;
+      color: rgba(0,0,0,0.4);
+    }
+    .countdown span {
+      font-weight: 600;
+      color: var(--text);
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">XMX</div>
+  <h1>多謝你加入 Waitlist！</h1>
+  <p>我哋會喺真機驗證後第一時間通知你，帶你搶先體驗 XMX Translate。</p>
+  <p class="countdown"><span id="sec">3</span> 秒後返回主頁...</p>
+
+  <script>
+    var count = 3;
+    var el = document.getElementById('sec');
+    var timer = setInterval(function() {
+      count--;
+      if (count <= 0) {
+        clearInterval(timer);
+        window.location.href = 'index.html';
+      } else {
+        el.textContent = count;
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
