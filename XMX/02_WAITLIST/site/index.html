@@ -863,6 +863,112 @@
       font-weight: 700;
       border-color: #fff;
     }
+
+    /* Music Mode */
+    .demo-mode { display: none; flex-direction: column; flex: 1; }
+    .demo-mode-active { display: flex; }
+    .demo-music-top {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .demo-music-art {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #1a2a4a, #0e1a2e);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .demo-music-info { flex: 1; min-width: 0; }
+    .demo-music-title {
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .demo-music-artist {
+      font-size: 9px;
+      color: #6a778f;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .demo-music-progress {
+      height: 28px;
+      padding: 0 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    .demo-prog-bar {
+      height: 4px;
+      background: #1a2332;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+    .demo-prog-fill {
+      height: 100%;
+      width: 62%;
+      background: linear-gradient(90deg, #00D8FF, #fff);
+      border-radius: 2px;
+    }
+    .demo-prog-time {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7px;
+      color: #4a5670;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .demo-music-ctrl {
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      flex-shrink: 0;
+    }
+    .demo-ctrl-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1f2a;
+      border: 1px solid #222a36;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .demo-ctrl-btn.demo-play {
+      width: 46px;
+      height: 46px;
+      background: #fff;
+      color: #000;
+      font-size: 18px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+    .demo-music-bottom {
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 10px;
+      color: #5a667a;
+    }
+
     @media (max-width: 500px) {
       .demo-case {
         width: 340px;
@@ -1025,38 +1131,65 @@
 
   <!-- TRANSLATION DEMO -->
   <section class="demo-section">
-    <div class="demo-label">XMX Translate 彩屏翻譯演示</div>
-    <div class="demo-sub">充电仓彩屏即時顯示雙語字幕</div>
+    <div class="demo-label">XMX Translate 彩屏演示</div>
+    <div class="demo-sub">翻譯耳機 + 充電倉彩屏</div>
     <div class="demo-case">
       <div class="demo-bezel">
         <div class="demo-screen">
-          <div class="demo-logo-area">
-            <svg viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <text x="0" y="15" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="white" letter-spacing="2">XMX</text>
-            </svg>
+          <!-- TRANSLATION MODE -->
+          <div class="demo-mode demo-mode-active" id="trans-mode">
+            <div class="demo-logo-area">
+              <svg viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="15" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="white" letter-spacing="2">XMX</text>
+              </svg>
+            </div>
+            <div class="demo-original-block">
+              <div class="demo-original-label">ORIGINAL</div>
+              <div class="demo-original-text" id="demo-orig">你好，請問東京站怎麼走？</div>
+            </div>
+            <div class="demo-wave-wrap">
+              <canvas id="demo-wave" width="640" height="128"></canvas>
+            </div>
+            <div class="demo-translation-area">
+              <div class="demo-translation-label">日本語 • 譯文</div>
+              <div class="demo-translation-text" id="demo-trans">すみません、東京駅はどう行けばいいですか？</div>
+            </div>
+            <div class="demo-langs">
+              <span class="dim">中</span><span class="dot"></span><span>JP</span><span class="dot"></span><span class="dim">EN</span><span class="dot"></span><span class="dim">韓</span>
+            </div>
           </div>
-          <div class="demo-original-block">
-            <div class="demo-original-label">ORIGINAL</div>
-            <div class="demo-original-text" id="demo-orig">你好，請問東京站怎麼走？</div>
-          </div>
-          <div class="demo-wave-wrap">
-            <canvas id="demo-wave" width="640" height="128"></canvas>
-          </div>
-          <div class="demo-translation-area">
-            <div class="demo-translation-label">日本語 • 譯文</div>
-            <div class="demo-translation-text" id="demo-trans">すみません、東京駅はどう行けばいいですか？</div>
-          </div>
-          <div class="demo-langs">
-            <span class="dim">中</span><span class="dot"></span><span>JP</span><span class="dot"></span><span class="dim">EN</span><span class="dot"></span><span class="dim">韓</span>
+          <!-- MUSIC MODE -->
+          <div class="demo-mode" id="music-mode">
+            <div class="demo-music-top">
+              <div class="demo-music-art">♪</div>
+              <div class="demo-music-info">
+                <div class="demo-music-title" id="demo-song">Coastal Drive</div>
+                <div class="demo-music-artist">Lo-Fi Chill • XMX Studio</div>
+              </div>
+            </div>
+            <div class="demo-music-progress">
+              <div class="demo-prog-bar"><div class="demo-prog-fill" id="demo-prog"></div></div>
+              <div class="demo-prog-time"><span>01:22</span><span>04:12</span></div>
+            </div>
+            <div class="demo-music-ctrl">
+              <div class="demo-ctrl-btn">↺</div>
+              <div class="demo-ctrl-btn">◀◀</div>
+              <div class="demo-ctrl-btn demo-play">▶</div>
+              <div class="demo-ctrl-btn">▶▶</div>
+              <div class="demo-ctrl-btn">↻</div>
+            </div>
+            <div class="demo-music-bottom">
+              <span>🔀 Shuffle</span>
+              <span>🔊 70%</span>
+              <span>🎧</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="demo-controls">
-      <button class="active" onclick="setDemo(0,this)">中→日問路</button>
-      <button onclick="setDemo(1,this)">中→日點菜</button>
-      <button onclick="setDemo(2,this)">EN→JP</button>
-      <button onclick="setDemo(3,this)">長句測試</button>
+      <button class="active" onclick="setDemoMode('trans',this)">🌐 翻譯</button>
+      <button onclick="setDemoMode('music',this)">♪ 音樂</button>
     </div>
   </section>
 
@@ -1312,6 +1445,19 @@
       {orig:'How much is this shirt?', trans:'このシャツはいくらですか？'},
       {orig:'你好，請問東京站地鐵出口在哪邊？', trans:'すみません、東京駅の地下鉄出口はどちらですか？'}
     ];
+    function setDemoMode(mode,btn){
+      document.querySelectorAll('.demo-controls button').forEach(function(b){b.classList.remove('active')});
+      if(btn) btn.classList.add('active');
+      var transMode=document.getElementById('trans-mode');
+      var musicMode=document.getElementById('music-mode');
+      if(mode==='trans'){
+        if(transMode) transMode.classList.add('demo-mode-active');
+        if(musicMode) musicMode.classList.remove('demo-mode-active');
+      } else {
+        if(transMode) transMode.classList.remove('demo-mode-active');
+        if(musicMode) musicMode.classList.add('demo-mode-active');
+      }
+    }
     function setDemo(i,btn){
       document.querySelectorAll('.demo-controls button').forEach(function(b){b.classList.remove('active')});
       if(btn) btn.classList.add('active');
