@@ -853,8 +853,8 @@
       border: 1px solid #2a2a30;
       color: #777;
       border-radius: 8px;
-      padding: 9px 6px;
-      font-size: 10px;
+      padding: 12px 8px;
+      font-size: 14px;
       cursor: pointer;
     }
     .demo-controls button.active {
@@ -1458,6 +1458,31 @@
         if(musicMode) musicMode.classList.add('demo-mode-active');
       }
     }
+    // Music playback simulation
+    (function(){
+      var prog=0, playing=false;
+      var progFill=document.getElementById('demo-prog');
+      var timeEl=document.querySelector('.demo-prog-time span:first-child');
+      var isMusicActive=function(){var m=document.getElementById('music-mode');return m && m.classList.contains('demo-mode-active');};
+      setInterval(function(){
+        if(!isMusicActive()) return;
+        if(playing){
+          prog+=0.5;
+          if(prog>100) prog=0;
+          if(progFill) progFill.style.width=prog+'%';
+          var totalSec=252, curSec=Math.floor(prog*totalSec/100);
+          var m=Math.floor(curSec/60), s=curSec%60;
+          if(timeEl) timeEl.textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+        }
+      },200);
+      document.addEventListener('click',function(e){
+        if(e.target && (e.target.classList.contains('demo-play')||e.target.classList.contains('demo-ctrl-btn'))){
+          playing=!playing;
+          var playBtn=document.querySelector('.demo-play');
+          if(playBtn) playBtn.textContent=playing?'❚❚':'▶';
+        }
+      });
+    })();
     function setDemo(i,btn){
       document.querySelectorAll('.demo-controls button').forEach(function(b){b.classList.remove('active')});
       if(btn) btn.classList.add('active');
