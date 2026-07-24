@@ -280,12 +280,18 @@
     @media (max-width: 900px) {
       .hero-images { max-width: 500px; }
       .hero-video-single {
-        aspect-ratio: 16/9;
+        width: 100%;
+        max-height: 240px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .hero-video-single video {
-        object-fit: cover;
-        height: 100%;
+        object-fit: contain;
+        height: auto;
+        max-height: 240px;
+        width: 100%;
       }
     }
     @media (min-width: 901px) {
