@@ -443,6 +443,25 @@
       background: var(--black);
       display: flex; align-items: center; justify-content: center;
       font-size: 10px; color: white;
+    }
+    /* ========== CAROUSEL ========== */
+    .showcase-carousel { position: relative; width: 100%; overflow: hidden; border-radius: var(--radius); }
+    .carousel-track { display: flex; transition: transform 0.4s ease; }
+    .carousel-slide { min-width: 100%; }
+    .carousel-slide img { width: 100%; display: block; border-radius: var(--radius); }
+    .carousel-nav { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; }
+    .carousel-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); border: none; cursor: pointer; transition: background 0.2s; }
+    .carousel-dot.active { background: #fff; }
+    .carousel-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(0,0,0,0.5); border: none; color: #fff;
+      width: 40px; height: 40px; border-radius: 50%;
+      cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .carousel-arrow:hover { background: rgba(0,0,0,0.8); }
+    .carousel-arrow.prev { left: 12px; }
+    .carousel-arrow.next { right: 12px; }
       flex-shrink: 0; margin-top: 2px;
     }
 
@@ -538,6 +557,73 @@
     .cta-section .btn-dark { padding: 16px 36px; font-size: 15px; }
 
     /* ========== WAITLIST FORM ========== */
+    /* ========== PACKAGE SELECTOR IN FORM ========== */
+    .pkg-sel-header {
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+    .pkg-timing-note {
+      font-size: 13px;
+      text-align: center;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+    .pkg-sel-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 480px) {
+      .pkg-sel-grid { grid-template-columns: 1fr; }
+    }
+    .pkg-card {
+      border: 2px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 16px 14px;
+      cursor: pointer;
+      transition: all .2s;
+      position: relative;
+      background: var(--bg);
+      text-align: center;
+    }
+    .pkg-card:hover {
+      border-color: #999;
+    }
+    .pkg-card.selected {
+      border-color: var(--black);
+      background: var(--bg-soft);
+    }
+    .pkg-badge {
+      display: inline-block;
+      background: var(--black);
+      color: var(--white);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+    .pkg-name {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .pkg-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .pkg-price {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
     .waitlist-form {
       padding: 0 0 80px;
     }
@@ -613,6 +699,7 @@
       text-align: center;
     }
     .site-footer p { font-size: 13px; color: var(--text-muted); }
+
   </style>
   <script>
     // ========== LAZY VIDEO LOADER ==========
@@ -1053,7 +1140,7 @@
     <div class="hero-inner">
       <!-- LEFT: Text -->
       <div class="hero-left">
-        <h1>實時翻譯耳塞<br />聽得見世界，亦睇得見字</h1>
+        <h1>聽得明廣東話嘅翻譯耳塞</h1>
         <p class="hero-desc">
           XMX Translate — 智能翻譯耳塞。充電倉彩屏即時顯示原文與譯文，
           中英日韓場景優先。旅行、商務、日常聆聽，一機搞定。
@@ -1080,7 +1167,7 @@
       <!-- RIGHT: Single Hero Video -->
       <div class="hero-right">
         <div class="hero-video-single">
-          <video autoplay muted loop playsinline preload="auto">
+          <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg">
             <source src="assets/a_woman_talking_and_ch.mp4" type="video/mp4" />
           </video>
         </div>
@@ -1091,7 +1178,7 @@
   <!-- FEATURES -->
   <section class="features" id="features">
     <div class="features-video-banner">
-      <video autoplay muted loop playsinline preload="metadata" poster="assets/product-earbuds-thumb.jpg">
+      <video autoplay muted loop playsinline preload="auto" poster="assets/product-earbuds-thumb.jpg">
         <source src="assets/product-earbuds.mp4" type="video/mp4" />
       </video>
     </div>
@@ -1196,7 +1283,14 @@
   <section class="showcase">
     <div class="showcase-inner">
       <div class="showcase-visual">
-        <img src="assets/hero-bg.png" alt="XMX Translate 產品展示" />
+        <div class="showcase-carousel" id="showcaseCarousel">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="assets/showcase-earbud.jpg" alt="XMX Translate 翻譯耳塞" />
+            </div>
+          </div>
+
+        </div>
       </div>
       <div class="showcase-content">
         <p class="section-label">產品特點</p>
@@ -1294,17 +1388,36 @@
   <section class="cta-section" id="waitlist">
     <div class="cta-inner">
       <h2>準備好加入了嗎？</h2>
-      <p>加入 Waitlist，成為首批優先體驗用家。我哋會喺早鳥開放時第一時間通知你。</p>
+      <p>加入 Waitlist，成為首批優先體驗用家。<strong>完全免費</strong>，我哋會喺早鳥開放時第一時間通知你。</p>
       <button class="btn-dark" onclick="document.getElementById('waitlist-form').scrollIntoView({behavior:'smooth'})">立即加入 Waitlist</button>
     </div>
   </section>
 
   <section class="waitlist-form" id="waitlist-form">
     <div class="waitlist-inner">
+      <!-- Package Selection -->
+      <div class="pkg-sel-header">你想加入邊個套餐？</div>
+      <div class="pkg-timing-note">📅 2026 年 7 月預售 · 10 月出貨，屆時先需付款</div>
+      <div class="pkg-sel-grid">
+        <div class="pkg-card selected" data-pkg="solo" onclick="selectPkg(this)">
+          <div class="pkg-badge">⭐ Most Popular</div>
+          <div class="pkg-name">Solo Starter</div>
+          <div class="pkg-desc">1 套翻譯套裝</div>
+          <div class="pkg-price">HK$888</div>
+        </div>
+        <div class="pkg-card" data-pkg="double" onclick="selectPkg(this)">
+          <div class="pkg-name">Double Pack</div>
+          <div class="pkg-desc">2 套翻譯套裝</div>
+          <div class="pkg-price">HK$1,600</div>
+        </div>
+      </div>
+
       <form action="https://formspree.io/f/xzdnpwnj" method="POST" id="waitlist-form-element">
         <input type="hidden" name="_next" value="https://site-lime-rho-47.vercel.app/thank-you.html" />
-        <input type="email" name="email" placeholder="你的電郵地址" required />
+        <input type="hidden" name="package" id="formPkg" value="solo" />
         <input type="text" name="name" placeholder="你的名字（可選）" />
+        <input type="tel" name="phone" placeholder="電話號碼（可選）" />
+        <input type="email" name="email" placeholder="你的電郵地址" required />
         <button type="submit" class="btn-dark">加入 Waitlist</button>
         <p class="form-note">我們重視你的私隱，不會發送垃圾郵件。</p>
       </form>
@@ -1319,40 +1432,23 @@
         <h2>有問題？</h2>
       </div>
       <div class="faq-list">
-        <div class="faq-item">
+        <div class="faq-item open">
           <button class="faq-question" >
             <span>而家要俾錢嗎？</span>
-            <span class="faq-icon">+</span>
+            <span class="faq-icon">−</span>
           </button>
           <div class="faq-answer">
-            <p>唔使。而家只係 Waitlist。早鳥開放時會再邀請你，屆時先有價錢同交期。</p>
+            <p>唔使。而家只係 Waitlist，唔洗俾任何錢。我哋 2026 年 7 月開放預售時，會第一時間通知你。</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-question" >
-            <span>係咪真·全息投影？</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>第一代係「彩屏充電倉顯示雙語字幕 + 實時翻譯耳塞」。空氣全息投影唔係 T1 承諾範圍。</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" >
-            <span>要網絡嗎？</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>最佳體驗通常需要手機網絡／Wi‑Fi（視最終 ODM 方案）。離線能力以實機規格為準，上線前會寫清。</p>
-          </div>
-        </div>
-        <div class="faq-item">
+
+<div class="faq-item open">
           <button class="faq-question" >
             <span>幾時出貨？</span>
-            <span class="faq-icon">+</span>
+            <span class="faq-icon">−</span>
           </button>
           <div class="faq-answer">
-            <p>視真機驗證與工廠排期。Waitlist 會員會最先收到準確窗口，唔會用含糊「即將上市」收全款。</p>
+            <p>✅ 2026 年 7 月開放預售，10 月正式出貨。Waitlist 會員優先訂購。</p>
           </div>
         </div>
       </div>
@@ -1489,6 +1585,56 @@
       if(o) o.textContent=demos[i].orig;
       if(t) t.textContent=demos[i].trans;
     }
+
+    // ========== SHOWCASE CAROUSEL ==========
+    var currentSlide = 0;
+    var carouselTrack = document.querySelector('.carousel-track');
+    var slides = document.querySelectorAll('.carousel-slide');
+    var dots = document.querySelectorAll('.carousel-dot');
+    var totalSlides = slides.length;
+
+    function updateCarousel() {
+      if (!carouselTrack) return;
+      carouselTrack.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+      dots.forEach(function(d, i) {
+        d.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    function moveCarousel(dir) {
+      currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+      updateCarousel();
+    }
+
+    function goToSlide(idx) {
+      currentSlide = idx;
+      updateCarousel();
+    }
+
+    // Auto-play every 5 seconds
+    setInterval(function() {
+      if (carouselTrack) {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateCarousel();
+      }
+    }, 5000);
+
+    // ========== PRICING SELECTOR ==========
+    function selectPkg(card) {
+      // Remove selected from both pricing-card and pkg-card
+      document.querySelectorAll('.pricing-card, .pkg-card').forEach(function(c) {
+        c.classList.remove('selected');
+      });
+      card.classList.add('selected');
+      // Update hidden field
+      var pkg = card.dataset.pkg || card.dataset.package;
+      var hiddenField = document.getElementById('formPkg');
+      if (hiddenField) hiddenField.value = pkg;
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      var first = document.querySelector('.pricing-card, .pkg-card');
+      if (first) first.classList.add('selected');
+    });
   </script>
 
 </body>
